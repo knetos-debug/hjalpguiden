@@ -44,6 +44,16 @@ Tillgänglighet: stora tryckytor (min 48×48 dp), hög kontrast, skärmläsarst�
 
 Integritet: inga personuppgifter lagras; inga tredjeparts-trackers.
 
+SAMARBETE MED AI-ASSISTENT
+
+Det här repo:t är kopplat till en AI-assistent som kan läsa och ändra filer lokalt i den här utvecklingsmiljön. Assistenten kan hjälpa till att ta fram kod, översättningar och dokumentation, men det finns ett par viktiga begränsningar att känna till:
+
+* Ingen nätverksåtkomst – assistenten kan inte nå externa API:er, webbplatser eller din Git-fjärr.
+* Ingen autentisering – kommandon som kräver inloggning (t.ex. `git push`, `firebase deploy`) måste köras manuellt av en människa.
+* Manuell granskning – behandla förslag från assistenten som utkast; granska och testa innan de checkas in eller pushas vidare.
+
+Vill du föra över ändringar till ditt eget repo gör du det själv via terminalen, t.ex. `git remote add`, `git push`, osv. Assistenten kan däremot hjälpa dig med steg-för-steg-instruktioner om du behöver.
+
 FUNKTIONALITET (MVP)
 1) Språkflöde
 

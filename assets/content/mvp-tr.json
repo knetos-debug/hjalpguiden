@@ -1,0 +1,1021 @@
+{
+  "guides": [
+    {
+      "id": "mobil-wifi",
+      "module": "Mobil",
+      "title": "Mobilens grunder - Anslut Wi-Fi",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Telefonunuzun açık olduğundan emin olun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Wi-Fi şifresini hazır bulundurun."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Telefonunuzda Ayarlar uygulamasını açın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Wi-Fi ya da Kablosuz ağ seçeneğine dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Ağ listesini kontrol edin. Kendi ağınızı seçin."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Wi-Fi şifresini yazın. Bağlan'a dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Bekleyin. İşlem bitince bir onay işareti göreceksiniz."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Artık Wi-Fi'ye bağlısınız."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Ağı bulamıyorsunuz → Modeme biraz daha yaklaşın.",
+          "stepIndex": 3
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Şifre yanlış → Büyük/küçük harfleri yeniden kontrol edin.",
+          "stepIndex": 4
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "mobil-oppna-lank",
+      "module": "Mobil",
+      "title": "Mobilens grunder - Öppna länk & QR-kod",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Açmak için bir bağlantı veya QR kodu hazır bulundurun."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Bağlantı için: Linke dokunun. Mavi olacaktır."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tarayıcı otomatik olarak açılır. Bekleyin."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "QR kod için: Kamera uygulamasını açın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kamerayı QR koda doğrultun. Sabit tutun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Görünen bildirime dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Bağlantı tarayıcıda açılır."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "QR kod çalışmıyor → Bunun yerine Google Lens kullanın.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Bağlantı açılmıyor → Basılı tutup Aç seçeneğini seçin.",
+          "stepIndex": 1
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "mobil-skarmdump",
+      "module": "Mobil",
+      "title": "Mobilens grunder - Ta skärmdump",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Ekran görüntüsü almak istediğiniz sayfayı açın."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Android: Güç + Sesi Kıs tuşlarına aynı anda basılı tutun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "iPhone: Yan düğme + Sesi Aç tuşlarına aynı anda basın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kısa bir flaş göreceksiniz. Görüntü kaydedilir."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Görüntüyü görmek için Galeri veya Fotoğraflar'ı açın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Görüntüyü göndermek için Paylaş'a dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Nasıl paylaşmak istediğinizi seçin: SMS, e-posta, WhatsApp."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Görüntüyü bulamıyorsunuz → Ekran Görüntüleri klasörüne bakın.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Çalışmıyor → Düğmeleri biraz daha uzun basılı tutmayı deneyin.",
+          "stepIndex": 1
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "oversatt-kamera",
+      "module": "AI",
+      "title": "Google Översätt - Översätt med kamera",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Google Çeviri uygulamasının kurulu olduğundan emin olun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Çevirmek istediğiniz metni önünüze alın."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Google Çeviri'yi açın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Alttaki kamera simgesine dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dilleri seçin: İsveççe'den kendi dilinize."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kamerayı metne doğrultun. Sabit tutun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tara'ya dokunun. Metnin fotoğrafını çekin."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Çeviri İsveççe metnin üzerine yansıtılır."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Görüntü bulanık → Telefonu sabit tutup yeniden deneyin.",
+          "stepIndex": 5
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Çeviri yanlış → Dil ayarlarının doğru olduğundan emin olun.",
+          "stepIndex": 3
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "oversatt-rost",
+      "module": "AI",
+      "title": "Google Översätt - Prata och översätt",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Google Çeviri uygulamasını hazır bulundurun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Mikrofon izninin açık olduğundan emin olun."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Google Çeviri'yi açın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dilleri seçin: Kendi dilinizden İsveççe'ye."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Mikrofon simgesine dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kendi dilinizde net bir şekilde konuşun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Bekleyin. Çeviri görünür ve sesli okunur."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tekrar dinlemek için hoparlör simgesine dokunun."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Çeviriyi duymuyorsunuz → Telefonun sesini açın.",
+          "stepIndex": 5
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Çeviri yanlış → Daha yavaş ve net konuşun.",
+          "stepIndex": 4
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "bankid-login-same",
+      "module": "BankID",
+      "title": "BankID - Logga in (samma enhet)",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID uygulamasının yüklü olduğundan emin olun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID kodunuzu hatırlayın."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Siteye gidin. Giriş Yap'a dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kimlik numaranızı yazın. İleri'ye dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Bu cihazda BankID'yi seçin."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID otomatik olarak açılır. Bekleyin."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID kodunuzu yazın. Tamam'a dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Artık giriş yaptınız."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID açılmıyor → Uygulamayı elle açın.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kod yanlış → Yeniden deneyin. Üç hata sonrası bekleyin.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "bankid-login-other",
+      "module": "BankID",
+      "title": "BankID - Logga in (annan enhet)",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Telefonunuzda BankID bulunsun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Telefon yanınızda olmalı."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Bilgisayarda siteye gidin. Giriş Yap'a tıklayın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kimlik numaranızı yazın. Başka cihazda BankID'yi seçin."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Telefonda BankID uygulamasını açın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kimliğini Doğrula'ya dokunun. Bilgileri okuyun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID kodunuzu yazın. Tamam'a dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Artık bilgisayarda giriş yaptınız."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID'de bir şey yok → Kimliğini Doğrula'ya dokunun.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hiçbir şey olmuyor → Kimlik numarasının doğru olduğunu kontrol edin.",
+          "stepIndex": 2
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "1177-login-same",
+      "module": "m1177",
+      "title": "1177 – Logga in (samma enhet)",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Telefonunuzda BankID uygulaması bulunsun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID kodunuzu hatırlayın."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Tarayıcınızda 1177.se'yi açın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Giriş Yap düğmesine dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kimlik numaranızı yazın. İleri'ye dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID otomatik olarak açılır. Bekleyin."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID kodunuzu yazın. Tamam'a dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Artık 1177'ye giriş yaptınız."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID açılmıyor → Uygulamayı elle açın.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kod yanlış → Yeniden deneyin. Üç hata sonrası beklemeniz gerekir.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "1177-login-other",
+      "module": "m1177",
+      "title": "1177 – Logga in (annan enhet)",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Telefonunuzda BankID bulunsun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Telefon yanınızda olmalı."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Bilgisayarda 1177.se'yi açın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Giriş Yap'a tıklayın. Kimlik numaranızı yazın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Başka cihazda BankID'yi seçin."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Telefonda BankID'yi açın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kimliğini Doğrula'ya dokunun. Kodunuzu yazın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Artık bilgisayarda giriş yaptınız."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Hiçbir şey olmuyor → Kimlik numarasının doğru olduğunu kontrol edin.",
+          "stepIndex": 2
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID'de bir şey görünmüyor → \"Kimliğini doğrula\" yazısına dokunun.",
+          "stepIndex": 4
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "1177-read-message",
+      "module": "m1177",
+      "title": "1177 - Läsa meddelande",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "1177 hesabınız ve BankID'niz olsun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "1177.se'de oturum açmış olun."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "1177.se'ye gidin. BankID ile giriş yapın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Gelen Kutusu veya Mesajlar'a dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Mesajlarınızı görürsünüz. Yeniler işaretlidir."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Okumak istediğiniz mesaja dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Mesajı okuyun. Uzunsa aşağı kaydırın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Yanıtlamak için: Alttaki Yanıtla'ya dokunun."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Mesaj bulamıyorsunuz → Arşiv bölümünü de kontrol edin.",
+          "stepIndex": 2
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Yanıtlanamıyor → Bazı mesajlara cevap verilemez.",
+          "stepIndex": 6
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "kivra-activate",
+      "module": "Kivra",
+      "title": "Kivra – Aktivera och logga in",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Telefonunuzda BankID bulunsun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Bir e-posta adresiniz olsun."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "kivra.se'ye gidin. Kivra Edin'e dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kimlik numaranızı yazın. İleri'ye dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Telefondaki BankID ile giriş yapın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "E-posta adresinizi yazın. İleri'ye dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hangi mektupları dijital almak istediğinizi seçin."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kivra şimdi aktif. Giriş yaptınız."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Zaten üyesiniz → Sadece Giriş Yap'a dokunun.",
+          "stepIndex": 1
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Düğmeyi bulamıyorsunuz → Sayfayı aşağı kaydırın.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "kivra-read-letter",
+      "module": "Kivra",
+      "title": "Kivra – Läsa nytt brev",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Aktif bir Kivra hesabınız olsun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Giriş yapmak için BankID'ye sahip olun."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "kivra.se'ye gidin. Giriş Yap'a dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kimlik numaranızı yazın. BankID ile giriş yapın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Mektuplarınızı görürsünüz. Yeniler işaretlidir."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Okumak istediğiniz mesaja dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Mesaj açılır. Metni okuyun veya PDF'yi açın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kaydetmek isterseniz PDF simgesine dokunun."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Mektup görünmüyor → Arşiv sekmesini de kontrol edin.",
+          "stepIndex": 3
+        },
+        {
+          "sv_enkel": "",
+          "hs": "PDF açılmıyor → Basılı tutup Yeni sekmede aç'ı seçin.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "af-upload-document",
+      "module": "AF",
+      "title": "Arbetsförmedlingen – Ladda upp dokument",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Benim Sayfalarım'da bir hesabınız olsun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Belgeyi dosya veya foto olarak hazır bulundurun."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "arbetsformedlingen.se/minasidor adresine giriş yapın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Mesaj Gönder veya İşlemlerime dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dosya Ekle veya Ekle düğmesini bulun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dosyayı telefonunuzdan veya bilgisayarınızdan seçin."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dosya yüklenene kadar bekleyin. Yeşil işaret görün."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Gönder'e dokunun. Belge gönderildi."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Düğmeyi bulamıyorsunuz → Formu aşağı kaydırın.",
+          "stepIndex": 3
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dosya biçimi yanlış → PDF veya JPG kullanın.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dosya çok büyük → Yeni fotoğraf çekin veya sıkıştırın.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "skatteverket-personbevis",
+      "module": "Skatteverket",
+      "title": "Skatteverket - Hämta personbevis",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID'niz olsun."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "skatteverket.se'ye gidin. \"personbevis\" arayın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Personbevis sipariş et'e dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID ile giriş yapın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Personbevis türünü seçin. İleri'ye dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Personbevis PDF olarak açılır. İndir'e dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "PDF İndirilenler'e kaydedilir. İşlem tamam."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "PDF'yi bulamıyorsunuz → Dosyalar veya İndirilenler'i açın.",
+          "stepIndex": 6
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tür yanlış → En yaygını \"Personbevis utan folkbokföringsuppgifter\"dir.",
+          "stepIndex": 4
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "fk-login",
+      "module": "FK",
+      "title": "Försäkringskassan - Logga in",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID'niz olsun."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "forsakringskassan.se'ye gidin."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Giriş Yap veya Benim Sayfalarım'a dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kimlik numaranızı yazın. İleri'ye dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Telefondaki BankID ile giriş yapın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Artık Benim Sayfalarım'ı görüyorsunuz. Giriş yaptınız."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Yüklemek için: Önce işleminizi bulun."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "İşlemi bulamıyorsunuz → Rehberlik için Försäkringskassan'ı arayın.",
+          "stepIndex": 6
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Giriş hatası → Kimlik numarasını kontrol edin.",
+          "stepIndex": 3
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "epost-login",
+      "module": "Epost",
+      "title": "E-post - Logga in",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "E-posta adresinizi ve şifrenizi hazır bulundurun."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Gmail uygulamasını açın veya gmail.com'a gidin."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Giriş Yap'a dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "E-posta adresinizi yazın. İleri'ye dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Şifrenizi yazın. İleri'ye dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Gelen kutunuzu görüyorsunuz. Giriş yaptınız."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Okumak için bir e-postaya dokunun."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Şifre yanlış → Şifreyi sıfırlamak için \"Şifremi unuttum\"a dokunun.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "E-post bulamıyorsunuz → Spam klasörünü kontrol edin.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "epost-send-file",
+      "module": "Epost",
+      "title": "E-post - Skicka bild eller fil",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "E-post hesabınızda oturum açmış olun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dosyayı veya resmi hazır bulundurun."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Yaz'a veya artı simgesine dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Alıcının e-posta adresini yazın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "İsterseniz konu ve mesaj yazın."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dosya eklemek için ataş simgesine dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dosyayı Galeri veya Dosyalar'dan seçin. Tamam'a dokunun."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dosya yüklenir. Gönder'e dokunun."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Dosya çok büyük → Görüntüyü sıkıştırın veya bulut hizmeti kullanın.",
+          "stepIndex": 5
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dosyayı bulamıyorsunuz → İndirilenler klasörüne bakın.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "trygghet-fraser",
+      "module": "Trygghet",
+      "title": "Trygghet - Viktiga fraser att visa",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Telefonu göstermeye hazır tutun."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Cümle 1: Lütfen yavaş konuşun. Çeviri kullanıyorum."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Cümle 2: Yazabilir misiniz? Böyle daha iyi anlarım."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Cümle 3: Dilim için bir tercümana ihtiyacım var."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Cümle 4: En yakın eczane nerede?"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Cümle 5: Anlamıyorum. Bana yardım eder misiniz?"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "İpucu: Bu ekranı birine gösterin."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Yazı çok küçük → Ekranı parmaklarınızla yakınlaştırın.",
+          "stepIndex": 1
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "trygghet-nummer",
+      "module": "Trygghet",
+      "title": "Trygghet - Viktiga telefonnummer",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Telefonu arama yapmaya hazır tutun."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Acil: 112 (polis, ambulans, itfaiye)"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "1177: Tıbbi danışma (acil değil)"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "114 14: Dilinizde bilgi"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Polis (acil değil): 114 14"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Zehir bilgisi: 112 (\"giftinformation\" deyin)"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "İpucu: Bu numaraları kişilerinize kaydedin."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "112 cevap vermiyor → Yeniden arayın, her zaman açıktır.",
+          "stepIndex": 1
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dil sorunu → Kendi dilinizde tercüman isteyin.",
+          "stepIndex": 1
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    }
+  ]
+}

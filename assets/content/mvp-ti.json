@@ -1,0 +1,1021 @@
+{
+  "guides": [
+    {
+      "id": "mobil-wifi",
+      "module": "Mobil",
+      "title": "Mobilens grunder - Anslut Wi-Fi",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "ስልክካ ብስራሕ እንዳለ ኣረጋግጽ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "መርሕ ወይፋይ ቅድሚ እንታይ ኣዘጋጅ።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "በርታ Settings ኣብ ስልክካ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኣብ Wi-Fi ወይ Wireless ኔትዎርክ ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ዝተረኽበ ኔትዎርክ ምስ ተረኽበ ፍለጥ እናድለካ ምረጽ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "መርሕ Wi-Fi ኣእትው። ኣብ መራኸቢ ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ጽቡቕ እዩ እንተደሊኻ ተጸበይቲ። እንተዘረባ ምልክት ተርፊኡ ትርከብ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኣብ Wi-Fi ክንደይ ተዳህሶ ኢኻ።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "ኔትዎርክ ኣብ ኣይትረኽበካ → ናብ ራውተር ቀረብ።",
+          "stepIndex": 3
+        },
+        {
+          "sv_enkel": "",
+          "hs": "መርሕ ተሳስይ። ቁሩብ ወይ ትንንሽ ፊደል ደጊም ምርመራ ግበር።",
+          "stepIndex": 4
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "mobil-oppna-lank",
+      "module": "Mobil",
+      "title": "Mobilens grunder - Öppna länk & QR-kod",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "ሊንክ ወይ QR ኮድ እንዳለ ኣዘጋጅ።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "ሊንክ እንተሓለፈት ሊንክ ጠውቕ። ሰማያዊ ይሕብር።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ብራውዘር ብሓላፊ ይበርክ። ጽቡቕ እዩ እንተተመንበር።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "QR ኮድ እንተሓለፈት ካሜራ ኣፕ ክፈት።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ካሜራካ ናብ QR ኮድ ኣመልክት ኣብዚ ሓዙ ኣጥቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "እቲ ሰዓቢ ምልክት እንተበዝሐ ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ሊንኩ ኣብ ብራውዘር ይከፈት።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "QR ኮድ ኣይሰርሕን → Google Lens ተጠቀም።",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ሊንክ ኣይተኸፈትን → ጠውቕ እናተዓረከ ክፈት ምረጽ።",
+          "stepIndex": 1
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "mobil-skarmdump",
+      "module": "Mobil",
+      "title": "Mobilens grunder - Ta skärmdump",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "ስክሪን ዘብልካ ክትስዕል ክፈት።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "ኣንድሮይድ: ኣብ Power ንሱ ቮልዩም ታትና ብኣንድ ግዜ ኣጥቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኣይፎን: ገጽ እቲ ቁልፊ ንሱ ቮልዩም ላዕለዋይ ብኣንድ ግዜ ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "እንታይ ምንባብ ብሊፍተኛ ብምብላጽ ትረኽብ። ስዕሉ ተኣክሊ እዩ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ናብ ጋለሪ ወይ ፎቶታት ግበር ስዕልካ እንተኣኽሊ ክትርከብ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ስዕልካ ክትስደድ እንተደለኻ ተካፊል ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ስንበት ክትካፍል ትደሊ ምረጽ። SMS፣ ኢ-መይል፣ WhatsApp።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "ስዕል ኣይተረኽበካን → ኣብ Screenshots ፎልደር ፈልጥ።",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኣይሰርሕን → ቁልፊታት ካልእ ግዜ ኣጥቕ።",
+          "stepIndex": 1
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "oversatt-kamera",
+      "module": "AI",
+      "title": "Google Översätt - Översätt med kamera",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Google Translate ኣፕ ኣብ ስልክካ ኣዘጋጅ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ጽሑፍ እቲ ትተርጉም ትደሊ ቕሩብካ ኣድልዎ።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Google Translate ክፈት።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ታሕቲ ዘሎ ካሜራ ምልክት ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ቋንቋ ምረጽ። ካብ ስወድኛ ናብ ቋንቋኻ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ካሜራካ ናብ ጽሑፍ ኣመልክት። ደሓን ኣጥቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኣብ ስካን ጠውቕ። ጽሑፍ ስዕል ኣድርግ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ትርጉም ኣብ ላዕሊ ጽሑፍ ስወድኛ ይታየ።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "ስዕል ጠልቕ → ስልክካ ዘርግጽ ምቕላሽ ምግባር።",
+          "stepIndex": 5
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ትርጉም ተሳስየ → ቋንቋታት ትክክል እንዳተመረጹ ኣረጋግጽ።",
+          "stepIndex": 3
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "oversatt-rost",
+      "module": "AI",
+      "title": "Google Översätt - Prata och översätt",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Google Translate ኣፕ ኣዘጋጅ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ሚክሮፎን ፈቃድ እንተተኽለ ኣረጋግጽ።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Google Translate ክፈት።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ቋንቋ ናብ ስወድኛ ካብ ቋንቋኻ ምረጽ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ምልክት ሚክሮፎን ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "በዚ ቋንቋኻ ግልጽ ተናገር።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ጸብጸብ ግበር። ትርጉም ኣብ ስክሪን ይገለጽ እናዘረባ ይኣርር።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "እንደገና ስምዒ ክትረኽብ እቲ ስፒከር ምልክት ጠውቕ።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "ትርጉም ኣብ እዚ ኣብዚ ኣይስምዓኻን → ቮልዩም ስልክካ ኣምባ።",
+          "stepIndex": 5
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ትርጉም ተሳስየ → ቀስታ እና ግልጽ ተናገር።",
+          "stepIndex": 4
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "bankid-login-same",
+      "module": "BankID",
+      "title": "BankID - Logga in (samma enhet)",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID ኣፕ ተካይዶ ክህሉ ኣረጋግጽ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኮድ BankID ክትዘክር ኣዘዝ።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "ናብ ድሕሪት ድሕረ ብዲ ክትዓውድ ናይ ኢንተርነት ገጽ ሂድ። ኣብ መእተዊ ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ቁጽሪ መለኪያ ኣእትው። Nästa ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID ኣብ ዚ መሳርሒ ምረጽ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID ብሓላፊ ይከፈት። ጸብጸብ ግበር።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኮድ BankID ኣእትው። OK ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ሕጂ ገባኻ።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID ኣይከፍትን → ኣፕ ብእግሪኻ ክፈት።",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኮድ ተሳስየ → እንደገና ሞክር። ሰለስተ ጊዜ እንተሰሳሰ ጸብጸብ ግበር።",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "bankid-login-other",
+      "module": "BankID",
+      "title": "BankID - Logga in (annan enhet)",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID ኣብ ስልክካ ኣለካ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ስልክካ ቕረብካ ይምልከት።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "ኣብ ኮምፒውተር ድሕረ ገጽ ክፈት። Logga in ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ቁጽሪ መለኪያ ኣእትው። BankID ካብ ካልእ መሳርሒ ምረጽ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID ኣብ ስልክ ክፈት።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "\"Legitimera dig\" ጠውቕ። መረጃ ኣንብብ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኮድ BankID ኣእትው። OK ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ሕጂ ኣብ ኮምፒውተር ውሽጥ ኣሎኻ።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "ኣብ BankID ኣይተረኽበካን → ኣብ \"Legitimera dig\" ጠውቕ።",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኣብ ዘይተረኽበ ምስ ዘለኻ ንቁጽሪ ትክክል እንተሆነ ኣረጋግጽ።",
+          "stepIndex": 2
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "1177-login-same",
+      "module": "m1177",
+      "title": "1177 – Logga in (samma enhet)",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID ኣፕ ኣብ ስልክካ ኣዘጋጅ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኮድ BankID ክትዘክር ኣዘዝ።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "1177.se ኣብ ብራውዘርካ ክፈት።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ቁልፊ Logga in ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ቁጽሪ መለኪያ ኣእትው። Nästa ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID ብሓላፊ ይከፈት። ጸብጸብ ግበር።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኮድ BankID ኣእትው። OK ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ሕጂ ኣብ 1177 ውሽጥ ኣለኻ።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID ኣይከፍትን → በእግሪኻ ኣፕ ክፈት።",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኮድ ተሳስየ → እንደገና ሞክር። ሰለስተ ጊዜ እንተሰሳሰ ጸብጸብ ኣለኻ።",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "1177-login-other",
+      "module": "m1177",
+      "title": "1177 – Logga in (annan enhet)",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID ኣብ ስልክካ ኣለካ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ስልክካ ቕረብካ ይምልከት።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "1177.se ኣብ ኮምፒውተር ክፈት።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "\"Logga in\" ጠውቕ። ቁጽሪ መለኪያ ኣእትው።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID ኣብ ካልእ መሳርሒ ምረጽ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID ኣብ ስልክካ ክፈት።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "\"Legitimera dig\" ጠውቕ። ኮድኻ ኣእትው።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ሕጂ ኣብ ኮምፒውተር ውሽጥ ኣሎኻ።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "ኣብ ዘይተረኽበ ምስ ዘለኻ ንቁጽሪ ትክክል እንተሆነ ኣረጋግጽ።",
+          "stepIndex": 2
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኣብ BankID ኣይታየካን → ኣብ \"Legitimera dig\" ጽሑፍ ጠውቕ።",
+          "stepIndex": 4
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "1177-read-message",
+      "module": "m1177",
+      "title": "1177 - Läsa meddelande",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "ናይ 1177 መለለዪን BankIDን ኣለካ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "በዚ 1177.se መእተዊ እንተሆኻ ኣረጋግጽ።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "ናብ 1177.se ሂድ። ብ BankID ግባ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኢንኮርግ ወይ መልእኽቲ ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "መልእኽቲኻ ትረኽብ። ሓድሽቲ ብምልክት ይገልፁ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "እቲ መልእኽቲ ትኣቱ ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "መልእኽቲ ኣንብብ። እንተ ነዊሕ ኣብ ታሕቲ ንምምላስ ስኮርላ ግበር።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ንምላስ: ኣብ ታሕቲ \"Svara\" ጠውቕ።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "መልእኽቲ ኣይትረኽበካን → ኣብ ኣርክቲቭ ፎልደር ምርመራ ግበር።",
+          "stepIndex": 2
+        },
+        {
+          "sv_enkel": "",
+          "hs": "መልሲ ኣይከኣልካን → ኣብ እቶም መልእኽቲ መልሲ ምሃብ ኣይከኣልን።",
+          "stepIndex": 6
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "kivra-activate",
+      "module": "Kivra",
+      "title": "Kivra – Aktivera och logga in",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID ኣብ ስልክካ ኣለካ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኢ-መይል ኣድራሻ ኣለካ።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "ናብ kivra.se ሂድ። \"Skaffa Kivra\" ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ቁጽሪ መለኪያ ኣእትው። Nästa ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ብ BankID ኣብ ስልክ ግባ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኢ-መይል ኣድራሻኻ ኣእትው። Nästa ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "መልእኽቲ እቲ ትደሊ ዲጂታል ክትቕበል ምረጽ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kivra ኣሁን ተኸፍቲ እዩ። ገብረሃል።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "ንእተ ኣባል እንተድለኻ → ብቐጻሊ Logga in ጠውቕ።",
+          "stepIndex": 1
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ቁልፊ ኣይተረኽበካን → ገጽ ናብ ታሕቲ ንምምላስ ስኮርላ ግበር።",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "kivra-read-letter",
+      "module": "Kivra",
+      "title": "Kivra – Läsa nytt brev",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "ኣክቲቭ ዝለዎ ናይ Kivra መለለዪ ኣለካ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ንመእተዊ እንተደለኻ BankID ክንደይ እዩ ዘለኻ።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "ናብ kivra.se ሂድ። Logga in ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ዝርዝር መለኪያ ቁጽሪኻ ኣእትው። ብ BankID ግባ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "መልእኽቲኻ ትረኽብ። ሓድሽቲ ምልክት ይተርፋ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "እቲ ተደሊኻ መልእኽቲ ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "መልእኽቲ ይከፍት። ጽሑፉ ኣንብብ ወይ PDF ክፈት።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "እንተትደሊ ምእቃን PDF ምልክት ጠውቕ።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "መልእኽቲ ኣይተረኽበካን → ታብ Arkiv ምርመራ ግበር።",
+          "stepIndex": 3
+        },
+        {
+          "sv_enkel": "",
+          "hs": "PDF ኣይከፍትን → ጠውቕ እናተዓረከ \"ኣብ ሓዲሽ ታብ ክፈት\" ምረጽ።",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "af-upload-document",
+      "module": "AF",
+      "title": "Arbetsförmedlingen – Ladda upp dokument",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "ተግባራዊ መለለዪ በዚ \"Mina sidor\" ኣለካ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ሰነድ ከም ፋይል ወይ ስዕል ኣዘጋጅ።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "ናብ arbetsformedlingen.se/minasidor ግበር።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "\"Skicka meddelande\" ወይ \"Mina ärenden\" ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "\"Bifoga fil\" ወይ \"Lägg till\" ቁልፊ ፈልጥ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ፋይል ካብ ስልክ ወይ ኮምፒውተር ምረጽ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ፋይሉ ክትገብር እንተዘለኻ ጸብጸብ ግበር። ምልክት ቀልጠኛ እንታይ ትረኽብ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "\"Skicka\" ጠውቕ። ሰነዱ ተላእኮ እዩ።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "ቁልፊ ኣይተረኽበካን → ፎርሙላ ናብ ታሕቲ ስኮርላ ግበር።",
+          "stepIndex": 3
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ፋይል ቅርጺ ተሳስየ → PDF ወይ JPG ተጠቀም።",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ፋይል ደቂ እዩ → ስዕል ሓዲሽ ስዕል ኣድርግ ወይ ክምረታ ግበር።",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "skatteverket-personbevis",
+      "module": "Skatteverket",
+      "title": "Skatteverket - Hämta personbevis",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID ኣለካ።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "ናብ skatteverket.se ሂድ። \"personbevis\" ፈልጥ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "\"Beställ personbevis\" ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ብ BankID ግባ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ዝኾነ ዓይነት የለኻዮ ሰነድ ምረጽ። Nästa ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "personbevis PDF እንዲ ይታየ። \"Ladda ner\" ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "PDF ኣብ ፎልደር Downloads ይተኣክል። ጨርሓ።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "PDF ኣይተረኽበካን → Filer ወይ Downloads ክፈት።",
+          "stepIndex": 6
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ዓይነት ተሳስየ → እቲ ብዙሕ ዝምልከት \"Personbevis utan folkbokföringsuppgifter\" እዩ።",
+          "stepIndex": 4
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "fk-login",
+      "module": "FK",
+      "title": "Försäkringskassan - Logga in",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID ኣለካ።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "ናብ forsakringskassan.se ሂድ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "\"Logga in\" ወይ \"Mina sidor\" ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ቁጽሪ መለኪያ ኣእትው። Nästa ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ብ BankID ኣብ ስልክ ግባ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "\"Mina sidor\" ትረኽብ። ገብረሃል።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ንምትዓመዝ: ቀዳማይ ጉዳይኻ ፈልጥ።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "ጉዳይ ኣይተረኽበካን → ናብ Försäkringskassan ደውል ምስ ዕላማ።",
+          "stepIndex": 6
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኣብ መእተዊ ችግር → ቁጽሪ መለኪያኻ ኣረጋግጽ።",
+          "stepIndex": 3
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "epost-login",
+      "module": "Epost",
+      "title": "E-post - Logga in",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "ኢ-መይል ኣድራሻኻን መርሕኻን ኣዘጋጅ።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Gmail ኣፕ ክፈት ወይ ናብ gmail.com ሂድ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Logga in ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኢ-መይል ኣድራሻኻ ኣእትው። Nästa ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "መርሕኻ ኣእትው። Nästa ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኢንኮርግካ ትረኽብ። ገብረሃል።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "እቲ መልእኽቲ ክትኣቱ ጠውቕ።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "መርሕ ተሳስየ → \"Glömt lösenord\" ጠውቕ ንምርካብ።",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "መልእኽቲ ኣይተረኽበካን → ኣብ Spam ፎልደር ፈልጥ።",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "epost-send-file",
+      "module": "Epost",
+      "title": "E-post - Skicka bild eller fil",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "ኣብ ኢ-መይልካ መእተዊ እንድሕን ሕራይ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ፋይል ወይ ስዕል ኣዘጋጅ።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "\"Skriv\" ወይ ምልክት + ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ኢ-መይል ኣድራሻ ተቐባሊ ኣእትው።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ርእሲ እና መልእኽቲ እንተትደሊ ጽሓ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ፋይል ክትያዝ እንተደለኻ ኣብ ምልክት ተተርከይቲ ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ፋይል ካብ ጋለሪ ወይ ከም ፋይልስ ምረጽ። OK ጠውቕ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ፋይል ይተዓማዝ። Skicka ጠውቕ።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "ፋይል ደቂ እዩ → ስዕል ንምጥናት ወይ ክላውድ ኣገልግሎት ተጠቀም።",
+          "stepIndex": 5
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ፋይል ኣይተረኽበካን → ኣብ Downloads ፎልደር ፈልጥ።",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "trygghet-fraser",
+      "module": "Trygghet",
+      "title": "Trygghet - Viktiga fraser att visa",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "ስልክካ ንምርኣይ ኣዘጋጅ።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "ሐረግ 1: ቀስታ ተናገር። ትርጉም ኣጥብቃ ኣለኹ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ሐረግ 2: ኣብ ጽሑፍ ትጽሓፍ ትኽእል? ኣነ ይበልጥ ኣረድእ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ሐረግ 3: ተርጉማን ናብ ቋንቋይ ሕራይ።"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ሐረግ 4: ኣብ ቅርብ አፖቴክ ኣበይ ኣሎ?"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ሐረግ 5: ኣይረድእን። ንኸይደው ትኽእል?"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ሓገዝ: እዚ ስክሪን ሰብ ኣሳየዎ።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "ጽሑፍ ንንኡስ እዩ → ስክሪን ብጣብያ ኣድግ።",
+          "stepIndex": 1
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "trygghet-nummer",
+      "module": "Trygghet",
+      "title": "Trygghet - Viktiga telefonnummer",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "ስልክካ ንምድዋር ኣዘጋጅ።"
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "ኣኽዩት: 112 (ፖሊስ፣ ኣምቡላንስ፣ እሳት ኣገልግሎት)"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "1177: ሕክምና ምኽሪ (ዘይኣኽዩት)"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "114 14: መረጃ ብቋንቋኻ"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ፖሊስ (ዘይኣኽዩት): 114 14"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "መረጃ ስለ መርዓ: 112 (giftinformation በለ)"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ሓገዝ: እዚ ቁጽሪታት ኣብ ሓበሬታ ኣእትው።"
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "112 ኣይመለሰካን → እንደገና ደውል፣ ዘይሕተት እዩ።",
+          "stepIndex": 1
+        },
+        {
+          "sv_enkel": "",
+          "hs": "ችግር ቋንቋ → ተርጉማን ብቋንቋኻ ብቕራብ ሕበስ።",
+          "stepIndex": 1
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    }
+  ]
+}
