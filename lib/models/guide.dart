@@ -96,11 +96,11 @@ class Trouble extends LangLine {
 @JsonSerializable()
 class Guide {
   final String id;
-  
+
   @JsonKey(unknownEnumValue: Module.m1177)
   final Module module;
-  
-  final String title;
+
+  final LangLine title;
   final List<LangLine> prereq;
   final List<GuideStep> steps;
   final List<Trouble> troubleshoot;
@@ -119,7 +119,7 @@ class Guide {
   });
 
   factory Guide.fromJson(Map<String, dynamic> json) => _$GuideFromJson(json);
-  
+
   Map<String, dynamic> toJson() => _$GuideToJson(this);
 }
 

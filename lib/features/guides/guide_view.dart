@@ -22,7 +22,21 @@ class GuideView extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(guide.title),
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              guide.title.svEnkel,
+              style: const TextStyle(fontSize: 16),
+            ),
+            if (guide.title.hs.isNotEmpty)
+              Text(
+                guide.title.hs,
+                style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w400),
+              ),
+          ],
+        ),
         actions: [
           Semantics(
             button: true,

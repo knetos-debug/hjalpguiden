@@ -133,7 +133,7 @@ class _GuideCard extends StatelessWidget {
 
     return Semantics(
       button: true,
-      label: 'Öppna guide: ${guide.title}',
+      label: 'Öppna guide: ${guide.title.svEnkel}',
       child: Card(
         elevation: 3,
         child: InkWell(
@@ -153,15 +153,33 @@ class _GuideCard extends StatelessWidget {
                   child: Icon(icon, size: 36, color: color),
                 ),
                 const SizedBox(height: 12),
-                Text(
-                  guide.title,
-                  style: const TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w600,
-                  ),
-                  textAlign: TextAlign.center,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
+                Column(
+                  children: [
+                    Text(
+                      guide.title.svEnkel,
+                      style: const TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.w600,
+                      ),
+                      textAlign: TextAlign.center,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    if (guide.title.hs.isNotEmpty) ...[
+                      const SizedBox(height: 4),
+                      Text(
+                        guide.title.hs,
+                        style: const TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.grey,
+                        ),
+                        textAlign: TextAlign.center,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
+                  ],
                 ),
               ],
             ),

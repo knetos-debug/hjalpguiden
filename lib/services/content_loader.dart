@@ -41,32 +41,37 @@ class ContentLoader {
 
   ContentBundle _mergeContent(ContentBundle base, ContentBundle translation) {
     final mergedGuides = <Guide>[];
-    
+
     for (final baseGuide in base.guides) {
       final translationGuide = translation.guides.firstWhere(
         (g) => g.id == baseGuide.id,
         orElse: () => baseGuide,
       );
-      
+
+      final mergedTitle = LangLine(
+        svEnkel: baseGuide.title.svEnkel,
+        hs: translationGuide.title.hs,
+      );
+
       final mergedPrereq = _mergeLangLines(
         baseGuide.prereq,
         translationGuide.prereq,
       );
-      
+
       final mergedSteps = _mergeSteps(
         baseGuide.steps,
         translationGuide.steps,
       );
-      
+
       final mergedTroubleshoot = _mergeTroubles(
         baseGuide.troubleshoot,
         translationGuide.troubleshoot,
       );
-      
+
       mergedGuides.add(Guide(
         id: baseGuide.id,
         module: baseGuide.module,
-        title: baseGuide.title,
+        title: mergedTitle,
         prereq: mergedPrereq,
         steps: mergedSteps,
         troubleshoot: mergedTroubleshoot,
@@ -74,7 +79,7 @@ class ContentLoader {
         lastVerified: baseGuide.lastVerified,
       ));
     }
-    
+
     return ContentBundle(guides: mergedGuides);
   }
 
