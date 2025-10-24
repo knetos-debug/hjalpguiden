@@ -3,22 +3,57 @@
     {
       "id": "mobil-wifi",
       "module": "Mobil",
-      "title": "Mobilens grunder - Anslut Wi-Fi",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Mobilens grunder - Anslut Wi-Fi"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel teleefankaaga shidan."},
-        {"sv_enkel": "", "hs": "Hel erayga sirta Wi-Fi diyaar ah."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel teleefankaaga shidan."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hel erayga sirta Wi-Fi diyaar ah."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Fur Habaynta teleefanka."},
-        {"sv_enkel": "", "hs": "Riix Wi-Fi ama Shabakadda Wireless."},
-        {"sv_enkel": "", "hs": "Arag liiska shabakadaha. Dooro shabakadaada."},
-        {"sv_enkel": "", "hs": "Qor erayga sirta Wi-Fi. Riix Xidh."},
-        {"sv_enkel": "", "hs": "Sug. Waxaad arki doontaa calaamad markaad dhammaato."},
-        {"sv_enkel": "", "hs": "Hadda waxaad ku xidhan tahay Wi-Fi."}
+        {
+          "sv_enkel": "",
+          "hs": "Fur Habaynta teleefanka."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix Wi-Fi ama Shabakadda Wireless."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Arag liiska shabakadaha. Dooro shabakadaada."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor erayga sirta Wi-Fi. Riix Xidh."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Sug. Waxaad arki doontaa calaamad markaad dhammaato."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hadda waxaad ku xidhan tahay Wi-Fi."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "Ma heli kartid shabakada ← U dhaw router-ka.", "stepIndex": 3},
-        {"sv_enkel": "", "hs": "Eray sir qaldan ← Hubi xarfaha waaweyn/yaryar.", "stepIndex": 4}
+        {
+          "sv_enkel": "",
+          "hs": "Ma heli kartid shabakada ← U dhaw router-ka.",
+          "stepIndex": 3
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Eray sir qaldan ← Hubi xarfaha waaweyn/yaryar.",
+          "stepIndex": 4
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -26,21 +61,53 @@
     {
       "id": "mobil-oppna-lank",
       "module": "Mobil",
-      "title": "Mobilens grunder - Öppna länk & QR-kod",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Mobilens grunder - Öppna länk & QR-kod"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel link ama QR code si aad u furto."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel link ama QR code si aad u furto."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Link-ka: Riix link-ka. Wuu buluug noqdaa."},
-        {"sv_enkel": "", "hs": "Browser-ku si toos ah ayuu u furmi doonaa. Sug."},
-        {"sv_enkel": "", "hs": "QR code: Fur app-ka kamarada."},
-        {"sv_enkel": "", "hs": "Toosi kamarada xagga QR code. Taagan."},
-        {"sv_enkel": "", "hs": "Riix ogeysiiska soo muuqda."},
-        {"sv_enkel": "", "hs": "Link-ku wuxuu ku furmi doonaa browser-ka."}
+        {
+          "sv_enkel": "",
+          "hs": "Link-ka: Riix link-ka. Wuu buluug noqdaa."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Browser-ku si toos ah ayuu u furmi doonaa. Sug."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "QR code: Fur app-ka kamarada."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Toosi kamarada xagga QR code. Taagan."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix ogeysiiska soo muuqda."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Link-ku wuxuu ku furmi doonaa browser-ka."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "QR code ma shaqeeyo ← Isticmaal Google Lens beddelkeeda.", "stepIndex": 4},
-        {"sv_enkel": "", "hs": "Link-ku ma furmo ← Riix oo hay, dooro Fur.", "stepIndex": 1}
+        {
+          "sv_enkel": "",
+          "hs": "QR code ma shaqeeyo ← Isticmaal Google Lens beddelkeeda.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Link-ku ma furmo ← Riix oo hay, dooro Fur.",
+          "stepIndex": 1
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -48,21 +115,53 @@
     {
       "id": "mobil-skarmdump",
       "module": "Mobil",
-      "title": "Mobilens grunder - Ta skärmdump",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Mobilens grunder - Ta skärmdump"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel shaashadda aad rabto inaad sawirto furan."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel shaashadda aad rabto inaad sawirto furan."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Android: Hayo On/Off + Codka hoos isla mar."},
-        {"sv_enkel": "", "hs": "iPhone: Riix Dhinaca + Codka kor isla mar."},
-        {"sv_enkel": "", "hs": "Waxaad arki doontaa dhalaalaya. Sawirka waa la kaydiyey."},
-        {"sv_enkel": "", "hs": "Fur Gallery ama Sawirrada si aad u aragto sawirka."},
-        {"sv_enkel": "", "hs": "Riix Wadaag si aad u dirto sawirka."},
-        {"sv_enkel": "", "hs": "Dooro sida aad u wadaagi lahayd: SMS, email, WhatsApp."}
+        {
+          "sv_enkel": "",
+          "hs": "Android: Hayo On/Off + Codka hoos isla mar."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "iPhone: Riix Dhinaca + Codka kor isla mar."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Waxaad arki doontaa dhalaalaya. Sawirka waa la kaydiyey."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Fur Gallery ama Sawirrada si aad u aragto sawirka."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix Wadaag si aad u dirto sawirka."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dooro sida aad u wadaagi lahayd: SMS, email, WhatsApp."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "Ma heli kartid sawirka ← Raadi galka Screenshots.", "stepIndex": 4},
-        {"sv_enkel": "", "hs": "Ma shaqeeyo ← Isku day inaad badhanka waqti dheer hayso.", "stepIndex": 1}
+        {
+          "sv_enkel": "",
+          "hs": "Ma heli kartid sawirka ← Raadi galka Screenshots.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Ma shaqeeyo ← Isku day inaad badhanka waqti dheer hayso.",
+          "stepIndex": 1
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -70,22 +169,57 @@
     {
       "id": "oversatt-kamera",
       "module": "AI",
-      "title": "Google Översätt - Översätt med kamera",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Google Översätt - Översätt med kamera"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel app-ka Google Translate rakiban."},
-        {"sv_enkel": "", "hs": "Hel qoraalka aad rabto inaad turjunto hortaada."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel app-ka Google Translate rakiban."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hel qoraalka aad rabto inaad turjunto hortaada."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Fur Google Translate."},
-        {"sv_enkel": "", "hs": "Riix astaanta kaamerad hoose."},
-        {"sv_enkel": "", "hs": "Dooro luqadda: Ka Swedish ilaa luqadaada."},
-        {"sv_enkel": "", "hs": "Toosi kamarada xagga qoraalka. Taagan."},
-        {"sv_enkel": "", "hs": "Riix Scan. Qaado sawir qoraalka."},
-        {"sv_enkel": "", "hs": "Turjumaantu waxay muuqan doontaa qoraalka Swedish korka."}
+        {
+          "sv_enkel": "",
+          "hs": "Fur Google Translate."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix astaanta kaamerad hoose."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dooro luqadda: Ka Swedish ilaa luqadaada."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Toosi kamarada xagga qoraalka. Taagan."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix Scan. Qaado sawir qoraalka."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Turjumaantu waxay muuqan doontaa qoraalka Swedish korka."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "Sawir aan cad ahayn ← Qaado telefoonka taagan, isku day mar kale.", "stepIndex": 5},
-        {"sv_enkel": "", "hs": "Turjumaan qaldan ← Hubi in luqadahu saxsan yihiin.", "stepIndex": 3}
+        {
+          "sv_enkel": "",
+          "hs": "Sawir aan cad ahayn ← Qaado telefoonka taagan, isku day mar kale.",
+          "stepIndex": 5
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Turjumaan qaldan ← Hubi in luqadahu saxsan yihiin.",
+          "stepIndex": 3
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -93,22 +227,57 @@
     {
       "id": "oversatt-rost",
       "module": "AI",
-      "title": "Google Översätt - Prata och översätt",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Google Översätt - Prata och översätt"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel app-ka Google Translate."},
-        {"sv_enkel": "", "hs": "Hel ogolaanshaha microphone-ka firfircoon."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel app-ka Google Translate."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hel ogolaanshaha microphone-ka firfircoon."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Fur Google Translate."},
-        {"sv_enkel": "", "hs": "Dooro luqadda: Ka luqadaada ilaa Swedish."},
-        {"sv_enkel": "", "hs": "Riix astaanta microphone-ka."},
-        {"sv_enkel": "", "hs": "Ku hadal si cad luqadaada."},
-        {"sv_enkel": "", "hs": "Sug. Turjumaantu waa la tusi doonaa oo la akhrisan doonaa."},
-        {"sv_enkel": "", "hs": "Riix astaanta codka si aad mar kale u maqasho."}
+        {
+          "sv_enkel": "",
+          "hs": "Fur Google Translate."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dooro luqadda: Ka luqadaada ilaa Swedish."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix astaanta microphone-ka."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Ku hadal si cad luqadaada."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Sug. Turjumaantu waa la tusi doonaa oo la akhrisan doonaa."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix astaanta codka si aad mar kale u maqasho."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "Ma maqli kartid turjumaanta ← Kor u qoad codka telefoonka.", "stepIndex": 5},
-        {"sv_enkel": "", "hs": "Turjumaan qaldan ← Ku hadal si tartiib ah oo cad.", "stepIndex": 4}
+        {
+          "sv_enkel": "",
+          "hs": "Ma maqli kartid turjumaanta ← Kor u qoad codka telefoonka.",
+          "stepIndex": 5
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Turjumaan qaldan ← Ku hadal si tartiib ah oo cad.",
+          "stepIndex": 4
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -116,22 +285,57 @@
     {
       "id": "bankid-login-same",
       "module": "BankID",
-      "title": "BankID - Logga in (samma enhet)",
+      "title": {
+        "sv_enkel": "",
+        "hs": "BankID - Logga in (samma enhet)"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel app-ka BankID rakiban."},
-        {"sv_enkel": "", "hs": "Xusuuso koodka BankID-kaaga."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel app-ka BankID rakiban."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Xusuuso koodka BankID-kaaga."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Tag websiteka. Riix Geli."},
-        {"sv_enkel": "", "hs": "Qor lambarkaaga shaqsiga. Riix Xiga."},
-        {"sv_enkel": "", "hs": "Dooro BankID qalabkan."},
-        {"sv_enkel": "", "hs": "BankID wuu si toos ah u furmi doonaa. Sug."},
-        {"sv_enkel": "", "hs": "Qor koodka BankID. Riix OK."},
-        {"sv_enkel": "", "hs": "Hadda waad gashay."}
+        {
+          "sv_enkel": "",
+          "hs": "Tag websiteka. Riix Geli."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor lambarkaaga shaqsiga. Riix Xiga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dooro BankID qalabkan."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID wuu si toos ah u furmi doonaa. Sug."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor koodka BankID. Riix OK."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hadda waad gashay."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "BankID ma furmo ← Fur app-ka gacanta.", "stepIndex": 4},
-        {"sv_enkel": "", "hs": "Kood qaldan ← Isku day mar kale. Ka dib saddex isku day waa inaad sugaysaa.", "stepIndex": 5}
+        {
+          "sv_enkel": "",
+          "hs": "BankID ma furmo ← Fur app-ka gacanta.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kood qaldan ← Isku day mar kale. Ka dib saddex isku day waa inaad sugaysaa.",
+          "stepIndex": 5
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -139,22 +343,57 @@
     {
       "id": "bankid-login-other",
       "module": "BankID",
-      "title": "BankID - Logga in (annan enhet)",
+      "title": {
+        "sv_enkel": "",
+        "hs": "BankID - Logga in (annan enhet)"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel BankID teleefankaaga."},
-        {"sv_enkel": "", "hs": "Telefoonku waa inuu kuu dhow yahay."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel BankID teleefankaaga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Telefoonku waa inuu kuu dhow yahay."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Tag websiteka kombiyuutarka. Riix Geli."},
-        {"sv_enkel": "", "hs": "Qor lambarka shaqsiga. Dooro BankID qalab kale."},
-        {"sv_enkel": "", "hs": "Fur app-ka BankID telefoonka."},
-        {"sv_enkel": "", "hs": "Riix Caddee naftaada. Arag macluumaadka."},
-        {"sv_enkel": "", "hs": "Qor koodka BankID. Riix OK."},
-        {"sv_enkel": "", "hs": "Hadda waad ku gashay kombiyuutarka."}
+        {
+          "sv_enkel": "",
+          "hs": "Tag websiteka kombiyuutarka. Riix Geli."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor lambarka shaqsiga. Dooro BankID qalab kale."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Fur app-ka BankID telefoonka."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix Caddee naftaada. Arag macluumaadka."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor koodka BankID. Riix OK."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hadda waad ku gashay kombiyuutarka."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "Waxba kama arko BankID ← Riix Caddee naftaada.", "stepIndex": 4},
-        {"sv_enkel": "", "hs": "Waxba ma dhacaan ← Hubi in lambarka shaqsigu sax yahay.", "stepIndex": 2}
+        {
+          "sv_enkel": "",
+          "hs": "Waxba kama arko BankID ← Riix Caddee naftaada.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Waxba ma dhacaan ← Hubi in lambarka shaqsigu sax yahay.",
+          "stepIndex": 2
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -162,22 +401,57 @@
     {
       "id": "1177-login-same",
       "module": "m1177",
-      "title": "1177 – Logga in (samma enhet)",
+      "title": {
+        "sv_enkel": "",
+        "hs": "1177 – Logga in (samma enhet)"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel app-ka BankID teleefankaaga."},
-        {"sv_enkel": "", "hs": "Xusuuso koodka BankID-kaaga."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel app-ka BankID teleefankaaga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Xusuuso koodka BankID-kaaga."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Fur 1177.se browserkaaga."},
-        {"sv_enkel": "", "hs": "Riix badhanka Geli."},
-        {"sv_enkel": "", "hs": "Qor lambarkaaga shaqsiga. Riix Xiga."},
-        {"sv_enkel": "", "hs": "BankID wuu si toos ah u furmi doonaa. Sug."},
-        {"sv_enkel": "", "hs": "Qor koodka BankID. Riix OK."},
-        {"sv_enkel": "", "hs": "Hadda waad gashay 1177."}
+        {
+          "sv_enkel": "",
+          "hs": "Fur 1177.se browserkaaga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix badhanka Geli."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor lambarkaaga shaqsiga. Riix Xiga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID wuu si toos ah u furmi doonaa. Sug."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor koodka BankID. Riix OK."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hadda waad gashay 1177."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "BankID ma furmo ← Fur app-ka BankID gacanta.", "stepIndex": 4},
-        {"sv_enkel": "", "hs": "Kood qaldan ← Isku day mar kale. Ka dib saddex isku day waa inaad sugaysaa.", "stepIndex": 5}
+        {
+          "sv_enkel": "",
+          "hs": "BankID ma furmo ← Fur app-ka BankID gacanta.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kood qaldan ← Isku day mar kale. Ka dib saddex isku day waa inaad sugaysaa.",
+          "stepIndex": 5
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -185,22 +459,57 @@
     {
       "id": "1177-login-other",
       "module": "m1177",
-      "title": "1177 – Logga in (annan enhet)",
+      "title": {
+        "sv_enkel": "",
+        "hs": "1177 – Logga in (annan enhet)"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel BankID teleefankaaga."},
-        {"sv_enkel": "", "hs": "Telefoonku waa inuu kuu dhow yahay."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel BankID teleefankaaga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Telefoonku waa inuu kuu dhow yahay."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Fur 1177.se kumbuyuutarka."},
-        {"sv_enkel": "", "hs": "Riix Geli. Qor lambarka shaqsiga."},
-        {"sv_enkel": "", "hs": "Dooro BankID qalab kale."},
-        {"sv_enkel": "", "hs": "Fur BankID teleefanka."},
-        {"sv_enkel": "", "hs": "Riix Caddee naftaada. Qor koodkaaga."},
-        {"sv_enkel": "", "hs": "Hadda waad ku gashay kumbuyuutarka."}
+        {
+          "sv_enkel": "",
+          "hs": "Fur 1177.se kumbuyuutarka."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix Geli. Qor lambarka shaqsiga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dooro BankID qalab kale."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Fur BankID teleefanka."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix Caddee naftaada. Qor koodkaaga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hadda waad ku gashay kumbuyuutarka."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "Waxba ma dhacaan ← Hubi in lambarka shaqsigu sax yahay.", "stepIndex": 2},
-        {"sv_enkel": "", "hs": "Waxba kama arko BankID ← Riix qoraalka Caddee naftaada.", "stepIndex": 4}
+        {
+          "sv_enkel": "",
+          "hs": "Waxba ma dhacaan ← Hubi in lambarka shaqsigu sax yahay.",
+          "stepIndex": 2
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Waxba kama arko BankID ← Riix qoraalka Caddee naftaada.",
+          "stepIndex": 4
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -208,22 +517,57 @@
     {
       "id": "1177-read-message",
       "module": "m1177",
-      "title": "1177 - Läsa meddelande",
+      "title": {
+        "sv_enkel": "",
+        "hs": "1177 - Läsa meddelande"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel akoon 1177 iyo BankID."},
-        {"sv_enkel": "", "hs": "Noqo mid gashalay 1177.se."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel akoon 1177 iyo BankID."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Noqo mid gashalay 1177.se."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Tag 1177.se. Geli BankID."},
-        {"sv_enkel": "", "hs": "Riix Inbox ama Farriimaha."},
-        {"sv_enkel": "", "hs": "Waad aragaysaa fariimadaada. Kuwa cusub waa la calaamadeeyey."},
-        {"sv_enkel": "", "hs": "Riix fariinta aad rabto inaad akhrisho."},
-        {"sv_enkel": "", "hs": "Akhri fariinta. Scroll haddii ay dheer tahay."},
-        {"sv_enkel": "", "hs": "Si aad uga jawaabto: Riix Jawaab hoose."}
+        {
+          "sv_enkel": "",
+          "hs": "Tag 1177.se. Geli BankID."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix Inbox ama Farriimaha."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Waad aragaysaa fariimadaada. Kuwa cusub waa la calaamadeeyey."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix fariinta aad rabto inaad akhrisho."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Akhri fariinta. Scroll haddii ay dheer tahay."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Si aad uga jawaabto: Riix Jawaab hoose."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "Ma heli kartid farriimaha ← Sidoo kale hubi Archive.", "stepIndex": 2},
-        {"sv_enkel": "", "hs": "Ma jawaabi kartid ← Farriimaha qaarkood lama jawaabi karo.", "stepIndex": 6}
+        {
+          "sv_enkel": "",
+          "hs": "Ma heli kartid farriimaha ← Sidoo kale hubi Archive.",
+          "stepIndex": 2
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Ma jawaabi kartid ← Farriimaha qaarkood lama jawaabi karo.",
+          "stepIndex": 6
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -231,22 +575,57 @@
     {
       "id": "kivra-activate",
       "module": "Kivra",
-      "title": "Kivra – Aktivera och logga in",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Kivra – Aktivera och logga in"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel BankID teleefankaaga."},
-        {"sv_enkel": "", "hs": "Hel cinwaan email."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel BankID teleefankaaga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hel cinwaan email."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Tag kivra.se. Riix Hel Kivra."},
-        {"sv_enkel": "", "hs": "Qor lambarkaaga shaqsiga. Riix Xiga."},
-        {"sv_enkel": "", "hs": "Gali BankID telefoonka."},
-        {"sv_enkel": "", "hs": "Qor cinwaanka emailkaaga. Riix Xiga."},
-        {"sv_enkel": "", "hs": "Dooro waraaqaha aad rabto inaad si dijitaal u hesho."},
-        {"sv_enkel": "", "hs": "Kivra hadda waa la hawlgeliyey. Waad gashay."}
+        {
+          "sv_enkel": "",
+          "hs": "Tag kivra.se. Riix Hel Kivra."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor lambarkaaga shaqsiga. Riix Xiga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Gali BankID telefoonka."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor cinwaanka emailkaaga. Riix Xiga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dooro waraaqaha aad rabto inaad si dijitaal u hesho."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kivra hadda waa la hawlgeliyey. Waad gashay."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "Hadda xubin ← Kaliya riix Geli halkii.", "stepIndex": 1},
-        {"sv_enkel": "", "hs": "Ma heli karo badhanka ← Hoos u dul bogsiga.", "stepIndex": 5}
+        {
+          "sv_enkel": "",
+          "hs": "Hadda xubin ← Kaliya riix Geli halkii.",
+          "stepIndex": 1
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Ma heli karo badhanka ← Hoos u dul bogsiga.",
+          "stepIndex": 5
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -254,22 +633,57 @@
     {
       "id": "kivra-read-letter",
       "module": "Kivra",
-      "title": "Kivra – Läsa nytt brev",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Kivra – Läsa nytt brev"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel akoon Kivra oo hawlgal."},
-        {"sv_enkel": "", "hs": "Hel BankID si aad u gasho."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel akoon Kivra oo hawlgal."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hel BankID si aad u gasho."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Tag kivra.se. Riix Geli."},
-        {"sv_enkel": "", "hs": "Qor lambarka shaqsiga. Gali BankID."},
-        {"sv_enkel": "", "hs": "Waad aragaysaa waraaqahaaga. Kuwa cusub waa la calaamadeeyey."},
-        {"sv_enkel": "", "hs": "Riix warqadda aad rabto inaad akhrisho."},
-        {"sv_enkel": "", "hs": "Warqaddu waa furantay. Akhri qoraalka ama fur PDF."},
-        {"sv_enkel": "", "hs": "Riix calaamada PDF haddii aad rabto inaad keydsato."}
+        {
+          "sv_enkel": "",
+          "hs": "Tag kivra.se. Riix Geli."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor lambarka shaqsiga. Gali BankID."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Waad aragaysaa waraaqahaaga. Kuwa cusub waa la calaamadeeyey."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix warqadda aad rabto inaad akhrisho."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Warqaddu waa furantay. Akhri qoraalka ama fur PDF."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix calaamada PDF haddii aad rabto inaad keydsato."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "Ma arko warqad ← Sidoo kale hubi tab-ka Kaydka.", "stepIndex": 3},
-        {"sv_enkel": "", "hs": "PDF ma furmo ← Riix oo hay, dooro Fur tab cusub.", "stepIndex": 5}
+        {
+          "sv_enkel": "",
+          "hs": "Ma arko warqad ← Sidoo kale hubi tab-ka Kaydka.",
+          "stepIndex": 3
+        },
+        {
+          "sv_enkel": "",
+          "hs": "PDF ma furmo ← Riix oo hay, dooro Fur tab cusub.",
+          "stepIndex": 5
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -277,23 +691,62 @@
     {
       "id": "af-upload-document",
       "module": "AF",
-      "title": "Arbetsförmedlingen – Ladda upp dokument",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Arbetsförmedlingen – Ladda upp dokument"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel akoon Bogagayga."},
-        {"sv_enkel": "", "hs": "Hel dukumeentiga sidii file ama sawir."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel akoon Bogagayga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hel dukumeentiga sidii file ama sawir."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Gali arbetsformedlingen.se/minasidor."},
-        {"sv_enkel": "", "hs": "Riix Dir fariim ama Arimahayga."},
-        {"sv_enkel": "", "hs": "Raadi badhanka Ku lifaaq file ama Kudar."},
-        {"sv_enkel": "", "hs": "Dooro file-ka teleefankaaga ama kombuyuutarkaaga."},
-        {"sv_enkel": "", "hs": "Sug ilaa file-ka la soo geliyo. Arag cagaaran."},
-        {"sv_enkel": "", "hs": "Riix Dir. Dukumeentiga hadda waa la diray."}
+        {
+          "sv_enkel": "",
+          "hs": "Gali arbetsformedlingen.se/minasidor."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix Dir fariim ama Arimahayga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Raadi badhanka Ku lifaaq file ama Kudar."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dooro file-ka teleefankaaga ama kombuyuutarkaaga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Sug ilaa file-ka la soo geliyo. Arag cagaaran."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix Dir. Dukumeentiga hadda waa la diray."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "Ma heli karo badhanka ← Hoos ugu dul foomka.", "stepIndex": 3},
-        {"sv_enkel": "", "hs": "Nooca file-ka qalad ← Isticmaal PDF ama JPG halkii.", "stepIndex": 4},
-        {"sv_enkel": "", "hs": "File aad u weyn ← Qaad sawir cusub ama soo cabbir.", "stepIndex": 5}
+        {
+          "sv_enkel": "",
+          "hs": "Ma heli karo badhanka ← Hoos ugu dul foomka.",
+          "stepIndex": 3
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Nooca file-ka qalad ← Isticmaal PDF ama JPG halkii.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "File aad u weyn ← Qaad sawir cusub ama soo cabbir.",
+          "stepIndex": 5
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -301,21 +754,53 @@
     {
       "id": "skatteverket-personbevis",
       "module": "Skatteverket",
-      "title": "Skatteverket - Hämta personbevis",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Skatteverket - Hämta personbevis"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel BankID."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel BankID."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Tag skatteverket.se. Raadi shahaado shaqsi."},
-        {"sv_enkel": "", "hs": "Riix Dalbashada shahaadada shaqsi."},
-        {"sv_enkel": "", "hs": "Gali BankID."},
-        {"sv_enkel": "", "hs": "Dooro nooca shahaadada shaqsi. Riix Xiga."},
-        {"sv_enkel": "", "hs": "Shahaadada shaqsi waxay u muuqan doontaa PDF. Riix Soo dejiso."},
-        {"sv_enkel": "", "hs": "PDF-ka waxa lagu keydiyaa Soo dejinta. Waad dhamaysatay."}
+        {
+          "sv_enkel": "",
+          "hs": "Tag skatteverket.se. Raadi shahaado shaqsi."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix Dalbashada shahaadada shaqsi."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Gali BankID."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dooro nooca shahaadada shaqsi. Riix Xiga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Shahaadada shaqsi waxay u muuqan doontaa PDF. Riix Soo dejiso."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "PDF-ka waxa lagu keydiyaa Soo dejinta. Waad dhamaysatay."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "Ma heli kartid PDF ← Fur Files ama Soo dejinta.", "stepIndex": 6},
-        {"sv_enkel": "", "hs": "Nooc qaldan ← Ugu badan waa Shahaado shaqsi aan lahayn macluumaadka guriga.", "stepIndex": 4}
+        {
+          "sv_enkel": "",
+          "hs": "Ma heli kartid PDF ← Fur Files ama Soo dejinta.",
+          "stepIndex": 6
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Nooc qaldan ← Ugu badan waa Shahaado shaqsi aan lahayn macluumaadka guriga.",
+          "stepIndex": 4
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -323,21 +808,53 @@
     {
       "id": "fk-login",
       "module": "FK",
-      "title": "Försäkringskassan - Logga in",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Försäkringskassan - Logga in"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel BankID."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel BankID."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Tag forsakringskassan.se."},
-        {"sv_enkel": "", "hs": "Riix Geli ama Bogagayga."},
-        {"sv_enkel": "", "hs": "Qor lambarkaaga shaqsiga. Riix Xiga."},
-        {"sv_enkel": "", "hs": "Gali BankID telefoonka."},
-        {"sv_enkel": "", "hs": "Hadda waad aragaysaa Bogagayga. Waad gashay."},
-        {"sv_enkel": "", "hs": "Si aad u soo geliso: Raadi arimahaga marka hore."}
+        {
+          "sv_enkel": "",
+          "hs": "Tag forsakringskassan.se."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix Geli ama Bogagayga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor lambarkaaga shaqsiga. Riix Xiga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Gali BankID telefoonka."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hadda waad aragaysaa Bogagayga. Waad gashay."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Si aad u soo geliso: Raadi arimahaga marka hore."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "Ma heli kartid arimaha ← Wac FK hagitaanka.", "stepIndex": 6},
-        {"sv_enkel": "", "hs": "Khalad gelitaanka ← Hubi lambarka shaqsiga.", "stepIndex": 3}
+        {
+          "sv_enkel": "",
+          "hs": "Ma heli kartid arimaha ← Wac FK hagitaanka.",
+          "stepIndex": 6
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Khalad gelitaanka ← Hubi lambarka shaqsiga.",
+          "stepIndex": 3
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -345,21 +862,53 @@
     {
       "id": "epost-login",
       "module": "Epost",
-      "title": "E-post - Logga in",
+      "title": {
+        "sv_enkel": "",
+        "hs": "E-post - Logga in"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel cinwaankaaga email iyo erayga sirta."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel cinwaankaaga email iyo erayga sirta."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Fur app-ka Gmail ama tag gmail.com."},
-        {"sv_enkel": "", "hs": "Riix Geli."},
-        {"sv_enkel": "", "hs": "Qor cinwaanka emailkaaga. Riix Xiga."},
-        {"sv_enkel": "", "hs": "Qor erayga sirta. Riix Xiga."},
-        {"sv_enkel": "", "hs": "Waad aragaysaa inbox-kaaga. Waad gashay."},
-        {"sv_enkel": "", "hs": "Riix email si aad u akhrisho."}
+        {
+          "sv_enkel": "",
+          "hs": "Fur app-ka Gmail ama tag gmail.com."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix Geli."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor cinwaanka emailkaaga. Riix Xiga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor erayga sirta. Riix Xiga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Waad aragaysaa inbox-kaaga. Waad gashay."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix email si aad u akhrisho."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "Eray sir qaldan ← Riix Illoobay erayga sirta si aad u cusub-celin.", "stepIndex": 4},
-        {"sv_enkel": "", "hs": "Ma heli kartid email ← Hubi galka Spam.", "stepIndex": 5}
+        {
+          "sv_enkel": "",
+          "hs": "Eray sir qaldan ← Riix Illoobay erayga sirta si aad u cusub-celin.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Ma heli kartid email ← Hubi galka Spam.",
+          "stepIndex": 5
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -367,22 +916,57 @@
     {
       "id": "epost-send-file",
       "module": "Epost",
-      "title": "E-post - Skicka bild eller fil",
+      "title": {
+        "sv_enkel": "",
+        "hs": "E-post - Skicka bild eller fil"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Noqo mid gashalay emailkaaga."},
-        {"sv_enkel": "", "hs": "Hel file-ka ama sawirka diyaar ah."}
+        {
+          "sv_enkel": "",
+          "hs": "Noqo mid gashalay emailkaaga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hel file-ka ama sawirka diyaar ah."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Riix Qor ama astaamaha Plus."},
-        {"sv_enkel": "", "hs": "Qor cinwaanka email-ka qaataha."},
-        {"sv_enkel": "", "hs": "Qor mawduuca iyo fariinta haddii aad rabto."},
-        {"sv_enkel": "", "hs": "Riix astaamaha paperclip si aad file ku lifaaqdo."},
-        {"sv_enkel": "", "hs": "Dooro file-ka Gallery ama Files. Riix OK."},
-        {"sv_enkel": "", "hs": "File-ka waa la soo gelinayaa. Riix Dir."}
+        {
+          "sv_enkel": "",
+          "hs": "Riix Qor ama astaamaha Plus."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor cinwaanka email-ka qaataha."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor mawduuca iyo fariinta haddii aad rabto."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix astaamaha paperclip si aad file ku lifaaqdo."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dooro file-ka Gallery ama Files. Riix OK."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "File-ka waa la soo gelinayaa. Riix Dir."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "File aad u weyn ← Cabbir sawirka ama isticmaal adeeg daruur.", "stepIndex": 5},
-        {"sv_enkel": "", "hs": "Ma heli kartid file-ka ← Hubi galka Soo dejinta.", "stepIndex": 5}
+        {
+          "sv_enkel": "",
+          "hs": "File aad u weyn ← Cabbir sawirka ama isticmaal adeeg daruur.",
+          "stepIndex": 5
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Ma heli kartid file-ka ← Hubi galka Soo dejinta.",
+          "stepIndex": 5
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -390,20 +974,48 @@
     {
       "id": "trygghet-fraser",
       "module": "Trygghet",
-      "title": "Trygghet - Viktiga fraser att visa",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Trygghet - Viktiga fraser att visa"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel telefoonka diyaar ah si aad u tuso."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel telefoonka diyaar ah si aad u tuso."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Weedh 1: Ku hadal si tartiib ah. Waxaan isticmaalayaa turjumaad."},
-        {"sv_enkel": "", "hs": "Weedh 2: Ma qori kartaa? Si fiican ayaan u fahmayaa."},
-        {"sv_enkel": "", "hs": "Weedh 3: Waxaan u baahanahay turjubaan luqaddayda."},
-        {"sv_enkel": "", "hs": "Weedh 4: Xaggee pharmacyga u dhow?"},
-        {"sv_enkel": "", "hs": "Weedh 5: Ma fahmin. Ii caawin kartaa?"},
-        {"sv_enkel": "", "hs": "Talo: Tus shaashaddan qof."}
+        {
+          "sv_enkel": "",
+          "hs": "Weedh 1: Ku hadal si tartiib ah. Waxaan isticmaalayaa turjumaad."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Weedh 2: Ma qori kartaa? Si fiican ayaan u fahmayaa."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Weedh 3: Waxaan u baahanahay turjubaan luqaddayda."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Weedh 4: Xaggee pharmacyga u dhow?"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Weedh 5: Ma fahmin. Ii caawin kartaa?"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Talo: Tus shaashaddan qof."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "Qoraal aad u yar ← Weynee shaashada fartaada.", "stepIndex": 1}
+        {
+          "sv_enkel": "",
+          "hs": "Qoraal aad u yar ← Weynee shaashada fartaada.",
+          "stepIndex": 1
+        }
       ],
       "sources": [],
       "lastVerified": null
@@ -411,21 +1023,53 @@
     {
       "id": "trygghet-nummer",
       "module": "Trygghet",
-      "title": "Trygghet - Viktiga telefonnummer",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Trygghet - Viktiga telefonnummer"
+      },
       "prereq": [
-        {"sv_enkel": "", "hs": "Hel telefoonka diyaar ah wicitaanka."}
+        {
+          "sv_enkel": "",
+          "hs": "Hel telefoonka diyaar ah wicitaanka."
+        }
       ],
       "steps": [
-        {"sv_enkel": "", "hs": "Degdeg: 112 (boolis, ambalaas, dabdemis)"},
-        {"sv_enkel": "", "hs": "1177: La talinta caafimaadka (aan degdeg ahayn)"},
-        {"sv_enkel": "", "hs": "114 14: Macluumaad luqaddaada"},
-        {"sv_enkel": "", "hs": "Boolis (aan degdeg ahayn): 114 14"},
-        {"sv_enkel": "", "hs": "Macluumaadka sunta: 112 (dheh macluumaad sun)"},
-        {"sv_enkel": "", "hs": "Talo: Keydi lambaradahan xiriirka."}
+        {
+          "sv_enkel": "",
+          "hs": "Degdeg: 112 (boolis, ambalaas, dabdemis)"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "1177: La talinta caafimaadka (aan degdeg ahayn)"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "114 14: Macluumaad luqaddaada"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Boolis (aan degdeg ahayn): 114 14"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Macluumaadka sunta: 112 (dheh macluumaad sun)"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Talo: Keydi lambaradahan xiriirka."
+        }
       ],
       "troubleshoot": [
-        {"sv_enkel": "", "hs": "Qofna kama jawaabin 112 ← Mar kale wac, had iyo jir waa furan yahay.", "stepIndex": 1},
-        {"sv_enkel": "", "hs": "Dhibaato luqad ← Weydiiso turjubaan si toos ah luqaddaada.", "stepIndex": 1}
+        {
+          "sv_enkel": "",
+          "hs": "Qofna kama jawaabin 112 ← Mar kale wac, had iyo jir waa furan yahay.",
+          "stepIndex": 1
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dhibaato luqad ← Weydiiso turjubaan si toos ah luqaddaada.",
+          "stepIndex": 1
+        }
       ],
       "sources": [],
       "lastVerified": null
