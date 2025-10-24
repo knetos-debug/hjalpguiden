@@ -321,59 +321,6 @@
       "lastVerified": null
     },
     {
-      "id": "trygghet-fraser",
-      "module": "Trygghet",
-      "title": "Trygghet - Viktiga fraser att visa",
-      "prereq": [
-        {"sv_enkel": "", "hs": "احصل على الهاتف جاهزاً للعرض."}
-      ],
-      "steps": [
-        {"sv_enkel": "", "hs": "عبارة 1: تحدث ببطء. أستخدم الترجمة."},
-        {"sv_enkel": "", "hs": "عبارة 2: هل يمكنك كتابتها؟ أفهم أفضل."},
-        {"sv_enkel": "", "hs": "عبارة 3: أحتاج مترجماً إلى لغتي."},
-        {"sv_enkel": "", "hs": "عبارة 4: أين أقرب صيدلية؟"},
-        {"sv_enkel": "", "hs": "عبارة 5: لا أفهم. هل يمكنك مساعدتي؟"},
-        {"sv_enkel": "", "hs": "نصيحة: أظهر هذه الشاشة لشخص ما."}
-      ],
-      "troubleshoot": [
-        {"sv_enkel": "", "hs": "نص صغير جداً ← قم بتكبير الشاشة بأصابعك.", "stepIndex": 1}
-      ],
-      "sources": [],
-      "lastVerified": null
-    },
-    {
-      "id": "trygghet-nummer",
-      "module": "Trygghet",
-      "title": "Trygghet - Viktiga telefonnummer",
-      "prereq": [
-        {"sv_enkel": "", "hs": "احصل على الهاتف جاهزاً للاتصال."}
-      ],
-      "steps": [
-        {"sv_enkel": "", "hs": "طوارئ: 112 (شرطة، إسعاف، إطفاء)"},
-        {"sv_enkel": "", "hs": "1177: استشارات صحية (غير طارئة)"},
-        {"sv_enkel": "", "hs": "114 14: معلومات بلغتك"},
-        {"sv_enkel": "", "hs": "شرطة (غير طارئة): 114 14"},
-        {"sv_enkel": "", "hs": "معلومات السموم: 112 (قل معلومات السموم)"},
-        {"sv_enkel": "", "hs": "نصيحة: احفظ هذه الأرقام في جهات الاتصال."}
-      ],
-      "troubleshoot": [
-        {"sv_enkel": "", "hs": "لا أحد يجيب على 112 ← اتصل مرة أخرى، إنه مفتوح دائماً.", "stepIndex": 1},
-        {"sv_enkel": "", "hs": "مشكلة لغة ← اطلب مترجماً مباشرة بلغتك.", "stepIndex": 1}
-      ],
-      "sources": [],
-      "lastVerified": null
-    }
-  ]
-} حفظ PDF في التنزيلات. انتهيت."}
-      ],
-      "troubleshoot": [
-        {"sv_enkel": "", "hs": "لا تجد PDF ← افتح ملفات أو تنزيلات.", "stepIndex": 6},
-        {"sv_enkel": "", "hs": "نوع خاطئ ← الأكثر شيوعاً هو شهادة الهوية بدون معلومات السكن.", "stepIndex": 4}
-      ],
-      "sources": [],
-      "lastVerified": null
-    },
-    {
       "id": "fk-login",
       "module": "FK",
       "title": "Försäkringskassan - Logga in",
@@ -431,4 +378,57 @@
         {"sv_enkel": "", "hs": "اكتب الموضوع والرسالة إذا أردت."},
         {"sv_enkel": "", "hs": "اضغط على أيقونة مشبك الورق لإرفاق ملف."},
         {"sv_enkel": "", "hs": "اختر الملف من المعرض أو الملفات. اضغط موافق."},
-        {"sv_enkel": "", "hs": "يتم
+        {"sv_enkel": "", "hs": "يتم تحميل الملف. اضغط إرسال."}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "", "hs": "ملف كبير جداً ← اضغط الصورة أو استخدم خدمة سحابية.", "stepIndex": 5},
+        {"sv_enkel": "", "hs": "لا تجد الملف ← تحقق من مجلد التنزيلات.", "stepIndex": 5}
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "trygghet-fraser",
+      "module": "Trygghet",
+      "title": "Trygghet - Viktiga fraser att visa",
+      "prereq": [
+        {"sv_enkel": "", "hs": "احصل على الهاتف جاهزاً للعرض."}
+      ],
+      "steps": [
+        {"sv_enkel": "", "hs": "عبارة 1: تحدث ببطء. أستخدم الترجمة."},
+        {"sv_enkel": "", "hs": "عبارة 2: هل يمكنك كتابتها؟ أفهم أفضل."},
+        {"sv_enkel": "", "hs": "عبارة 3: أحتاج مترجماً إلى لغتي."},
+        {"sv_enkel": "", "hs": "عبارة 4: أين أقرب صيدلية؟"},
+        {"sv_enkel": "", "hs": "عبارة 5: لا أفهم. هل يمكنك مساعدتي؟"},
+        {"sv_enkel": "", "hs": "نصيحة: أظهر هذه الشاشة لشخص ما."}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "", "hs": "نص صغير جداً ← قم بتكبير الشاشة بأصابعك.", "stepIndex": 1}
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "trygghet-nummer",
+      "module": "Trygghet",
+      "title": "Trygghet - Viktiga telefonnummer",
+      "prereq": [
+        {"sv_enkel": "", "hs": "احصل على الهاتف جاهزاً للاتصال."}
+      ],
+      "steps": [
+        {"sv_enkel": "", "hs": "طوارئ: 112 (شرطة، إسعاف، إطفاء)"},
+        {"sv_enkel": "", "hs": "1177: استشارات صحية (غير طارئة)"},
+        {"sv_enkel": "", "hs": "114 14: معلومات بلغتك"},
+        {"sv_enkel": "", "hs": "شرطة (غير طارئة): 114 14"},
+        {"sv_enkel": "", "hs": "معلومات السموم: 112 (قل معلومات السموم)"},
+        {"sv_enkel": "", "hs": "نصيحة: احفظ هذه الأرقام في جهات الاتصال."}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "", "hs": "لا أحد يجيب على 112 ← اتصل مرة أخرى، إنه مفتوح دائماً.", "stepIndex": 1},
+        {"sv_enkel": "", "hs": "مشكلة لغة ← اطلب مترجماً مباشرة بلغتك.", "stepIndex": 1}
+      ],
+      "sources": [],
+      "lastVerified": null
+    }
+  ]
+}
