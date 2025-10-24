@@ -1,0 +1,434 @@
+{
+  "guides": [
+    {
+      "id": "mobil-wifi",
+      "module": "Mobil",
+      "title": "Mobilens grunder - Anslut Wi-Fi",
+      "prereq": [
+        {"sv_enkel": "Ha din telefon påslagen.", "hs": "[HS]"},
+        {"sv_enkel": "Ha Wi-Fi-lösenordet redo.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Öppna Inställningar på telefonen.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck på Wi-Fi eller Trådlöst nätverk.", "hs": "[HS]"},
+        {"sv_enkel": "Se listan över nätverk. Välj ditt nätverk.", "hs": "[HS]"},
+        {"sv_enkel": "Skriv Wi-Fi-lösenordet. Tryck Anslut.", "hs": "[HS]"},
+        {"sv_enkel": "Vänta. Du ser ett kryss-tecken när klart.", "hs": "[HS]"},
+        {"sv_enkel": "Du är nu ansluten till Wi-Fi.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "Hittar inte nätverket → Gå närmare routern.", "hs": "[HS]", "stepIndex": 3},
+        {"sv_enkel": "Fel lösenord → Dubbelkolla stora/små bokstäver.", "hs": "[HS]", "stepIndex": 4}
+      ],
+      "sources": [{"label": "Android Support - Wi-Fi", "url": "https://support.google.com/android/"}],
+      "lastVerified": "2025-10-24"
+    },
+    {
+      "id": "mobil-oppna-lank",
+      "module": "Mobil",
+      "title": "Mobilens grunder - Öppna länk & QR-kod",
+      "prereq": [
+        {"sv_enkel": "Ha en länk eller QR-kod att öppna.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "För länk: Tryck på länken. Den blir blå.", "hs": "[HS]"},
+        {"sv_enkel": "Webbläsaren öppnas automatiskt. Vänta.", "hs": "[HS]"},
+        {"sv_enkel": "För QR-kod: Öppna kamera-appen.", "hs": "[HS]"},
+        {"sv_enkel": "Rikta kameran mot QR-koden. Håll stilla.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck på notisen som dyker upp.", "hs": "[HS]"},
+        {"sv_enkel": "Länken öppnas i webbläsaren.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "QR-kod fungerar inte → Använd Google Lens istället.", "hs": "[HS]", "stepIndex": 4},
+        {"sv_enkel": "Länk öppnas inte → Tryck och håll, välj Öppna.", "hs": "[HS]", "stepIndex": 1}
+      ],
+      "sources": [{"label": "Android - QR-koder", "url": "https://support.google.com/android/"}],
+      "lastVerified": "2025-10-24"
+    },
+    {
+      "id": "mobil-skarmdump",
+      "module": "Mobil",
+      "title": "Mobilens grunder - Ta skärmdump",
+      "prereq": [
+        {"sv_enkel": "Ha skärmen du vill fota öppen.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Android: Håll ner På/Av + Volym ner samtidigt.", "hs": "[HS]"},
+        {"sv_enkel": "iPhone: Tryck Sida + Volym upp samtidigt.", "hs": "[HS]"},
+        {"sv_enkel": "Du ser en blixt. Bilden är sparad.", "hs": "[HS]"},
+        {"sv_enkel": "Öppna Galleri eller Foton för att se bilden.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck Dela för att skicka bilden.", "hs": "[HS]"},
+        {"sv_enkel": "Välj hur du vill dela: SMS, mejl, WhatsApp.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "Hittar inte bilden → Sök i Skärmbilder-mappen.", "hs": "[HS]", "stepIndex": 4},
+        {"sv_enkel": "Fungerar inte → Prova hålla knapparna längre.", "hs": "[HS]", "stepIndex": 1}
+      ],
+      "sources": [{"label": "Android - Skärmdump", "url": "https://support.google.com/android/"}],
+      "lastVerified": "2025-10-24"
+    },
+    {
+      "id": "oversatt-kamera",
+      "module": "AI",
+      "title": "Google Översätt - Översätt med kamera",
+      "prereq": [
+        {"sv_enkel": "Ha Google Översätt-appen installerad.", "hs": "[HS]"},
+        {"sv_enkel": "Ha texten du vill översätta framför dig.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Öppna Google Översätt.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck på kamera-ikonen nere.", "hs": "[HS]"},
+        {"sv_enkel": "Välj språk: Från svenska till ditt språk.", "hs": "[HS]"},
+        {"sv_enkel": "Rikta kameran mot texten. Håll stilla.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck på Scanna. Ta bild av texten.", "hs": "[HS]"},
+        {"sv_enkel": "Översättningen visas över den svenska texten.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "Suddig bild → Håll telefonen stilla, försök igen.", "hs": "[HS]", "stepIndex": 5},
+        {"sv_enkel": "Fel översättning → Kontrollera att språken är rätt.", "hs": "[HS]", "stepIndex": 3}
+      ],
+      "sources": [{"label": "Google Översätt Support", "url": "https://support.google.com/translate/"}],
+      "lastVerified": "2025-10-24"
+    },
+    {
+      "id": "oversatt-rost",
+      "module": "AI",
+      "title": "Google Översätt - Prata och översätt",
+      "prereq": [
+        {"sv_enkel": "Ha Google Översätt-appen.", "hs": "[HS]"},
+        {"sv_enkel": "Ha mikrofon-tillstånd aktiverat.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Öppna Google Översätt.", "hs": "[HS]"},
+        {"sv_enkel": "Välj språk: Från ditt språk till svenska.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck på mikrofon-ikonen.", "hs": "[HS]"},
+        {"sv_enkel": "Prata tydligt på ditt språk.", "hs": "[HS]"},
+        {"sv_enkel": "Vänta. Översättningen visas och läses upp.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck högtalare-ikonen för att höra igen.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "Hör inte översättningen → Höj volymen på telefonen.", "hs": "[HS]", "stepIndex": 5},
+        {"sv_enkel": "Fel översättning → Prata långsammare och tydligare.", "hs": "[HS]", "stepIndex": 4}
+      ],
+      "sources": [{"label": "Google Översätt Support", "url": "https://support.google.com/translate/"}],
+      "lastVerified": "2025-10-24"
+    },
+    {
+      "id": "bankid-login-same",
+      "module": "BankID",
+      "title": "BankID - Logga in (samma enhet)",
+      "prereq": [
+        {"sv_enkel": "Ha BankID-appen installerad.", "hs": "[HS]"},
+        {"sv_enkel": "Kom ihåg din BankID-kod.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Gå till webbplatsen. Tryck Logga in.", "hs": "[HS]"},
+        {"sv_enkel": "Skriv ditt personnummer. Tryck Nästa.", "hs": "[HS]"},
+        {"sv_enkel": "Välj BankID på den här enheten.", "hs": "[HS]"},
+        {"sv_enkel": "BankID öppnas automatiskt. Vänta.", "hs": "[HS]"},
+        {"sv_enkel": "Skriv din BankID-kod. Tryck OK.", "hs": "[HS]"},
+        {"sv_enkel": "Du är nu inloggad.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "BankID öppnas inte → Öppna appen manuellt.", "hs": "[HS]", "stepIndex": 4},
+        {"sv_enkel": "Fel kod → Försök igen. Efter tre fel måste du vänta.", "hs": "[HS]", "stepIndex": 5}
+      ],
+      "sources": [{"label": "BankID Support", "url": "https://www.bankid.com/privat/support"}],
+      "lastVerified": "2025-10-24"
+    },
+    {
+      "id": "bankid-login-other",
+      "module": "BankID",
+      "title": "BankID - Logga in (annan enhet)",
+      "prereq": [
+        {"sv_enkel": "Ha BankID på din telefon.", "hs": "[HS]"},
+        {"sv_enkel": "Telefonen måste vara nära dig.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Gå till webbplatsen på datorn. Tryck Logga in.", "hs": "[HS]"},
+        {"sv_enkel": "Skriv personnummer. Välj BankID på annan enhet.", "hs": "[HS]"},
+        {"sv_enkel": "Öppna BankID-appen på telefonen.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck Legitimera dig. Se informationen.", "hs": "[HS]"},
+        {"sv_enkel": "Skriv din BankID-kod. Tryck OK.", "hs": "[HS]"},
+        {"sv_enkel": "Du är nu inloggad på datorn.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "Ser inget i BankID → Tryck på Legitimera dig.", "hs": "[HS]", "stepIndex": 4},
+        {"sv_enkel": "Inget händer → Kolla att personnumret är rätt.", "hs": "[HS]", "stepIndex": 2}
+      ],
+      "sources": [{"label": "BankID Support", "url": "https://www.bankid.com/privat/support"}],
+      "lastVerified": "2025-10-24"
+    },
+    {
+      "id": "1177-login-same",
+      "module": "m1177",
+      "title": "1177 – Logga in (samma enhet)",
+      "prereq": [
+        {"sv_enkel": "Ha BankID-appen på din telefon.", "hs": "[HS]"},
+        {"sv_enkel": "Kom ihåg din BankID-kod.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Öppna 1177.se i din webbläsare.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck på knappen Logga in.", "hs": "[HS]"},
+        {"sv_enkel": "Skriv ditt personnummer. Tryck Nästa.", "hs": "[HS]"},
+        {"sv_enkel": "BankID öppnas automatiskt. Vänta.", "hs": "[HS]"},
+        {"sv_enkel": "Skriv din BankID-kod. Tryck OK.", "hs": "[HS]"},
+        {"sv_enkel": "Du är nu inloggad på 1177.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "BankID öppnas inte → Öppna BankID-appen manuellt.", "hs": "[HS]", "stepIndex": 4},
+        {"sv_enkel": "Fel kod → Prova igen. Efter tre fel måste du vänta.", "hs": "[HS]", "stepIndex": 5}
+      ],
+      "sources": [{"label": "1177 Vårdguiden – Logga in", "url": "https://www.1177.se"}],
+      "lastVerified": "2025-10-23"
+    },
+    {
+      "id": "1177-login-other",
+      "module": "m1177",
+      "title": "1177 – Logga in (annan enhet)",
+      "prereq": [
+        {"sv_enkel": "Ha BankID på din telefon.", "hs": "[HS]"},
+        {"sv_enkel": "Telefonen måste vara nära dig.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Öppna 1177.se på datorn.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck Logga in. Skriv personnummer.", "hs": "[HS]"},
+        {"sv_enkel": "Välj BankID på annan enhet.", "hs": "[HS]"},
+        {"sv_enkel": "Öppna BankID på telefonen.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck Legitimera dig. Skriv din kod.", "hs": "[HS]"},
+        {"sv_enkel": "Du är nu inloggad på datorn.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "Inget händer → Kolla att personnumret är rätt.", "hs": "[HS]", "stepIndex": 2},
+        {"sv_enkel": "Ser inget i BankID → Tryck på texten Legitimera dig.", "hs": "[HS]", "stepIndex": 4}
+      ],
+      "sources": [{"label": "1177 Vårdguiden", "url": "https://www.1177.se"}],
+      "lastVerified": "2025-10-23"
+    },
+    {
+      "id": "1177-read-message",
+      "module": "m1177",
+      "title": "1177 - Läsa meddelande",
+      "prereq": [
+        {"sv_enkel": "Ha ett 1177-konto och BankID.", "hs": "[HS]"},
+        {"sv_enkel": "Vara inloggad på 1177.se.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Gå till 1177.se. Logga in med BankID.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck på Inkorg eller Meddelanden.", "hs": "[HS]"},
+        {"sv_enkel": "Du ser dina meddelanden. Nya är markerade.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck på meddelandet du vill läsa.", "hs": "[HS]"},
+        {"sv_enkel": "Läs meddelandet. Scrolla om det är långt.", "hs": "[HS]"},
+        {"sv_enkel": "För att svara: Tryck Svara längst ner.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "Hittar inte meddelanden → Kolla Arkiv också.", "hs": "[HS]", "stepIndex": 2},
+        {"sv_enkel": "Kan inte svara → Vissa meddelanden går inte att svara på.", "hs": "[HS]", "stepIndex": 6}
+      ],
+      "sources": [{"label": "1177 Vårdguiden", "url": "https://www.1177.se"}],
+      "lastVerified": "2025-10-24"
+    },
+    {
+      "id": "kivra-activate",
+      "module": "Kivra",
+      "title": "Kivra – Aktivera och logga in",
+      "prereq": [
+        {"sv_enkel": "Ha BankID på din telefon.", "hs": "[HS]"},
+        {"sv_enkel": "Ha en e-postadress.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Gå till kivra.se. Tryck Skaffa Kivra.", "hs": "[HS]"},
+        {"sv_enkel": "Skriv ditt personnummer. Tryck Nästa.", "hs": "[HS]"},
+        {"sv_enkel": "Logga in med BankID på telefonen.", "hs": "[HS]"},
+        {"sv_enkel": "Skriv din e-postadress. Tryck Nästa.", "hs": "[HS]"},
+        {"sv_enkel": "Välj vilka brev du vill få digitalt.", "hs": "[HS]"},
+        {"sv_enkel": "Kivra är nu aktiverat. Du är inloggad.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "Redan medlem → Tryck bara Logga in istället.", "hs": "[HS]", "stepIndex": 1},
+        {"sv_enkel": "Hittar inte knappen → Scrolla nedåt på sidan.", "hs": "[HS]", "stepIndex": 5}
+      ],
+      "sources": [{"label": "Kivra – Kom igång", "url": "https://www.kivra.se"}],
+      "lastVerified": "2025-10-23"
+    },
+    {
+      "id": "kivra-read-letter",
+      "module": "Kivra",
+      "title": "Kivra – Läsa nytt brev",
+      "prereq": [
+        {"sv_enkel": "Ha ett aktiverat Kivra-konto.", "hs": "[HS]"},
+        {"sv_enkel": "Ha BankID för att logga in.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Gå till kivra.se. Tryck Logga in.", "hs": "[HS]"},
+        {"sv_enkel": "Skriv personnummer. Logga in med BankID.", "hs": "[HS]"},
+        {"sv_enkel": "Du ser dina brev. Nya brev är markerade.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck på brevet du vill läsa.", "hs": "[HS]"},
+        {"sv_enkel": "Brevet öppnas. Läs texten eller öppna PDF.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck på PDF-ikonen om du vill spara.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "Ser inget brev → Kolla fliken Arkiv också.", "hs": "[HS]", "stepIndex": 3},
+        {"sv_enkel": "PDF öppnas inte → Tryck och håll, välj Öppna i ny flik.", "hs": "[HS]", "stepIndex": 5}
+      ],
+      "sources": [{"label": "Kivra Support", "url": "https://support.kivra.se"}],
+      "lastVerified": "2025-10-23"
+    },
+    {
+      "id": "af-upload-document",
+      "module": "AF",
+      "title": "Arbetsförmedlingen – Ladda upp dokument",
+      "prereq": [
+        {"sv_enkel": "Ha ett konto på Mina sidor.", "hs": "[HS]"},
+        {"sv_enkel": "Ha dokumentet som fil eller foto.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Logga in på arbetsformedlingen.se/minasidor.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck Skicka meddelande eller Mina ärenden.", "hs": "[HS]"},
+        {"sv_enkel": "Hitta knappen Bifoga fil eller Lägg till.", "hs": "[HS]"},
+        {"sv_enkel": "Välj filen från din telefon eller dator.", "hs": "[HS]"},
+        {"sv_enkel": "Vänta tills filen laddas upp. Se grönt.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck Skicka. Dokumentet är nu skickat.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "Hittar inte knappen → Scrolla ner i formuläret.", "hs": "[HS]", "stepIndex": 3},
+        {"sv_enkel": "Fel filformat → Använd PDF eller JPG istället.", "hs": "[HS]", "stepIndex": 4},
+        {"sv_enkel": "För stor fil → Ta en ny bild eller komprimera.", "hs": "[HS]", "stepIndex": 5}
+      ],
+      "sources": [{"label": "Arbetsförmedlingen – Support", "url": "https://arbetsformedlingen.se/other-languages/support"}],
+      "lastVerified": "2025-10-23"
+    },
+    {
+      "id": "skatteverket-personbevis",
+      "module": "Skatteverket",
+      "title": "Skatteverket - Hämta personbevis",
+      "prereq": [
+        {"sv_enkel": "Ha BankID.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Gå till skatteverket.se. Sök personbevis.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck Beställ personbevis.", "hs": "[HS]"},
+        {"sv_enkel": "Logga in med BankID.", "hs": "[HS]"},
+        {"sv_enkel": "Välj typ av personbevis. Tryck Nästa.", "hs": "[HS]"},
+        {"sv_enkel": "Personbeviset visas som PDF. Tryck Ladda ner.", "hs": "[HS]"},
+        {"sv_enkel": "PDF:en sparas i Nedladdningar. Du är klar.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "Hittar inte PDF → Öppna Filer eller Nedladdningar.", "hs": "[HS]", "stepIndex": 6},
+        {"sv_enkel": "Fel typ → Vanligast är Personbevis utan folkbokföringsuppgifter.", "hs": "[HS]", "stepIndex": 4}
+      ],
+      "sources": [{"label": "Skatteverket - Personbevis", "url": "https://www.skatteverket.se"}],
+      "lastVerified": "2025-10-24"
+    },
+    {
+      "id": "fk-login",
+      "module": "FK",
+      "title": "Försäkringskassan - Logga in",
+      "prereq": [
+        {"sv_enkel": "Ha BankID.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Gå till forsakringskassan.se.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck Logga in eller Mina sidor.", "hs": "[HS]"},
+        {"sv_enkel": "Skriv ditt personnummer. Tryck Nästa.", "hs": "[HS]"},
+        {"sv_enkel": "Logga in med BankID på telefonen.", "hs": "[HS]"},
+        {"sv_enkel": "Du ser nu Mina sidor. Du är inloggad.", "hs": "[HS]"},
+        {"sv_enkel": "För att ladda upp: Hitta ditt ärende först.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "Hittar inte ärendet → Ring FK för vägledning.", "hs": "[HS]", "stepIndex": 6},
+        {"sv_enkel": "Fel vid inloggning → Kontrollera personnummer.", "hs": "[HS]", "stepIndex": 3}
+      ],
+      "sources": [{"label": "Försäkringskassan", "url": "https://www.forsakringskassan.se"}],
+      "lastVerified": "2025-10-24"
+    },
+    {
+      "id": "epost-login",
+      "module": "Epost",
+      "title": "E-post - Logga in",
+      "prereq": [
+        {"sv_enkel": "Ha din e-postadress och lösenord.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Öppna Gmail-appen eller gå till gmail.com.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck Logga in.", "hs": "[HS]"},
+        {"sv_enkel": "Skriv din e-postadress. Tryck Nästa.", "hs": "[HS]"},
+        {"sv_enkel": "Skriv ditt lösenord. Tryck Nästa.", "hs": "[HS]"},
+        {"sv_enkel": "Du ser din inkorg. Du är inloggad.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck på ett mejl för att läsa det.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "Fel lösenord → Tryck Glömt lösenord för att återställa.", "hs": "[HS]", "stepIndex": 4},
+        {"sv_enkel": "Hittar inte mejl → Kolla Skräppost-mappen.", "hs": "[HS]", "stepIndex": 5}
+      ],
+      "sources": [{"label": "Gmail Support", "url": "https://support.google.com/mail/"}],
+      "lastVerified": "2025-10-24"
+    },
+    {
+      "id": "epost-send-file",
+      "module": "Epost",
+      "title": "E-post - Skicka bild eller fil",
+      "prereq": [
+        {"sv_enkel": "Vara inloggad i din e-post.", "hs": "[HS]"},
+        {"sv_enkel": "Ha filen eller bilden redo.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Tryck på Skriv eller Plus-ikonen.", "hs": "[HS]"},
+        {"sv_enkel": "Skriv mottagarens e-postadress.", "hs": "[HS]"},
+        {"sv_enkel": "Skriv ämne och meddelande om du vill.", "hs": "[HS]"},
+        {"sv_enkel": "Tryck på gem-ikonen för att bifoga fil.", "hs": "[HS]"},
+        {"sv_enkel": "Välj filen från Galleri eller Filer. Tryck OK.", "hs": "[HS]"},
+        {"sv_enkel": "Filen laddas upp. Tryck Skicka.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "För stor fil → Komprimera bilden eller använd molntjänst.", "hs": "[HS]", "stepIndex": 5},
+        {"sv_enkel": "Hittar inte filen → Kolla Nedladdningar-mappen.", "hs": "[HS]", "stepIndex": 5}
+      ],
+      "sources": [{"label": "Gmail Support", "url": "https://support.google.com/mail/"}],
+      "lastVerified": "2025-10-24"
+    },
+    {
+      "id": "trygghet-fraser",
+      "module": "Trygghet",
+      "title": "Trygghet - Viktiga fraser att visa",
+      "prereq": [
+        {"sv_enkel": "Ha telefonen redo att visa.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Fras 1: Tala långsamt. Jag använder översättning.", "hs": "[HS]"},
+        {"sv_enkel": "Fras 2: Kan du skriva det? Jag förstår bättre.", "hs": "[HS]"},
+        {"sv_enkel": "Fras 3: Jag behöver tolk till mitt språk.", "hs": "[HS]"},
+        {"sv_enkel": "Fras 4: Var är närmaste apotek?", "hs": "[HS]"},
+        {"sv_enkel": "Fras 5: Jag förstår inte. Kan du hjälpa mig?", "hs": "[HS]"},
+        {"sv_enkel": "Tips: Visa den här skärmen för någon.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "För liten text → Zooma skärmen med fingrarna.", "hs": "[HS]", "stepIndex": 1}
+      ],
+      "sources": [{"label": "Kommunikationsstöd", "url": "https://www.1177.se"}],
+      "lastVerified": "2025-10-24"
+    },
+    {
+      "id": "trygghet-nummer",
+      "module": "Trygghet",
+      "title": "Trygghet - Viktiga telefonnummer",
+      "prereq": [
+        {"sv_enkel": "Ha telefonen redo för att ringa.", "hs": "[HS]"}
+      ],
+      "steps": [
+        {"sv_enkel": "Akut: 112 (polis, ambulans, brandkår)", "hs": "[HS]"},
+        {"sv_enkel": "1177: Sjukvårdsrådgivning (icke akut)", "hs": "[HS]"},
+        {"sv_enkel": "114 14: Information på ditt språk", "hs": "[HS]"},
+        {"sv_enkel": "Polis (icke akut): 114 14", "hs": "[HS]"},
+        {"sv_enkel": "Giftinformation: 112 (säg giftinformation)", "hs": "[HS]"},
+        {"sv_enkel": "Tips: Spara dessa nummer i kontakter.", "hs": "[HS]"}
+      ],
+      "troubleshoot": [
+        {"sv_enkel": "Ingen svarar på 112 → Ring igen, det är alltid öppet.", "hs": "[HS]", "stepIndex": 1},
+        {"sv_enkel": "Språkproblem → Be om tolk direkt på ditt språk.", "hs": "[HS]", "stepIndex": 1}
+      ],
+      "sources": [{"label": "Nödnummer Sverige", "url": "https://www.112.se"}],
+      "lastVerified": "2025-10-24"
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "guides": [
+    {
+      "id": "1177-login-same",
+      "module": "m1177",
+      "title": "1177 – Logga in (samma enhet)",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Hel app-ka BankID teleefankaaga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Xusuuso koodka BankID-kaaga."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Fur 1177.se browserkaaga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix badhanka Geli."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor lambarkaaga shaqsiga. Riix Xiga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID wuu si toos ah u furmi doonaa. Sug."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor koodka BankID. Riix OK."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hadda waad gashay 1177."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID ma furmo ← Fur app-ka BankID gacanta.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kood qalad ← Isku day mar kale. Ka dib saddex isku day waa inaad sugaysaa.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "1177-login-other",
+      "module": "m1177",
+      "title": "1177 – Logga in (annan enhet)",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Hel BankID teleefankaaga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Telefoonku waa inuu kuu dhow yahay."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Fur 1177.se kumbuyuutarka."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix Geli. Qor lambarka shaqsiga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dooro BankID qalab kale."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Fur BankID teleefanka."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix Caddee naftaada. Qor koodkaaga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hadda waad ku gashay kumbuyuutarka."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Waxba ma dhacaan ← Hubi in lambarka shaqsigu sax yahay.",
+          "stepIndex": 2
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Waxba kama arko BankID ← Riix qoraalka Caddee naftaada.",
+          "stepIndex": 4
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "kivra-activate",
+      "module": "Kivra",
+      "title": "Kivra – Aktivera och logga in",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Hel BankID teleefankaaga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hel cinwaan email."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Tag kivra.se. Riix Hel Kivra."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor lambarkaaga shaqsiga. Riix Xiga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Gal BankID teleefanka."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor cinwaanka emailkaaga. Riix Xiga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dooro waraaqaha aad rabto inaad si dijitaal u hesho."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kivra hadda waa la hawlgeliyey. Waad gashay."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Hadda xubin ← Kaliya riix Geli halkii.",
+          "stepIndex": 1
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Ma heli karo badhanka ← Hoos u dul bogsiga.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "kivra-read-letter",
+      "module": "Kivra",
+      "title": "Kivra – Läsa nytt brev",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Hel akoon Kivra oo hawlgal."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hel BankID si aad u gasho."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Tag kivra.se. Riix Geli."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Qor lambarka shaqsiga. Gal BankID."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Waad aragaysaa waraaqahaaga. Kuwa cusub waa la calaamadeeyey."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix warqadda aad rabto inaad akhrisho."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Warqaddu waa furantay. Akhri qoraalka ama fur PDF."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix calaamada PDF haddii aad rabto inaad keydsato."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Ma arko warqad ← Sidoo kale hubi tab-ka Kaydka.",
+          "stepIndex": 3
+        },
+        {
+          "sv_enkel": "",
+          "hs": "PDF ma furmo ← Riix oo hay, dooro Fur tab cusub.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "af-upload-document",
+      "module": "AF",
+      "title": "Arbetsförmedlingen – Ladda upp dokument",
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Hel akoon Bogagayga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Hel dukumeentiga sidii file ama sawir."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Gal arbetsformedlingen.se/minasidor."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix Dir fariim ama Arimahayga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Raadi badhanka Ku lifaaq file ama Kudar."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Dooro file-ka teleefankaaga ama kombuyuutarkaaga."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Sug ilaa file-ka la soo geliyo. Arag cagaaran."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Riix Dir. Dukumeentiga hadda waa la diray."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Ma heli karo badhanka ← Hoos ugu dul foomka.",
+          "stepIndex": 3
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Nooca file-ka qalad ← Isticmaal PDF ama JPG halkii.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "File aad u weyn ← Qaad sawir cusub ama soo cabbir.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    }
+  ]
+}
