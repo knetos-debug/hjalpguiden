@@ -5,53 +5,53 @@
       "module": "Mobil",
       "title": {
         "sv_enkel": "",
-        "hs": "Aasaaska Telefoonka - Ku xir Wi-Fi"
+        "hs": "Phone Basics - Connect Wi-Fi"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel teleefankaaga shidan."
+          "hs": "Have your phone turned on."
         },
         {
           "sv_enkel": "",
-          "hs": "Hel erayga sirta Wi-Fi diyaar ah."
+          "hs": "Have the Wi-Fi password ready."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Fur Habaynta teleefanka."
+          "hs": "Open Settings on the phone."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix Wi-Fi ama Shabakadda Wireless."
+          "hs": "Tap Wi-Fi or Wireless network."
         },
         {
           "sv_enkel": "",
-          "hs": "Arag liiska shabakadaha. Dooro shabakadaada."
+          "hs": "See the list of networks. Choose your network."
         },
         {
           "sv_enkel": "",
-          "hs": "Qor erayga sirta Wi-Fi. Riix Xidh."
+          "hs": "Enter the Wi-Fi password. Tap Connect."
         },
         {
           "sv_enkel": "",
-          "hs": "Sug. Waxaad arki doontaa calaamad markaad dhammaato."
+          "hs": "Wait. You'll see a checkmark when done."
         },
         {
           "sv_enkel": "",
-          "hs": "Hadda waxaad ku xidhan tahay Wi-Fi."
+          "hs": "You are now connected to Wi-Fi."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "Ma heli kartid shabakada ← U dhaw router-ka.",
+          "hs": "Can't find network → Move closer to the router.",
           "stepIndex": 3
         },
         {
           "sv_enkel": "",
-          "hs": "Eray sir qaldan ← Hubi xarfaha waaweyn/yaryar.",
+          "hs": "Wrong password → Double-check capital/lowercase letters.",
           "stepIndex": 4
         }
       ],
@@ -63,49 +63,49 @@
       "module": "Mobil",
       "title": {
         "sv_enkel": "",
-        "hs": "Aasaaska Telefoonka - Fur link iyo QR code"
+        "hs": "Phone Basics - Open link & QR code"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel link ama QR code si aad u furto."
+          "hs": "Have a link or QR code to open."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Link-ka: Riix link-ka. Wuu buluug noqdaa."
+          "hs": "For link: Tap the link. It turns blue."
         },
         {
           "sv_enkel": "",
-          "hs": "Browser-ku si toos ah ayuu u furmi doonaa. Sug."
+          "hs": "Browser opens automatically. Wait."
         },
         {
           "sv_enkel": "",
-          "hs": "QR code: Fur app-ka kamarada."
+          "hs": "For QR code: Open camera app."
         },
         {
           "sv_enkel": "",
-          "hs": "Toosi kamarada xagga QR code. Taagan."
+          "hs": "Point camera at QR code. Hold still."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix ogeysiiska soo muuqda."
+          "hs": "Tap the notification that appears."
         },
         {
           "sv_enkel": "",
-          "hs": "Link-ku wuxuu ku furmi doonaa browser-ka."
+          "hs": "Link opens in browser."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "QR code ma shaqeeyo ← Isticmaal Google Lens beddelkeeda.",
+          "hs": "QR code doesn't work → Use Google Lens instead.",
           "stepIndex": 4
         },
         {
           "sv_enkel": "",
-          "hs": "Link-ku ma furmo ← Riix oo hay, dooro Fur.",
+          "hs": "Link doesn't open → Tap and hold, choose Open.",
           "stepIndex": 1
         }
       ],
@@ -117,49 +117,49 @@
       "module": "Mobil",
       "title": {
         "sv_enkel": "",
-        "hs": "Aasaaska Telefoonka - Qaado sawir shaashadda"
+        "hs": "Phone Basics - Take screenshot"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel shaashadda aad rabto inaad sawirto furan."
+          "hs": "Have the screen you want to capture open."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Android: Hayo On/Off + Codka hoos isla mar."
+          "hs": "Android: Hold down Power + Volume down together."
         },
         {
           "sv_enkel": "",
-          "hs": "iPhone: Riix Dhinaca + Codka kor isla mar."
+          "hs": "iPhone: Press Side + Volume up together."
         },
         {
           "sv_enkel": "",
-          "hs": "Waxaad arki doontaa dhalaalaya. Sawirka waa la kaydiyey."
+          "hs": "You'll see a flash. Image is saved."
         },
         {
           "sv_enkel": "",
-          "hs": "Fur Gallery ama Sawirrada si aad u aragto sawirka."
+          "hs": "Open Gallery or Photos to see the image."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix Wadaag si aad u dirto sawirka."
+          "hs": "Tap Share to send the image."
         },
         {
           "sv_enkel": "",
-          "hs": "Dooro sida aad u wadaagi lahayd: SMS, email, WhatsApp."
+          "hs": "Choose how to share: SMS, email, WhatsApp."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "Ma heli kartid sawirka ← Raadi galka Screenshots.",
+          "hs": "Can't find image → Look in Screenshots folder.",
           "stepIndex": 4
         },
         {
           "sv_enkel": "",
-          "hs": "Ma shaqeeyo ← Isku day inaad badhanka waqti dheer hayso.",
+          "hs": "Doesn't work → Try holding buttons longer.",
           "stepIndex": 1
         }
       ],
@@ -171,53 +171,53 @@
       "module": "AI",
       "title": {
         "sv_enkel": "",
-        "hs": "Google Translate - Turjun kamera ku"
+        "hs": "Google Translate - Translate with camera"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel app-ka Google Translate rakiban."
+          "hs": "Have Google Translate app installed."
         },
         {
           "sv_enkel": "",
-          "hs": "Hel qoraalka aad rabto inaad turjunto hortaada."
+          "hs": "Have the text you want to translate in front of you."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Fur Google Translate."
+          "hs": "Open Google Translate."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix astaanta kaamerad hoose."
+          "hs": "Tap camera icon at bottom."
         },
         {
           "sv_enkel": "",
-          "hs": "Dooro luqadda: Ka Swedish ilaa luqadaada."
+          "hs": "Choose language: From Swedish to your language."
         },
         {
           "sv_enkel": "",
-          "hs": "Toosi kamarada xagga qoraalka. Taagan."
+          "hs": "Point camera at text. Hold still."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix Scan. Qaado sawir qoraalka."
+          "hs": "Tap Scan. Take picture of text."
         },
         {
           "sv_enkel": "",
-          "hs": "Turjumaantu waxay muuqan doontaa qoraalka Swedish korka."
+          "hs": "Translation appears over Swedish text."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "Sawir aan cad ahayn ← Qaado telefoonka taagan, isku day mar kale.",
+          "hs": "Blurry image → Hold phone steady, try again.",
           "stepIndex": 5
         },
         {
           "sv_enkel": "",
-          "hs": "Turjumaan qaldan ← Hubi in luqadahu saxsan yihiin.",
+          "hs": "Wrong translation → Check that languages are correct.",
           "stepIndex": 3
         }
       ],
@@ -229,53 +229,53 @@
       "module": "AI",
       "title": {
         "sv_enkel": "",
-        "hs": "Google Translate - Hadal oo turjun"
+        "hs": "Google Translate - Speak and translate"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel app-ka Google Translate."
+          "hs": "Have Google Translate app."
         },
         {
           "sv_enkel": "",
-          "hs": "Hel ogolaanshaha microphone-ka firfircoon."
+          "hs": "Have microphone permission enabled."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Fur Google Translate."
+          "hs": "Open Google Translate."
         },
         {
           "sv_enkel": "",
-          "hs": "Dooro luqadda: Ka luqadaada ilaa Swedish."
+          "hs": "Choose language: From your language to Swedish."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix astaanta microphone-ka."
+          "hs": "Tap microphone icon."
         },
         {
           "sv_enkel": "",
-          "hs": "Ku hadal si cad luqadaada."
+          "hs": "Speak clearly in your language."
         },
         {
           "sv_enkel": "",
-          "hs": "Sug. Turjumaantu waa la tusi doonaa oo la akhrisan doonaa."
+          "hs": "Wait. Translation appears and is read aloud."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix astaanta codka si aad mar kale u maqasho."
+          "hs": "Tap speaker icon to hear again."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "Ma maqli kartid turjumaanta ← Kor u qoad codka telefoonka.",
+          "hs": "Can't hear translation → Turn up volume on phone.",
           "stepIndex": 5
         },
         {
           "sv_enkel": "",
-          "hs": "Turjumaan qaldan ← Ku hadal si tartiib ah oo cad.",
+          "hs": "Wrong translation → Speak slower and clearer.",
           "stepIndex": 4
         }
       ],
@@ -287,53 +287,53 @@
       "module": "BankID",
       "title": {
         "sv_enkel": "",
-        "hs": "BankID - Gal (isla qalab)"
+        "hs": "BankID - Log in (same device)"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel app-ka BankID rakiban."
+          "hs": "Have BankID app installed."
         },
         {
           "sv_enkel": "",
-          "hs": "Xusuuso koodka BankID-kaaga."
+          "hs": "Remember your BankID code."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Tag websiteka. Riix Geli."
+          "hs": "Go to website. Tap Log in."
         },
         {
           "sv_enkel": "",
-          "hs": "Qor lambarkaaga shaqsiga. Riix Xiga."
+          "hs": "Enter your personal number. Tap Next."
         },
         {
           "sv_enkel": "",
-          "hs": "Dooro BankID qalabkan."
+          "hs": "Choose BankID on this device."
         },
         {
           "sv_enkel": "",
-          "hs": "BankID wuu si toos ah u furmi doonaa. Sug."
+          "hs": "BankID opens automatically. Wait."
         },
         {
           "sv_enkel": "",
-          "hs": "Qor koodka BankID. Riix OK."
+          "hs": "Enter your BankID code. Tap OK."
         },
         {
           "sv_enkel": "",
-          "hs": "Hadda waad gashay."
+          "hs": "You are now logged in."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "BankID ma furmo ← Fur app-ka gacanta.",
+          "hs": "BankID doesn't open → Open app manually.",
           "stepIndex": 4
         },
         {
           "sv_enkel": "",
-          "hs": "Kood qaldan ← Isku day mar kale. Ka dib saddex isku day waa inaad sugaysaa.",
+          "hs": "Wrong code → Try again. After three attempts you must wait.",
           "stepIndex": 5
         }
       ],
@@ -345,53 +345,53 @@
       "module": "BankID",
       "title": {
         "sv_enkel": "",
-        "hs": "BankID - Gal (qalab kale)"
+        "hs": "BankID - Log in (other device)"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel BankID teleefankaaga."
+          "hs": "Have BankID on your phone."
         },
         {
           "sv_enkel": "",
-          "hs": "Telefoonku waa inuu kuu dhow yahay."
+          "hs": "Phone must be near you."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Tag websiteka kombiyuutarka. Riix Geli."
+          "hs": "Go to website on computer. Tap Log in."
         },
         {
           "sv_enkel": "",
-          "hs": "Qor lambarka shaqsiga. Dooro BankID qalab kale."
+          "hs": "Enter personal number. Choose BankID on other device."
         },
         {
           "sv_enkel": "",
-          "hs": "Fur app-ka BankID telefoonka."
+          "hs": "Open BankID app on phone."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix Caddee naftaada. Arag macluumaadka."
+          "hs": "Tap Authenticate. See the information."
         },
         {
           "sv_enkel": "",
-          "hs": "Qor koodka BankID. Riix OK."
+          "hs": "Enter your BankID code. Tap OK."
         },
         {
           "sv_enkel": "",
-          "hs": "Hadda waad ku gashay kombiyuutarka."
+          "hs": "You are now logged in on computer."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "Waxba kama arko BankID ← Riix Caddee naftaada.",
+          "hs": "See nothing in BankID → Tap Authenticate.",
           "stepIndex": 4
         },
         {
           "sv_enkel": "",
-          "hs": "Waxba ma dhacaan ← Hubi in lambarka shaqsigu sax yahay.",
+          "hs": "Nothing happens → Check that personal number is correct.",
           "stepIndex": 2
         }
       ],
@@ -403,53 +403,53 @@
       "module": "m1177",
       "title": {
         "sv_enkel": "",
-        "hs": "1177 - Gal (isla qalab)"
+        "hs": "1177 - Log in (same device)"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel app-ka BankID teleefankaaga."
+          "hs": "Have BankID app on your phone."
         },
         {
           "sv_enkel": "",
-          "hs": "Xusuuso koodka BankID-kaaga."
+          "hs": "Remember your BankID code."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Fur 1177.se browserkaaga."
+          "hs": "Open 1177.se in your browser."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix badhanka Geli."
+          "hs": "Tap Log in button."
         },
         {
           "sv_enkel": "",
-          "hs": "Qor lambarkaaga shaqsiga. Riix Xiga."
+          "hs": "Enter your personal number. Tap Next."
         },
         {
           "sv_enkel": "",
-          "hs": "BankID wuu si toos ah u furmi doonaa. Sug."
+          "hs": "BankID opens automatically. Wait."
         },
         {
           "sv_enkel": "",
-          "hs": "Qor koodka BankID. Riix OK."
+          "hs": "Enter your BankID code. Tap OK."
         },
         {
           "sv_enkel": "",
-          "hs": "Hadda waad gashay 1177."
+          "hs": "You are now logged in to 1177."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "BankID ma furmo ← Fur app-ka BankID gacanta.",
+          "hs": "BankID doesn't open → Open BankID app manually.",
           "stepIndex": 4
         },
         {
           "sv_enkel": "",
-          "hs": "Kood qaldan ← Isku day mar kale. Ka dib saddex isku day waa inaad sugaysaa.",
+          "hs": "Wrong code → Try again. After three attempts you must wait.",
           "stepIndex": 5
         }
       ],
@@ -461,53 +461,53 @@
       "module": "m1177",
       "title": {
         "sv_enkel": "",
-        "hs": "1177 - Gal (qalab kale)"
+        "hs": "1177 - Log in (other device)"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel BankID teleefankaaga."
+          "hs": "Have BankID on your phone."
         },
         {
           "sv_enkel": "",
-          "hs": "Telefoonku waa inuu kuu dhow yahay."
+          "hs": "Phone must be near you."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Fur 1177.se kumbuyuutarka."
+          "hs": "Open 1177.se on computer."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix Geli. Qor lambarka shaqsiga."
+          "hs": "Tap Log in. Enter personal number."
         },
         {
           "sv_enkel": "",
-          "hs": "Dooro BankID qalab kale."
+          "hs": "Choose BankID on other device."
         },
         {
           "sv_enkel": "",
-          "hs": "Fur BankID teleefanka."
+          "hs": "Open BankID on phone."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix Caddee naftaada. Qor koodkaaga."
+          "hs": "Tap Authenticate. Enter your code."
         },
         {
           "sv_enkel": "",
-          "hs": "Hadda waad ku gashay kumbuyuutarka."
+          "hs": "You are now logged in on computer."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "Waxba ma dhacaan ← Hubi in lambarka shaqsigu sax yahay.",
+          "hs": "Nothing happens → Check that personal number is correct.",
           "stepIndex": 2
         },
         {
           "sv_enkel": "",
-          "hs": "Waxba kama arko BankID ← Riix qoraalka Caddee naftaada.",
+          "hs": "See nothing in BankID → Tap the text Authenticate.",
           "stepIndex": 4
         }
       ],
@@ -519,53 +519,53 @@
       "module": "m1177",
       "title": {
         "sv_enkel": "",
-        "hs": "1177 - Akhri fariinta"
+        "hs": "1177 - Read message"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel akoon 1177 iyo BankID."
+          "hs": "Have a 1177 account and BankID."
         },
         {
           "sv_enkel": "",
-          "hs": "Noqo mid gashalay 1177.se."
+          "hs": "Be logged in to 1177.se."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Tag 1177.se. Geli BankID."
+          "hs": "Go to 1177.se. Log in with BankID."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix Inbox ama Farriimaha."
+          "hs": "Tap Inbox or Messages."
         },
         {
           "sv_enkel": "",
-          "hs": "Waad aragaysaa fariimadaada. Kuwa cusub waa la calaamadeeyey."
+          "hs": "You see your messages. New ones are highlighted."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix fariinta aad rabto inaad akhrisho."
+          "hs": "Tap the message you want to read."
         },
         {
           "sv_enkel": "",
-          "hs": "Akhri fariinta. Scroll haddii ay dheer tahay."
+          "hs": "Read the message. Scroll if it's long."
         },
         {
           "sv_enkel": "",
-          "hs": "Si aad uga jawaabto: Riix Jawaab hoose."
+          "hs": "To reply: Tap Reply at bottom."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "Ma heli kartid farriimaha ← Sidoo kale hubi Archive.",
+          "hs": "Can't find messages → Check Archive also.",
           "stepIndex": 2
         },
         {
           "sv_enkel": "",
-          "hs": "Ma jawaabi kartid ← Farriimaha qaarkood lama jawaabi karo.",
+          "hs": "Can't reply → Some messages can't be replied to.",
           "stepIndex": 6
         }
       ],
@@ -577,53 +577,53 @@
       "module": "Kivra",
       "title": {
         "sv_enkel": "",
-        "hs": "Kivra - Hawlgeliya oo gal"
+        "hs": "Kivra - Activate and log in"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel BankID teleefankaaga."
+          "hs": "Have BankID on your phone."
         },
         {
           "sv_enkel": "",
-          "hs": "Hel cinwaan email."
+          "hs": "Have an email address."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Tag kivra.se. Riix Hel Kivra."
+          "hs": "Go to kivra.se. Tap Get Kivra."
         },
         {
           "sv_enkel": "",
-          "hs": "Qor lambarkaaga shaqsiga. Riix Xiga."
+          "hs": "Enter your personal number. Tap Next."
         },
         {
           "sv_enkel": "",
-          "hs": "Gali BankID telefoonka."
+          "hs": "Log in with BankID on phone."
         },
         {
           "sv_enkel": "",
-          "hs": "Qor cinwaanka emailkaaga. Riix Xiga."
+          "hs": "Enter your email address. Tap Next."
         },
         {
           "sv_enkel": "",
-          "hs": "Dooro waraaqaha aad rabto inaad si dijitaal u hesho."
+          "hs": "Choose which letters you want digitally."
         },
         {
           "sv_enkel": "",
-          "hs": "Kivra hadda waa la hawlgeliyey. Waad gashay."
+          "hs": "Kivra is now activated. You are logged in."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "Hadda xubin ← Kaliya riix Geli halkii.",
+          "hs": "Already member → Just tap Log in instead.",
           "stepIndex": 1
         },
         {
           "sv_enkel": "",
-          "hs": "Ma heli karo badhanka ← Hoos u dul bogsiga.",
+          "hs": "Can't find button → Scroll down the page.",
           "stepIndex": 5
         }
       ],
@@ -635,53 +635,53 @@
       "module": "Kivra",
       "title": {
         "sv_enkel": "",
-        "hs": "Kivra - Akhri warqad cusub"
+        "hs": "Kivra - Read new letter"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel akoon Kivra oo hawlgal."
+          "hs": "Have an activated Kivra account."
         },
         {
           "sv_enkel": "",
-          "hs": "Hel BankID si aad u gasho."
+          "hs": "Have BankID to log in."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Tag kivra.se. Riix Geli."
+          "hs": "Go to kivra.se. Tap Log in."
         },
         {
           "sv_enkel": "",
-          "hs": "Qor lambarka shaqsiga. Gali BankID."
+          "hs": "Enter personal number. Log in with BankID."
         },
         {
           "sv_enkel": "",
-          "hs": "Waad aragaysaa waraaqahaaga. Kuwa cusub waa la calaamadeeyey."
+          "hs": "You see your letters. New letters are highlighted."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix warqadda aad rabto inaad akhrisho."
+          "hs": "Tap the letter you want to read."
         },
         {
           "sv_enkel": "",
-          "hs": "Warqaddu waa furantay. Akhri qoraalka ama fur PDF."
+          "hs": "Letter opens. Read text or open PDF."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix calaamada PDF haddii aad rabto inaad keydsato."
+          "hs": "Tap PDF icon if you want to save."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "Ma arko warqad ← Sidoo kale hubi tab-ka Kaydka.",
+          "hs": "See no letter → Check Archive tab also.",
           "stepIndex": 3
         },
         {
           "sv_enkel": "",
-          "hs": "PDF ma furmo ← Riix oo hay, dooro Fur tab cusub.",
+          "hs": "PDF doesn't open → Tap and hold, choose Open in new tab.",
           "stepIndex": 5
         }
       ],
@@ -693,58 +693,58 @@
       "module": "AF",
       "title": {
         "sv_enkel": "",
-        "hs": "Xafiiska Shaqada - Soo rar dukumeenti"
+        "hs": "Employment Service - Upload document"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel akoon Bogagayga."
+          "hs": "Have an account on My Pages."
         },
         {
           "sv_enkel": "",
-          "hs": "Hel dukumeentiga sidii file ama sawir."
+          "hs": "Have the document as file or photo."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Gali arbetsformedlingen.se/minasidor."
+          "hs": "Log in to arbetsformedlingen.se/minasidor."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix Dir fariim ama Arimahayga."
+          "hs": "Tap Send message or My cases."
         },
         {
           "sv_enkel": "",
-          "hs": "Raadi badhanka Ku lifaaq file ama Kudar."
+          "hs": "Find button Attach file or Add."
         },
         {
           "sv_enkel": "",
-          "hs": "Dooro file-ka teleefankaaga ama kombuyuutarkaaga."
+          "hs": "Choose file from your phone or computer."
         },
         {
           "sv_enkel": "",
-          "hs": "Sug ilaa file-ka la soo geliyo. Arag cagaaran."
+          "hs": "Wait until file uploads. See green."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix Dir. Dukumeentiga hadda waa la diray."
+          "hs": "Tap Send. Document is now sent."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "Ma heli karo badhanka ← Hoos ugu dul foomka.",
+          "hs": "Can't find button → Scroll down in form.",
           "stepIndex": 3
         },
         {
           "sv_enkel": "",
-          "hs": "Nooca file-ka qalad ← Isticmaal PDF ama JPG halkii.",
+          "hs": "Wrong file format → Use PDF or JPG instead.",
           "stepIndex": 4
         },
         {
           "sv_enkel": "",
-          "hs": "File aad u weyn ← Qaad sawir cusub ama soo cabbir.",
+          "hs": "File too large → Take new picture or compress.",
           "stepIndex": 5
         }
       ],
@@ -756,49 +756,49 @@
       "module": "Skatteverket",
       "title": {
         "sv_enkel": "",
-        "hs": "Xafiiska Canshuuraha - Hel shahaadada shakhsiga"
+        "hs": "Tax Agency - Get personal certificate"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel BankID."
+          "hs": "Have BankID."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Tag skatteverket.se. Raadi shahaado shaqsi."
+          "hs": "Go to skatteverket.se. Search personal certificate."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix Dalbashada shahaadada shaqsi."
+          "hs": "Tap Order personal certificate."
         },
         {
           "sv_enkel": "",
-          "hs": "Gali BankID."
+          "hs": "Log in with BankID."
         },
         {
           "sv_enkel": "",
-          "hs": "Dooro nooca shahaadada shaqsi. Riix Xiga."
+          "hs": "Choose type of certificate. Tap Next."
         },
         {
           "sv_enkel": "",
-          "hs": "Shahaadada shaqsi waxay u muuqan doontaa PDF. Riix Soo dejiso."
+          "hs": "Certificate appears as PDF. Tap Download."
         },
         {
           "sv_enkel": "",
-          "hs": "PDF-ka waxa lagu keydiyaa Soo dejinta. Waad dhamaysatay."
+          "hs": "PDF saves in Downloads. You're done."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "Ma heli kartid PDF ← Fur Files ama Soo dejinta.",
+          "hs": "Can't find PDF → Open Files or Downloads.",
           "stepIndex": 6
         },
         {
           "sv_enkel": "",
-          "hs": "Nooc qaldan ← Ugu badan waa Shahaado shaqsi aan lahayn macluumaadka guriga.",
+          "hs": "Wrong type → Most common is Certificate without residence info.",
           "stepIndex": 4
         }
       ],
@@ -810,49 +810,49 @@
       "module": "FK",
       "title": {
         "sv_enkel": "",
-        "hs": "Caymiska - Gal"
+        "hs": "Social Insurance Agency - Log in"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel BankID."
+          "hs": "Have BankID."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Tag forsakringskassan.se."
+          "hs": "Go to forsakringskassan.se."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix Geli ama Bogagayga."
+          "hs": "Tap Log in or My pages."
         },
         {
           "sv_enkel": "",
-          "hs": "Qor lambarkaaga shaqsiga. Riix Xiga."
+          "hs": "Enter your personal number. Tap Next."
         },
         {
           "sv_enkel": "",
-          "hs": "Gali BankID telefoonka."
+          "hs": "Log in with BankID on phone."
         },
         {
           "sv_enkel": "",
-          "hs": "Hadda waad aragaysaa Bogagayga. Waad gashay."
+          "hs": "You now see My pages. You are logged in."
         },
         {
           "sv_enkel": "",
-          "hs": "Si aad u soo geliso: Raadi arimahaga marka hore."
+          "hs": "To upload: Find your case first."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "Ma heli kartid arimaha ← Wac FK hagitaanka.",
+          "hs": "Can't find case → Call FK for guidance.",
           "stepIndex": 6
         },
         {
           "sv_enkel": "",
-          "hs": "Khalad gelitaanka ← Hubi lambarka shaqsiga.",
+          "hs": "Login error → Check personal number.",
           "stepIndex": 3
         }
       ],
@@ -864,49 +864,49 @@
       "module": "Epost",
       "title": {
         "sv_enkel": "",
-        "hs": "Email - Gal"
+        "hs": "Email - Log in"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel cinwaankaaga email iyo erayga sirta."
+          "hs": "Have your email address and password."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Fur app-ka Gmail ama tag gmail.com."
+          "hs": "Open Gmail app or go to gmail.com."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix Geli."
+          "hs": "Tap Log in."
         },
         {
           "sv_enkel": "",
-          "hs": "Qor cinwaanka emailkaaga. Riix Xiga."
+          "hs": "Enter your email address. Tap Next."
         },
         {
           "sv_enkel": "",
-          "hs": "Qor erayga sirta. Riix Xiga."
+          "hs": "Enter your password. Tap Next."
         },
         {
           "sv_enkel": "",
-          "hs": "Waad aragaysaa inbox-kaaga. Waad gashay."
+          "hs": "You see your inbox. You are logged in."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix email si aad u akhrisho."
+          "hs": "Tap an email to read it."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "Eray sir qaldan ← Riix Illoobay erayga sirta si aad u cusub-celin.",
+          "hs": "Wrong password → Tap Forgot password to reset.",
           "stepIndex": 4
         },
         {
           "sv_enkel": "",
-          "hs": "Ma heli kartid email ← Hubi galka Spam.",
+          "hs": "Can't find email → Check Spam folder.",
           "stepIndex": 5
         }
       ],
@@ -918,53 +918,53 @@
       "module": "Epost",
       "title": {
         "sv_enkel": "",
-        "hs": "Email - Dir sawir ama file"
+        "hs": "Email - Send image or file"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Noqo mid gashalay emailkaaga."
+          "hs": "Be logged in to your email."
         },
         {
           "sv_enkel": "",
-          "hs": "Hel file-ka ama sawirka diyaar ah."
+          "hs": "Have the file or image ready."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Riix Qor ama astaamaha Plus."
+          "hs": "Tap Compose or Plus icon."
         },
         {
           "sv_enkel": "",
-          "hs": "Qor cinwaanka email-ka qaataha."
+          "hs": "Enter recipient's email address."
         },
         {
           "sv_enkel": "",
-          "hs": "Qor mawduuca iyo fariinta haddii aad rabto."
+          "hs": "Write subject and message if you want."
         },
         {
           "sv_enkel": "",
-          "hs": "Riix astaamaha paperclip si aad file ku lifaaqdo."
+          "hs": "Tap paperclip icon to attach file."
         },
         {
           "sv_enkel": "",
-          "hs": "Dooro file-ka Gallery ama Files. Riix OK."
+          "hs": "Choose file from Gallery or Files. Tap OK."
         },
         {
           "sv_enkel": "",
-          "hs": "File-ka waa la soo gelinayaa. Riix Dir."
+          "hs": "File uploads. Tap Send."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "File aad u weyn ← Cabbir sawirka ama isticmaal adeeg daruur.",
+          "hs": "File too large → Compress image or use cloud service.",
           "stepIndex": 5
         },
         {
           "sv_enkel": "",
-          "hs": "Ma heli kartid file-ka ← Hubi galka Soo dejinta.",
+          "hs": "Can't find file → Check Downloads folder.",
           "stepIndex": 5
         }
       ],
@@ -976,44 +976,44 @@
       "module": "Trygghet",
       "title": {
         "sv_enkel": "",
-        "hs": "Amnaan - Weedho muhiim ah oo la tuso"
+        "hs": "Safety - Important phrases to show"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel telefoonka diyaar ah si aad u tuso."
+          "hs": "Have phone ready to show."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Weedh 1: Ku hadal si tartiib ah. Waxaan isticmaalayaa turjumaad."
+          "hs": "Phrase 1: Speak slowly. I use translation."
         },
         {
           "sv_enkel": "",
-          "hs": "Weedh 2: Ma qori kartaa? Si fiican ayaan u fahmayaa."
+          "hs": "Phrase 2: Can you write it? I understand better."
         },
         {
           "sv_enkel": "",
-          "hs": "Weedh 3: Waxaan u baahanahay turjubaan luqaddayda."
+          "hs": "Phrase 3: I need interpreter to my language."
         },
         {
           "sv_enkel": "",
-          "hs": "Weedh 4: Xaggee pharmacyga u dhow?"
+          "hs": "Phrase 4: Where is nearest pharmacy?"
         },
         {
           "sv_enkel": "",
-          "hs": "Weedh 5: Ma fahmin. Ii caawin kartaa?"
+          "hs": "Phrase 5: I don't understand. Can you help me?"
         },
         {
           "sv_enkel": "",
-          "hs": "Talo: Tus shaashaddan qof."
+          "hs": "Tip: Show this screen to someone."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "Qoraal aad u yar ← Weynee shaashada fartaada.",
+          "hs": "Text too small → Zoom screen with fingers.",
           "stepIndex": 1
         }
       ],
@@ -1025,49 +1025,49 @@
       "module": "Trygghet",
       "title": {
         "sv_enkel": "",
-        "hs": "Amnaan - Lambarada teleef onka muhiimka ah"
+        "hs": "Safety - Important phone numbers"
       },
       "prereq": [
         {
           "sv_enkel": "",
-          "hs": "Hel telefoonka diyaar ah wicitaanka."
+          "hs": "Have phone ready to call."
         }
       ],
       "steps": [
         {
           "sv_enkel": "",
-          "hs": "Degdeg: 112 (boolis, ambalaas, dabdemis)"
+          "hs": "Emergency: 112 (police, ambulance, fire)"
         },
         {
           "sv_enkel": "",
-          "hs": "1177: La talinta caafimaadka (aan degdeg ahayn)"
+          "hs": "1177: Healthcare advice (non-emergency)"
         },
         {
           "sv_enkel": "",
-          "hs": "114 14: Macluumaad luqaddaada"
+          "hs": "114 14: Information in your language"
         },
         {
           "sv_enkel": "",
-          "hs": "Boolis (aan degdeg ahayn): 114 14"
+          "hs": "Police (non-emergency): 114 14"
         },
         {
           "sv_enkel": "",
-          "hs": "Macluumaadka sunta: 112 (dheh macluumaad sun)"
+          "hs": "Poison info: 112 (say poison information)"
         },
         {
           "sv_enkel": "",
-          "hs": "Talo: Keydi lambaradahan xiriirka."
+          "hs": "Tip: Save these numbers in contacts."
         }
       ],
       "troubleshoot": [
         {
           "sv_enkel": "",
-          "hs": "Qofna kama jawaabin 112 ← Mar kale wac, had iyo jir waa furan yahay.",
+          "hs": "No one answers 112 → Call again, it's always open.",
           "stepIndex": 1
         },
         {
           "sv_enkel": "",
-          "hs": "Dhibaato luqad ← Weydiiso turjubaan si toos ah luqaddaada.",
+          "hs": "Language problem → Ask for interpreter directly in your language.",
           "stepIndex": 1
         }
       ],

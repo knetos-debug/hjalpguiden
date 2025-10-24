@@ -5,7 +5,7 @@
       "module": "Mobil",
       "title": {
         "sv_enkel": "",
-        "hs": "Mobilens grunder - Anslut Wi-Fi"
+        "hs": "أساسيات الهاتف - الاتصال بالواي فاي"
       },
       "prereq": [
         {
@@ -63,7 +63,7 @@
       "module": "Mobil",
       "title": {
         "sv_enkel": "",
-        "hs": "Mobilens grunder - Öppna länk & QR-kod"
+        "hs": "أساسيات الهاتف - فتح رابط ورمز QR"
       },
       "prereq": [
         {
@@ -117,7 +117,7 @@
       "module": "Mobil",
       "title": {
         "sv_enkel": "",
-        "hs": "Mobilens grunder - Ta skärmdump"
+        "hs": "أساسيات الهاتف - التقاط لقطة شاشة"
       },
       "prereq": [
         {
@@ -171,7 +171,7 @@
       "module": "AI",
       "title": {
         "sv_enkel": "",
-        "hs": "Google Översätt - Översätt med kamera"
+        "hs": "Google Translate - الترجمة بالكاميرا"
       },
       "prereq": [
         {
@@ -229,7 +229,7 @@
       "module": "AI",
       "title": {
         "sv_enkel": "",
-        "hs": "Google Översätt - Prata och översätt"
+        "hs": "Google Translate - التحدث والترجمة"
       },
       "prereq": [
         {
@@ -287,7 +287,7 @@
       "module": "BankID",
       "title": {
         "sv_enkel": "",
-        "hs": "BankID - Logga in (samma enhet)"
+        "hs": "BankID - تسجيل الدخول (نفس الجهاز)"
       },
       "prereq": [
         {
@@ -345,7 +345,7 @@
       "module": "BankID",
       "title": {
         "sv_enkel": "",
-        "hs": "BankID - Logga in (annan enhet)"
+        "hs": "BankID - تسجيل الدخول (جهاز آخر)"
       },
       "prereq": [
         {
@@ -403,7 +403,7 @@
       "module": "m1177",
       "title": {
         "sv_enkel": "",
-        "hs": "1177 – Logga in (samma enhet)"
+        "hs": "1177 - تسجيل الدخول (نفس الجهاز)"
       },
       "prereq": [
         {
@@ -461,7 +461,7 @@
       "module": "m1177",
       "title": {
         "sv_enkel": "",
-        "hs": "1177 – Logga in (annan enhet)"
+        "hs": "1177 - تسجيل الدخول (جهاز آخر)"
       },
       "prereq": [
         {
@@ -519,7 +519,7 @@
       "module": "m1177",
       "title": {
         "sv_enkel": "",
-        "hs": "1177 - Läsa meddelande"
+        "hs": "1177 - قراءة رسالة"
       },
       "prereq": [
         {
@@ -577,7 +577,7 @@
       "module": "Kivra",
       "title": {
         "sv_enkel": "",
-        "hs": "Kivra – Aktivera och logga in"
+        "hs": "Kivra - التفعيل وتسجيل الدخول"
       },
       "prereq": [
         {
@@ -635,7 +635,7 @@
       "module": "Kivra",
       "title": {
         "sv_enkel": "",
-        "hs": "Kivra – Läsa nytt brev"
+        "hs": "Kivra - قراءة رسالة جديدة"
       },
       "prereq": [
         {
@@ -693,7 +693,7 @@
       "module": "AF",
       "title": {
         "sv_enkel": "",
-        "hs": "Arbetsförmedlingen – Ladda upp dokument"
+        "hs": "وكالة التوظيف - تحميل مستند"
       },
       "prereq": [
         {
@@ -756,7 +756,7 @@
       "module": "Skatteverket",
       "title": {
         "sv_enkel": "",
-        "hs": "Skatteverket - Hämta personbevis"
+        "hs": "مصلحة الضرائب - الحصول على شهادة شخصية"
       },
       "prereq": [
         {
@@ -810,7 +810,7 @@
       "module": "FK",
       "title": {
         "sv_enkel": "",
-        "hs": "Försäkringskassan - Logga in"
+        "hs": "صندوق التأمينات - تسجيل الدخول"
       },
       "prereq": [
         {
@@ -864,7 +864,7 @@
       "module": "Epost",
       "title": {
         "sv_enkel": "",
-        "hs": "E-post - Logga in"
+        "hs": "البريد الإلكتروني - تسجيل الدخول"
       },
       "prereq": [
         {
@@ -918,7 +918,7 @@
       "module": "Epost",
       "title": {
         "sv_enkel": "",
-        "hs": "E-post - Skicka bild eller fil"
+        "hs": "البريد الإلكتروني - إرسال صورة أو ملف"
       },
       "prereq": [
         {
@@ -976,7 +976,7 @@
       "module": "Trygghet",
       "title": {
         "sv_enkel": "",
-        "hs": "Trygghet - Viktiga fraser att visa"
+        "hs": "الأمان - عبارات مهمة للعرض"
       },
       "prereq": [
         {
@@ -1025,7 +1025,7 @@
       "module": "Trygghet",
       "title": {
         "sv_enkel": "",
-        "hs": "Trygghet - Viktiga telefonnummer"
+        "hs": "الأمان - أرقام هواتف مهمة"
       },
       "prereq": [
         {
