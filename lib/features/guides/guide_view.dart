@@ -28,12 +28,16 @@ class GuideView extends ConsumerWidget {
           children: [
             Text(
               guide.title.svEnkel,
-              style: const TextStyle(fontSize: 16),
+              style: const TextStyle(fontSize: 14),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
             ),
             if (guide.title.hs.isNotEmpty)
               Text(
                 guide.title.hs,
-                style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w400),
+                style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
               ),
           ],
         ),
