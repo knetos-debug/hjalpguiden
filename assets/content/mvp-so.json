@@ -5,7 +5,7 @@
       "module": "Mobil",
       "title": {
         "sv_enkel": "",
-        "hs": "Mobilens grunder - Anslut Wi-Fi"
+        "hs": "Aasaaska Telefoonka - Ku xir Wi-Fi"
       },
       "prereq": [
         {
@@ -63,7 +63,7 @@
       "module": "Mobil",
       "title": {
         "sv_enkel": "",
-        "hs": "Mobilens grunder - Öppna länk & QR-kod"
+        "hs": "Aasaaska Telefoonka - Fur link iyo QR code"
       },
       "prereq": [
         {
@@ -117,7 +117,7 @@
       "module": "Mobil",
       "title": {
         "sv_enkel": "",
-        "hs": "Mobilens grunder - Ta skärmdump"
+        "hs": "Aasaaska Telefoonka - Qaado sawir shaashadda"
       },
       "prereq": [
         {
@@ -171,7 +171,7 @@
       "module": "AI",
       "title": {
         "sv_enkel": "",
-        "hs": "Google Översätt - Översätt med kamera"
+        "hs": "Google Translate - Turjun kamera ku"
       },
       "prereq": [
         {
@@ -229,7 +229,7 @@
       "module": "AI",
       "title": {
         "sv_enkel": "",
-        "hs": "Google Översätt - Prata och översätt"
+        "hs": "Google Translate - Hadal oo turjun"
       },
       "prereq": [
         {
@@ -287,7 +287,7 @@
       "module": "BankID",
       "title": {
         "sv_enkel": "",
-        "hs": "BankID - Logga in (samma enhet)"
+        "hs": "BankID - Gal (isla qalab)"
       },
       "prereq": [
         {
@@ -345,7 +345,7 @@
       "module": "BankID",
       "title": {
         "sv_enkel": "",
-        "hs": "BankID - Logga in (annan enhet)"
+        "hs": "BankID - Gal (qalab kale)"
       },
       "prereq": [
         {
@@ -403,7 +403,7 @@
       "module": "m1177",
       "title": {
         "sv_enkel": "",
-        "hs": "1177 – Logga in (samma enhet)"
+        "hs": "1177 - Gal (isla qalab)"
       },
       "prereq": [
         {
@@ -461,7 +461,7 @@
       "module": "m1177",
       "title": {
         "sv_enkel": "",
-        "hs": "1177 – Logga in (annan enhet)"
+        "hs": "1177 - Gal (qalab kale)"
       },
       "prereq": [
         {
@@ -519,7 +519,7 @@
       "module": "m1177",
       "title": {
         "sv_enkel": "",
-        "hs": "1177 - Läsa meddelande"
+        "hs": "1177 - Akhri fariinta"
       },
       "prereq": [
         {
@@ -577,7 +577,7 @@
       "module": "Kivra",
       "title": {
         "sv_enkel": "",
-        "hs": "Kivra – Aktivera och logga in"
+        "hs": "Kivra - Hawlgeliya oo gal"
       },
       "prereq": [
         {
@@ -635,7 +635,7 @@
       "module": "Kivra",
       "title": {
         "sv_enkel": "",
-        "hs": "Kivra – Läsa nytt brev"
+        "hs": "Kivra - Akhri warqad cusub"
       },
       "prereq": [
         {
@@ -693,7 +693,7 @@
       "module": "AF",
       "title": {
         "sv_enkel": "",
-        "hs": "Arbetsförmedlingen – Ladda upp dokument"
+        "hs": "Xafiiska Shaqada - Soo rar dukumeenti"
       },
       "prereq": [
         {
@@ -756,7 +756,7 @@
       "module": "Skatteverket",
       "title": {
         "sv_enkel": "",
-        "hs": "Skatteverket - Hämta personbevis"
+        "hs": "Xafiiska Canshuuraha - Hel shahaadada shakhsiga"
       },
       "prereq": [
         {
@@ -810,7 +810,7 @@
       "module": "FK",
       "title": {
         "sv_enkel": "",
-        "hs": "Försäkringskassan - Logga in"
+        "hs": "Caymiska - Gal"
       },
       "prereq": [
         {
@@ -864,7 +864,7 @@
       "module": "Epost",
       "title": {
         "sv_enkel": "",
-        "hs": "E-post - Logga in"
+        "hs": "Email - Gal"
       },
       "prereq": [
         {
@@ -918,7 +918,7 @@
       "module": "Epost",
       "title": {
         "sv_enkel": "",
-        "hs": "E-post - Skicka bild eller fil"
+        "hs": "Email - Dir sawir ama file"
       },
       "prereq": [
         {
@@ -976,7 +976,7 @@
       "module": "Trygghet",
       "title": {
         "sv_enkel": "",
-        "hs": "Trygghet - Viktiga fraser att visa"
+        "hs": "Amnaan - Weedho muhiim ah oo la tuso"
       },
       "prereq": [
         {
@@ -1025,7 +1025,7 @@
       "module": "Trygghet",
       "title": {
         "sv_enkel": "",
-        "hs": "Trygghet - Viktiga telefonnummer"
+        "hs": "Amnaan - Lambarada teleef onka muhiimka ah"
       },
       "prereq": [
         {

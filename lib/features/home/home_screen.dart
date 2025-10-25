@@ -54,7 +54,7 @@ class HomeScreen extends ConsumerWidget {
       padding: const EdgeInsets.all(16),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        childAspectRatio: 1.2,
+        childAspectRatio: 0.85,
         crossAxisSpacing: 16,
         mainAxisSpacing: 16,
       ),
@@ -140,19 +140,19 @@ class _GuideCard extends StatelessWidget {
           onTap: () => context.go('/guide/${guide.id}'),
           borderRadius: BorderRadius.circular(12),
           child: Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(12.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  padding: const EdgeInsets.all(12),
+                  padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
                     color: color.withOpacity(0.1),
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Icon(icon, size: 36, color: color),
+                  child: Icon(icon, size: 26, color: color),
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: 8),
                 Column(
                   children: [
                     Text(
@@ -175,7 +175,7 @@ class _GuideCard extends StatelessWidget {
                           color: Colors.grey,
                         ),
                         textAlign: TextAlign.center,
-                        maxLines: 2,
+                        maxLines: 3,
                         overflow: TextOverflow.ellipsis,
                       ),
                     ],

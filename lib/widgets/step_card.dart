@@ -4,11 +4,13 @@ import '../models/guide.dart';
 import 'tts_button.dart';
 
 class StepCard extends ConsumerWidget {
+  final String guideId;
   final int stepNumber;
   final GuideStep step;
 
   const StepCard({
     super.key,
+    required this.guideId,
     required this.stepNumber,
     required this.step,
   });
@@ -73,6 +75,7 @@ class StepCard extends ConsumerWidget {
               ),
               const SizedBox(width: 8),
               TtsButton(
+                guideId: guideId,
                 text: step.hs,
                 stepNumber: stepNumber,
               ),

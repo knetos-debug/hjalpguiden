@@ -5,7 +5,7 @@
       "module": "Mobil",
       "title": {
         "sv_enkel": "",
-        "hs": "Mobilens grunder - Anslut Wi-Fi"
+        "hs": "Основы телефона - Подключить Wi-Fi"
       },
       "prereq": [
         {
@@ -63,7 +63,7 @@
       "module": "Mobil",
       "title": {
         "sv_enkel": "",
-        "hs": "Mobilens grunder - Öppna länk & QR-kod"
+        "hs": "Основы телефона - Открыть ссылку и QR-код"
       },
       "prereq": [
         {
@@ -117,7 +117,7 @@
       "module": "Mobil",
       "title": {
         "sv_enkel": "",
-        "hs": "Mobilens grunder - Ta skärmdump"
+        "hs": "Основы телефона - Сделать скриншот"
       },
       "prereq": [
         {
@@ -171,7 +171,7 @@
       "module": "AI",
       "title": {
         "sv_enkel": "",
-        "hs": "Google Översätt - Översätt med kamera"
+        "hs": "Google Translate - Перевести с помощью камеры"
       },
       "prereq": [
         {
@@ -229,7 +229,7 @@
       "module": "AI",
       "title": {
         "sv_enkel": "",
-        "hs": "Google Översätt - Prata och översätt"
+        "hs": "Google Translate - Говорить и переводить"
       },
       "prereq": [
         {
@@ -287,7 +287,7 @@
       "module": "BankID",
       "title": {
         "sv_enkel": "",
-        "hs": "BankID - Logga in (samma enhet)"
+        "hs": "BankID - Войти (то же устройство)"
       },
       "prereq": [
         {
@@ -345,7 +345,7 @@
       "module": "BankID",
       "title": {
         "sv_enkel": "",
-        "hs": "BankID - Logga in (annan enhet)"
+        "hs": "BankID - Войти (другое устройство)"
       },
       "prereq": [
         {
@@ -403,7 +403,7 @@
       "module": "m1177",
       "title": {
         "sv_enkel": "",
-        "hs": "1177 – Logga in (samma enhet)"
+        "hs": "1177 - Войти (то же устройство)"
       },
       "prereq": [
         {
@@ -461,7 +461,7 @@
       "module": "m1177",
       "title": {
         "sv_enkel": "",
-        "hs": "1177 – Logga in (annan enhet)"
+        "hs": "1177 - Войти (другое устройство)"
       },
       "prereq": [
         {
@@ -519,7 +519,7 @@
       "module": "m1177",
       "title": {
         "sv_enkel": "",
-        "hs": "1177 - Läsa meddelande"
+        "hs": "1177 - Прочитать сообщение"
       },
       "prereq": [
         {
@@ -577,7 +577,7 @@
       "module": "Kivra",
       "title": {
         "sv_enkel": "",
-        "hs": "Kivra – Aktivera och logga in"
+        "hs": "Kivra - Активировать и войти"
       },
       "prereq": [
         {
@@ -635,7 +635,7 @@
       "module": "Kivra",
       "title": {
         "sv_enkel": "",
-        "hs": "Kivra – Läsa nytt brev"
+        "hs": "Kivra - Прочитать новое письмо"
       },
       "prereq": [
         {
@@ -693,7 +693,7 @@
       "module": "AF",
       "title": {
         "sv_enkel": "",
-        "hs": "Arbetsförmedlingen – Ladda upp dokument"
+        "hs": "Служба занятости - Загрузить документ"
       },
       "prereq": [
         {
@@ -756,7 +756,7 @@
       "module": "Skatteverket",
       "title": {
         "sv_enkel": "",
-        "hs": "Skatteverket - Hämta personbevis"
+        "hs": "Налоговая служба - Получить личное свидетельство"
       },
       "prereq": [
         {
@@ -810,7 +810,7 @@
       "module": "FK",
       "title": {
         "sv_enkel": "",
-        "hs": "Försäkringskassan - Logga in"
+        "hs": "Касса социального страхования - Войти"
       },
       "prereq": [
         {
@@ -864,7 +864,7 @@
       "module": "Epost",
       "title": {
         "sv_enkel": "",
-        "hs": "E-post - Logga in"
+        "hs": "Электронная почта - Войти"
       },
       "prereq": [
         {
@@ -918,7 +918,7 @@
       "module": "Epost",
       "title": {
         "sv_enkel": "",
-        "hs": "E-post - Skicka bild eller fil"
+        "hs": "Электронная почта - Отправить изображение или файл"
       },
       "prereq": [
         {
@@ -976,7 +976,7 @@
       "module": "Trygghet",
       "title": {
         "sv_enkel": "",
-        "hs": "Trygghet - Viktiga fraser att visa"
+        "hs": "Безопасность - Важные фразы для показа"
       },
       "prereq": [
         {
@@ -1025,7 +1025,7 @@
       "module": "Trygghet",
       "title": {
         "sv_enkel": "",
-        "hs": "Trygghet - Viktiga telefonnummer"
+        "hs": "Безопасность - Важные телефонные номера"
       },
       "prereq": [
         {

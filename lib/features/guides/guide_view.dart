@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import '../../models/guide.dart';
 import '../../providers/providers.dart';
 import '../../widgets/step_card.dart';
@@ -28,16 +29,29 @@ class GuideView extends ConsumerWidget {
           children: [
             Text(
               guide.title.svEnkel,
-              style: const TextStyle(fontSize: 16),
+              style: const TextStyle(fontSize: 14),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
             ),
             if (guide.title.hs.isNotEmpty)
               Text(
                 guide.title.hs,
-                style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w400),
+                style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
               ),
           ],
         ),
         actions: [
+          Semantics(
+            button: true,
+            label: 'Tillbaka till startsidan',
+            child: IconButton(
+              icon: const Icon(Icons.home),
+              onPressed: () => context.go('/home'),
+              tooltip: 'Hem',
+            ),
+          ),
           Semantics(
             button: true,
             label: 'Visa information',
@@ -140,6 +154,7 @@ class GuideView extends ConsumerWidget {
           return Padding(
             padding: const EdgeInsets.only(bottom: 16),
             child: StepCard(
+              guideId: guideId,
               stepNumber: index + 1,
               step: step,
             ),
