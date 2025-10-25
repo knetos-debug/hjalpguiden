@@ -63,7 +63,7 @@ class TtsService {
     await setLanguage(langCode);
 
     // Try local TTS first
-    final hasVoice = await _hasLocalVoice(langCode);
+    final hasVoice = await hasLocalVoice(langCode);
     
     if (hasVoice) {
       await _flutterTts.speak(text);
@@ -73,7 +73,7 @@ class TtsService {
     }
   }
 
-  Future<bool> _hasLocalVoice(String langCode) async {
+ Future<bool> hasLocalVoice(String langCode) async {
     try {
       final voices = await _flutterTts.getVoices;
       if (voices == null) return false;
