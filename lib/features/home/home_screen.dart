@@ -54,7 +54,7 @@ class HomeScreen extends ConsumerWidget {
       padding: const EdgeInsets.all(16),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        childAspectRatio: 0.8,
+        childAspectRatio: 0.9,
         crossAxisSpacing: 16,
         mainAxisSpacing: 16,
       ),
@@ -162,7 +162,7 @@ class _GuideCard extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                       ),
                       textAlign: TextAlign.center,
-                      maxLines: 2,
+                      maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
                     if (guide.title.hs.isNotEmpty) ...[
@@ -175,7 +175,7 @@ class _GuideCard extends StatelessWidget {
                           color: Colors.grey,
                         ),
                         textAlign: TextAlign.center,
-                        maxLines: 2,
+                        maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                       ),
                     ],
