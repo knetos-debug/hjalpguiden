@@ -175,7 +175,7 @@ class _GuideCard extends StatelessWidget {
                           color: Colors.grey,
                         ),
                         textAlign: TextAlign.center,
-                        maxLines: 2,
+                        maxLines: 3,
                         overflow: TextOverflow.ellipsis,
                       ),
                     ],
