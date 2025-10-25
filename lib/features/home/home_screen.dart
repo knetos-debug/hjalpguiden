@@ -145,14 +145,14 @@ class _GuideCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  padding: const EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
                     color: color.withOpacity(0.1),
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                  child: Icon(icon, size: 32, color: color),
+                  child: Icon(icon, size: 26, color: color),
                 ),
-                const SizedBox(height: 10),
+                const SizedBox(height: 8),
                 Column(
                   children: [
                     Text(
