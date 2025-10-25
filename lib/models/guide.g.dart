@@ -45,7 +45,7 @@ Guide _$GuideFromJson(Map<String, dynamic> json) => Guide(
     json['module'],
     unknownValue: Module.m1177,
   ),
-  title: json['title'] as String,
+  title: LangLine.fromJson(json['title'] as Map<String, dynamic>),
   prereq: (json['prereq'] as List<dynamic>)
       .map((e) => LangLine.fromJson(e as Map<String, dynamic>))
       .toList(),
