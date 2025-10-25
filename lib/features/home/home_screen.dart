@@ -54,7 +54,7 @@ class HomeScreen extends ConsumerWidget {
       padding: const EdgeInsets.all(16),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        childAspectRatio: 1.2,
+        childAspectRatio: 0.95,
         crossAxisSpacing: 16,
         mainAxisSpacing: 16,
       ),
@@ -140,25 +140,25 @@ class _GuideCard extends StatelessWidget {
           onTap: () => context.go('/guide/${guide.id}'),
           borderRadius: BorderRadius.circular(12),
           child: Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(12.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  padding: const EdgeInsets.all(12),
+                  padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     color: color.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: Icon(icon, size: 36, color: color),
+                  child: Icon(icon, size: 32, color: color),
                 ),
-                const SizedBox(height: 12),
+                const SizedBox(height: 10),
                 Column(
                   children: [
                     Text(
                       guide.title.svEnkel,
                       style: const TextStyle(
-                        fontSize: 13,
+                        fontSize: 12,
                         fontWeight: FontWeight.w600,
                       ),
                       textAlign: TextAlign.center,
@@ -166,11 +166,11 @@ class _GuideCard extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                     ),
                     if (guide.title.hs.isNotEmpty) ...[
-                      const SizedBox(height: 4),
+                      const SizedBox(height: 3),
                       Text(
                         guide.title.hs,
                         style: const TextStyle(
-                          fontSize: 12,
+                          fontSize: 11,
                           fontWeight: FontWeight.w500,
                           color: Colors.grey,
                         ),
