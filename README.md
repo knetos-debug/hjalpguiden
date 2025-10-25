@@ -1,203 +1,185 @@
-ROLL & UPPDRAG
+# Hjälpguiden
 
-Du är lead Flutter-utvecklare + tech writer. Bygg och leverera en mobil-först Flutter-app (Android, iOS, Flutter Web PWA) som visar hjälpguider om svenska myndighetstjänster på enkel svenska + hemspråket med uppläsning (TTS) av hemspråksraden.
-Målgrupp: vuxna med låg digital vana och svenska på A1–A2.
-Krav på språk i UI: varje steg visas i två rader: Rad A = enkel svenska, Rad B = hemspråket (TTS läser Rad B).
+A mobile-first Flutter app that provides step-by-step guides for Swedish government e-services in simple Swedish and 9 other languages, with built-in text-to-speech functionality.
 
-PRODUKTENS SYFTE
+## 📱 About
 
-Hjälpa användaren att fullfölja vanliga e-tjänst-uppgifter (1177, Kivra, AF m.fl.) utan handledare.
+Hjälpguiden (The Help Guide) is designed for adults with low digital literacy and limited Swedish language skills (A1-A2 level). The app helps users complete common tasks with Swedish government services like 1177, Kivra, Arbetsförmedlingen, and more.
 
-Minimera stress: korta, tydliga steg; konsekvent språk; uppläsning.
+### Key Features
 
-Fungerar offline efter första visning av en guide.
+- **Bilingual Display**: Each step shown in both simple Swedish and the user's home language
+- **Text-to-Speech**: 912 pre-recorded MP3 files using Microsoft Edge TTS (high quality)
+- **100% Offline**: Works completely offline after first download - no internet required
+- **10 Languages**: Swedish, Arabic, Somali, Russian, Ukrainian, English, Turkish, Persian, Dari, Tigrinya
+- **19 Guides**: Covering common e-services tasks (mobile basics, BankID, 1177, Kivra, AF, FK, Skatteverket, etc.)
+- **Accessibility**: Large touch targets (48×48 dp), high contrast, screen reader support
+- **No Tracking**: No personal data stored, no third-party trackers
 
-ICKE-MÅL (MVP)
+## 🛠️ Tech Stack
 
-Ingen inloggning, inga konton, ingen spårning.
+- **Framework**: Flutter 3.8+
+- **State Management**: Riverpod
+- **Routing**: go_router
+- **Audio**: just_audio + flutter_tts
+- **Data**: JSON-based content with code generation
+- **TTS**: Pre-generated MP3 files using Edge TTS (offline playback)
 
-Inget autofyll i myndighetsformulär.
+## 🚀 Getting Started
 
-Inga skärmbilder i MVP (text först).
+### Prerequisites
 
-Inget GPT-chatläge i appen (detta är en instruktionsbok).
+- Flutter SDK 3.8 or higher
+- Dart SDK 3.0 or higher
+- Android Studio / Xcode (for mobile development)
+- Python 3 (for TTS generation script)
 
-PERSONOR (för designbeslut)
+### Installation
 
-A: Ny i Sverige, låg digital vana, saknar ibland BankID.
+1. Clone the repository:
+```bash
+git clone https://github.com/knetos-debug/hjalpguiden.git
+cd hjalpguiden
+```
 
-B: Har BankID, låg svenska, rädd att göra fel.
+2. Install dependencies:
+```bash
+flutter pub get
+```
 
-C: Klarar grunderna men fastnar på “ladda upp/foto/PDF”.
+3. Generate JSON serialization code:
+```bash
+flutter pub run build_runner build --delete-conflicting-outputs
+```
 
-GLOBALA ACCEPTANSKRITERIER
+4. Run the app:
+```bash
+flutter run
+```
 
-Vid start måste appen fråga: “Vilket språk vill du använda?” (varje appstart).
+## 🔊 TTS Audio Files
 
-Varje guide har Förberedelser, Steg 1–6 (två rader/ steg), Om det strular.
+The app includes 912 pre-generated MP3 files (~40 MB total) for offline text-to-speech functionality.
 
-TTS spelar upp endast hemspråksraden; paus (~600 ms) mellan steg.
+### Regenerating Audio Files
 
-Offline: En guide som visats online ska gå att läsa offline.
+If you need to regenerate the TTS audio files:
 
-Tillgänglighet: stora tryckytor (min 48×48 dp), hög kontrast, skärmläsarstöd (Semantics).
+1. Install edge-tts:
+```bash
+pip3 install edge-tts
+```
 
-Integritet: inga personuppgifter lagras; inga tredjeparts-trackers.
+2. Run the generation script:
+```bash
+python3 generate_tts_audio.py
+```
 
-FUNKTIONALITET (MVP)
-1) Språkflöde
+This will generate all MP3 files in `assets/audio/` (takes ~15-30 minutes).
 
-Startskärm varje appstart: 8–12 språkknappar med endonym (t.ex. العربية) + svensk benämning + flagg-ikon (hjälpmedel).
+## 📦 Building for Production
 
-Glob-ikon i app-baren för språkbyte när som helst (gäller tills appen stängs).
+### Android APK
 
-Språklista v1: ar (arabiska), so (somaliska), ti (tigrinska), fa (persiska/farsi), prs (dari), uk, ru, tr, en, sv.
+```bash
+flutter build apk --release
+```
 
-2) Hemskärm (kakel / GridView)
+Output: `build/app/outputs/flutter-apk/app-release.apk`
 
-Ordning efter frekvens × smärta:
+### iOS
 
-BankID – Logga in (samma/annan enhet), Byta kod, Låst (översikt)
+```bash
+flutter build ios --release
+```
 
-1177 – Logga in (samma/annan), Läsa meddelande, Boka tid (light)
+Note: Requires Xcode and Apple Developer account for distribution.
 
-Kivra – Aktivera & logga in, Läsa nytt brev / Öppna PDF
+## 📁 Project Structure
 
-Arbetsförmedlingen – Logga in, Ladda upp dokument/foto
-
-Skatteverket – Logga in, Hämta personbevis (PDF)
-
-Försäkringskassan – Logga in, Ladda upp intyg (orientering)
-
-E-post & meddelanden – Logga in, Öppna bilaga, Skicka bild/fil
-
-Mobilens grunder – Wi-Fi, Öppna länk/QR, Skärmdump
-
-Översättning & AI – Google Översätt (kamera/röst), enkel fråga-guide
-
-Kommun & skola – Hitta e-tjänst, Logga in (generiskt)
-
-Trygghet & “visa-upp” – korta fraser (kommunikationstöd)
-
-3) Guidevy
-
-Titel + Förberedelser (2–4 punkter).
-
-Stegkort 1–6: två rader text per steg:
-
-sv_enkel (max 9–12 ord, verb först)
-
-hs (hemspråk – TTS läser denna rad)
-
-Lyssna-knapp per steg: TTS av hs.
-
-Om det strular: 2–4 fel→åtgärd, gärna med stepIndex.
-
-Info-ikon (“i”): Källor (etikett + URL) och Senast verifierad: YYYY-MM-DD.
-
-INNEHÅLL (MVP-GUIDER) Uppdatering finns längre ner!!!!
-
-Följande fem ska finnas färdiga:
-
-1177 – Logga in (samma enhet)
-
-1177 – Logga in (annan enhet)
-
-Kivra – Aktivera & logga in
-
-Kivra – Läsa nytt brev
-
-Arbetsförmedlingen – Ladda upp dokument/foto
-
-Varje guide är skriven i A1-svenska, två rader/ steg, och har “Om det strular”. Texterna bygger på officiella, publika källor, omformulerade till enkel svenska och försedda med källa + datum.
-
-
-fortsättning ökad kravställning samt plan
-
-
-📋 Del 1: Inventering av vad som finns vs. vad som ska finnas
-Nuvarande status (5 guider finns):
-✅ 1177 - Logga in (samma enhet)
-✅ 1177 - Logga in (annan enhet)
-✅ Kivra - Aktivera & logga in
-✅ Kivra - Läsa nytt brev
-✅ AF - Ladda upp dokument/foto
-Saknas (11 nya guider):
-❌ Mobilens grunder - Wi-Fi anslut
-❌ Mobilens grunder - Öppna länk/QR
-❌ Mobilens grunder - Skärmdump
-❌ Översättning & AI - Google Översätt kamera
-❌ Översättning & AI - Google Översätt röst↔text
-❌ BankID - Logga in (samma enhet)
-❌ BankID - Logga in (annan enhet)
-❌ 1177 - Läsa meddelande (saknas, vi har bara "logga in")
-❌ Skatteverket - Hämta personbevis
-❌ FK - Logga in (orientering)
-❌ E-post - Logga in
-❌ E-post - Skicka bild/fil
-❌ Trygghet - "Visa-upp-kort" (2 st)
-
-🗣️ Del 2: Språk & TTS-problem
-Nuvarande språkstöd:
-
-Svenska (sv) ✅
-Arabiska (ar) ✅ (översättning finns)
-Somaliska (so) ✅ (översättning finns, MEN fel TTS)
-Tigrinska (ti) ⚠️ (ingen översättning, ingen TTS)
-Persiska/Farsi (fa) ⚠️ (ingen översättning, TTS?)
-Dari (prs) ⚠️ (ingen översättning, TTS?)
-Ukrainska (uk) ⚠️ (ingen översättning, TTS?)
-Ryska (ru) ⚠️ (ingen översättning, TTS?)
-Turkiska (tr) ⚠️ (ingen översättning, TTS?)
-Engelska (en) ⚠️ (ingen översättning)
-
-TTS-problem att lösa:
-Problem 1: Somaliska läses med svensk röst
-
-Flutter's flutter_tts hittar ingen somalisk röst
-Läser somalisk text med svensk uttal = oförståeligt
-
-Lösningar:
-
-Moln-TTS (Azure/Google Cloud) - har somaliska röster
-Förinspelade MP3 - spela in varje steg
-Extern TTS-app - länka till Google Översätt-app
-
-Problem 2: Tigrinska saknar TTS helt
-
-Nästan ingen TTS-tjänst har tigrinska
-Lösning: Endast förinspelade MP3-filer
-
- arbetsgång:
-Fas 1: Fixa befintliga 5 guider (snabbast) *klart*
-
-Lägg till översättningar för alla 8 saknade språk 
-
-Fixa somalisk TTS (välj lösning)
-Testa att allt fungerar
-
-Fas 2: Lägg till de 11 nya guiderna 
-
-Skapa innehåll på svenska först
-Översätt till alla 10 språk
-Generera/spela in TTS för problematiska språk
-
-Fas 3: TTS-integration (tekniskt)
-
-Implementera moln-TTS-fallback
-Lägg till förinspelade ljud
-Cacha allt för offline
-
-
-Plan framåt:
-
-TTS: Moln-TTS (Azure/Google) - Implementeras senare när guiderna finns
-Prioritering: Lägga till nya guider på svenska först
-Översättningar: Maskinöversättning + kvalitetskontroll
-
-
-
-uppdatering: alla guider skrivan på svenska
-
-översättningar gjorda för arabiska, somaliska, ryska, ukrinska
-Arabiska dock trasig
+```
+lib/
+├── features/           # Feature-based modules
+│   ├── home/          # Home screen with guide grid
+│   ├── guides/        # Guide detail view
+│   └── language/      # Language selection
+├── models/            # Data models (Guide, LangLine, etc.)
+├── providers/         # Riverpod providers
+├── services/          # TTS service, content loading
+├── widgets/           # Reusable widgets
+└── main.dart          # App entry point
+
+assets/
+├── content/           # JSON guide files (19 guides × 10 languages)
+└── audio/            # Pre-generated TTS MP3 files (912 files)
+```
+
+## 🌍 Supported Languages
+
+| Language | Code | TTS Status |
+|----------|------|------------|
+| Swedish | sv | ✅ Base language |
+| Arabic | ar | ✅ Edge TTS |
+| Somali | so | ✅ Edge TTS |
+| Russian | ru | ✅ Edge TTS |
+| Ukrainian | uk | ✅ Edge TTS |
+| English | en | ✅ Edge TTS |
+| Turkish | tr | ✅ Edge TTS |
+| Persian | fa | ✅ Edge TTS |
+| Dari | prs | ✅ Edge TTS (uses Persian voice) |
+| Tigrinya | ti | ❌ No TTS available |
+
+## 📖 Available Guides
+
+### Mobile Basics (3 guides)
+- Connect to Wi-Fi
+- Open links/QR codes
+- Take screenshots
+
+### Translation & AI (2 guides)
+- Google Translate with camera
+- Google Translate with voice
+
+### Government Services (14 guides)
+- BankID login (same/other device)
+- 1177 login and messaging (3 guides)
+- Kivra activation and reading letters (2 guides)
+- Arbetsförmedlingen document upload
+- Försäkringskassan login
+- Skatteverket personal certificate
+- Email login and file sending (2 guides)
+- Emergency phrases (2 guides)
+
+## 🎨 Future Enhancements
+
+- [ ] Custom app icon and splash screen
+- [ ] iOS TestFlight distribution
+- [ ] Additional guides based on user feedback
+- [ ] Tigrinya TTS (requires manual recording)
+- [ ] Screenshots/illustrations in guides
+
+## 👥 Target Audience
+
+This app is designed for:
+- Adults new to Sweden with low digital literacy
+- Swedish language learners (A1-A2 level)
+- Individuals who struggle with Swedish government e-services
+- Users who need step-by-step guidance in their native language
+
+## 📄 License
+
+This project is intended for educational purposes. All content is based on publicly available information from official Swedish government sources.
+
+## 🙏 Acknowledgments
+
+- Swedish government e-services documentation
+- Microsoft Edge TTS for high-quality neural voices
+- The Flutter community for excellent packages and support
+
+## 📞 Contact
+
+Created by Kenneth Mellkvist as a free resource for students learning to navigate Swedish digital services.
+
+---
+
+**Note**: This app does not store any personal data, require login, or track users in any way. It's a simple, offline-first guide book.
