@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import '../../models/guide.dart';
 import '../../providers/providers.dart';
 import '../../widgets/step_card.dart';
@@ -42,6 +43,15 @@ class GuideView extends ConsumerWidget {
           ],
         ),
         actions: [
+          Semantics(
+            button: true,
+            label: 'Tillbaka till startsidan',
+            child: IconButton(
+              icon: const Icon(Icons.home),
+              onPressed: () => context.go('/home'),
+              tooltip: 'Hem',
+            ),
+          ),
           Semantics(
             button: true,
             label: 'Visa information',
