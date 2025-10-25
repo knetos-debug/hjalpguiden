@@ -3,11 +3,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../providers/providers.dart';
 
 class TtsButton extends ConsumerWidget {
+  final String guideId;
   final String text;
   final int stepNumber;
 
   const TtsButton({
     super.key,
+    required this.guideId,
     required this.text,
     required this.stepNumber,
   });
@@ -66,7 +68,7 @@ class TtsButton extends ConsumerWidget {
                     ref.read(ttsPlayingProvider.notifier).state = 'step_$stepNumber';
 
                     try {
-                      await ttsService.speak(text, selectedLang);
+                      await ttsService.speak(text, selectedLang, guideId, stepNumber);
                       // Add pause after speaking
                       await Future.delayed(const Duration(milliseconds: 600));
                     } finally {

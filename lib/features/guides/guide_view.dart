@@ -154,6 +154,7 @@ class GuideView extends ConsumerWidget {
           return Padding(
             padding: const EdgeInsets.only(bottom: 16),
             child: StepCard(
+              guideId: guideId,
               stepNumber: index + 1,
               step: step,
             ),
