@@ -1,0 +1,17 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+flutter_export_environment.sh
+
+# Build outputs
+build/
+!build/web/
+
+# Generated plugin files
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# IDE files & OS artifacts
+.DS_Store
+*.iml
+.idea/

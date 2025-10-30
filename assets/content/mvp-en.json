@@ -1,0 +1,1078 @@
+{
+  "guides": [
+    {
+      "id": "mobil-wifi",
+      "module": "Mobil",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Phone Basics - Connect Wi-Fi"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have your phone turned on."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Have the Wi-Fi password ready."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Open Settings on the phone."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap Wi-Fi or Wireless network."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "See the list of networks. Choose your network."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Enter the Wi-Fi password. Tap Connect."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Wait. You'll see a checkmark when done."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "You are now connected to Wi-Fi."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Can't find network → Move closer to the router.",
+          "stepIndex": 3
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Wrong password → Double-check capital/lowercase letters.",
+          "stepIndex": 4
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "mobil-oppna-lank",
+      "module": "Mobil",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Phone Basics - Open link & QR code"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have a link or QR code to open."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "For link: Tap the link. It turns blue."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Browser opens automatically. Wait."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "For QR code: Open camera app."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Point camera at QR code. Hold still."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap the notification that appears."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Link opens in browser."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "QR code doesn't work → Use Google Lens instead.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Link doesn't open → Tap and hold, choose Open.",
+          "stepIndex": 1
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "mobil-skarmdump",
+      "module": "Mobil",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Phone Basics - Take screenshot"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have the screen you want to capture open."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Android: Hold down Power + Volume down together."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "iPhone: Press Side + Volume up together."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "You'll see a flash. Image is saved."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Open Gallery or Photos to see the image."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap Share to send the image."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Choose how to share: SMS, email, WhatsApp."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Can't find image → Look in Screenshots folder.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Doesn't work → Try holding buttons longer.",
+          "stepIndex": 1
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "oversatt-kamera",
+      "module": "AI",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Google Translate - Translate with camera"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have Google Translate app installed."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Have the text you want to translate in front of you."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Open Google Translate."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap camera icon at bottom."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Choose language: From Swedish to your language."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Point camera at text. Hold still."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap Scan. Take picture of text."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Translation appears over Swedish text."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Blurry image → Hold phone steady, try again.",
+          "stepIndex": 5
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Wrong translation → Check that languages are correct.",
+          "stepIndex": 3
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "oversatt-rost",
+      "module": "AI",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Google Translate - Speak and translate"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have Google Translate app."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Have microphone permission enabled."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Open Google Translate."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Choose language: From your language to Swedish."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap microphone icon."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Speak clearly in your language."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Wait. Translation appears and is read aloud."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap speaker icon to hear again."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Can't hear translation → Turn up volume on phone.",
+          "stepIndex": 5
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Wrong translation → Speak slower and clearer.",
+          "stepIndex": 4
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "bankid-login-same",
+      "module": "BankID",
+      "title": {
+        "sv_enkel": "",
+        "hs": "BankID - Log in (same device)"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have BankID app installed."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Remember your BankID code."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Go to website. Tap Log in."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Enter your personal number. Tap Next."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Choose BankID on this device."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID opens automatically. Wait."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Enter your BankID code. Tap OK."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "You are now logged in."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID doesn't open → Open app manually.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Wrong code → Try again. After three attempts you must wait.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "bankid-login-other",
+      "module": "BankID",
+      "title": {
+        "sv_enkel": "",
+        "hs": "BankID - Log in (other device)"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have BankID on your phone."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Phone must be near you."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Go to website on computer. Tap Log in."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Enter personal number. Choose BankID on other device."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Open BankID app on phone."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap Authenticate. See the information."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Enter your BankID code. Tap OK."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "You are now logged in on computer."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "See nothing in BankID → Tap Authenticate.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Nothing happens → Check that personal number is correct.",
+          "stepIndex": 2
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "1177-login-same",
+      "module": "m1177",
+      "title": {
+        "sv_enkel": "",
+        "hs": "1177 - Log in (same device)"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have BankID app on your phone."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Remember your BankID code."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Open 1177.se in your browser."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap Log in button."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Enter your personal number. Tap Next."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "BankID opens automatically. Wait."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Enter your BankID code. Tap OK."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "You are now logged in to 1177."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "BankID doesn't open → Open BankID app manually.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Wrong code → Try again. After three attempts you must wait.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "1177-login-other",
+      "module": "m1177",
+      "title": {
+        "sv_enkel": "",
+        "hs": "1177 - Log in (other device)"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have BankID on your phone."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Phone must be near you."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Open 1177.se on computer."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap Log in. Enter personal number."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Choose BankID on other device."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Open BankID on phone."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap Authenticate. Enter your code."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "You are now logged in on computer."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Nothing happens → Check that personal number is correct.",
+          "stepIndex": 2
+        },
+        {
+          "sv_enkel": "",
+          "hs": "See nothing in BankID → Tap the text Authenticate.",
+          "stepIndex": 4
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "1177-read-message",
+      "module": "m1177",
+      "title": {
+        "sv_enkel": "",
+        "hs": "1177 - Read message"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have a 1177 account and BankID."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Be logged in to 1177.se."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Go to 1177.se. Log in with BankID."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap Inbox or Messages."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "You see your messages. New ones are highlighted."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap the message you want to read."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Read the message. Scroll if it's long."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "To reply: Tap Reply at bottom."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Can't find messages → Check Archive also.",
+          "stepIndex": 2
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Can't reply → Some messages can't be replied to.",
+          "stepIndex": 6
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "kivra-activate",
+      "module": "Kivra",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Kivra - Activate and log in"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have BankID on your phone."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Have an email address."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Go to kivra.se. Tap Get Kivra."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Enter your personal number. Tap Next."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Log in with BankID on phone."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Enter your email address. Tap Next."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Choose which letters you want digitally."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Kivra is now activated. You are logged in."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Already member → Just tap Log in instead.",
+          "stepIndex": 1
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Can't find button → Scroll down the page.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "kivra-read-letter",
+      "module": "Kivra",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Kivra - Read new letter"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have an activated Kivra account."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Have BankID to log in."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Go to kivra.se. Tap Log in."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Enter personal number. Log in with BankID."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "You see your letters. New letters are highlighted."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap the letter you want to read."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Letter opens. Read text or open PDF."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap PDF icon if you want to save."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "See no letter → Check Archive tab also.",
+          "stepIndex": 3
+        },
+        {
+          "sv_enkel": "",
+          "hs": "PDF doesn't open → Tap and hold, choose Open in new tab.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "af-upload-document",
+      "module": "AF",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Employment Service - Upload document"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have an account on My Pages."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Have the document as file or photo."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Log in to arbetsformedlingen.se/minasidor."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap Send message or My cases."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Find button Attach file or Add."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Choose file from your phone or computer."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Wait until file uploads. See green."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap Send. Document is now sent."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Can't find button → Scroll down in form.",
+          "stepIndex": 3
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Wrong file format → Use PDF or JPG instead.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "File too large → Take new picture or compress.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "skatteverket-personbevis",
+      "module": "Skatteverket",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Tax Agency - Get personal certificate"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have BankID."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Go to skatteverket.se. Search personal certificate."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap Order personal certificate."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Log in with BankID."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Choose type of certificate. Tap Next."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Certificate appears as PDF. Tap Download."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "PDF saves in Downloads. You're done."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Can't find PDF → Open Files or Downloads.",
+          "stepIndex": 6
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Wrong type → Most common is Certificate without residence info.",
+          "stepIndex": 4
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "fk-login",
+      "module": "FK",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Social Insurance Agency - Log in"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have BankID."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Go to forsakringskassan.se."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap Log in or My pages."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Enter your personal number. Tap Next."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Log in with BankID on phone."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "You now see My pages. You are logged in."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "To upload: Find your case first."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Can't find case → Call FK for guidance.",
+          "stepIndex": 6
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Login error → Check personal number.",
+          "stepIndex": 3
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "epost-login",
+      "module": "Epost",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Email - Log in"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have your email address and password."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Open Gmail app or go to gmail.com."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap Log in."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Enter your email address. Tap Next."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Enter your password. Tap Next."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "You see your inbox. You are logged in."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap an email to read it."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Wrong password → Tap Forgot password to reset.",
+          "stepIndex": 4
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Can't find email → Check Spam folder.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "epost-send-file",
+      "module": "Epost",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Email - Send image or file"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Be logged in to your email."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Have the file or image ready."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Tap Compose or Plus icon."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Enter recipient's email address."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Write subject and message if you want."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tap paperclip icon to attach file."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Choose file from Gallery or Files. Tap OK."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "File uploads. Tap Send."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "File too large → Compress image or use cloud service.",
+          "stepIndex": 5
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Can't find file → Check Downloads folder.",
+          "stepIndex": 5
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "trygghet-fraser",
+      "module": "Trygghet",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Safety - Important phrases to show"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have phone ready to show."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Phrase 1: Speak slowly. I use translation."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Phrase 2: Can you write it? I understand better."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Phrase 3: I need interpreter to my language."
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Phrase 4: Where is nearest pharmacy?"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Phrase 5: I don't understand. Can you help me?"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tip: Show this screen to someone."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "Text too small → Zoom screen with fingers.",
+          "stepIndex": 1
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    },
+    {
+      "id": "trygghet-nummer",
+      "module": "Trygghet",
+      "title": {
+        "sv_enkel": "",
+        "hs": "Safety - Important phone numbers"
+      },
+      "prereq": [
+        {
+          "sv_enkel": "",
+          "hs": "Have phone ready to call."
+        }
+      ],
+      "steps": [
+        {
+          "sv_enkel": "",
+          "hs": "Emergency: 112 (police, ambulance, fire)"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "1177: Healthcare advice (non-emergency)"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "114 14: Information in your language"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Police (non-emergency): 114 14"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Poison info: 112 (say poison information)"
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Tip: Save these numbers in contacts."
+        }
+      ],
+      "troubleshoot": [
+        {
+          "sv_enkel": "",
+          "hs": "No one answers 112 → Call again, it's always open.",
+          "stepIndex": 1
+        },
+        {
+          "sv_enkel": "",
+          "hs": "Language problem → Ask for interpreter directly in your language.",
+          "stepIndex": 1
+        }
+      ],
+      "sources": [],
+      "lastVerified": null
+    }
+  ]
+}

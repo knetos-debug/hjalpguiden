@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Steg-för-steg guider för svenska myndighetstjänster på ditt språk">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <!-- PWA -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Hjälpguiden">
+  <meta name="theme-color" content="#2196F3">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Hjälpguiden</title>
+
+  <script src="flutter.js" defer></script>
+  <script src="flutter_bootstrap.js" defer onerror="window.__flutter_bootstrap_missing = true;"></script>
+</head>
+<body>
+  <script>
+    window.addEventListener('load', function () {
+      const flutter = window._flutter || (window._flutter = {});
+      if (!flutter.loader) {
+        console.error('Flutter loader was not initialized.');
+        return;
+      }
+
+      const runApp = function (engineInitializer) {
+        engineInitializer.initializeEngine().then(function (appRunner) {
+          appRunner.runApp();
+        });
+      };
+
+      if (flutter.loader.load && flutter.buildConfig && !window.__flutter_bootstrap_missing) {
+        // flutter_bootstrap.js will handle initialization in this case.
+        return;
+      }
+
+      if (flutter.loader.loadEntrypoint) {
+        flutter.loader.loadEntrypoint({
+          serviceWorker: {
+            serviceWorkerVersion: '{{flutter_service_worker_version}}',
+          },
+          onEntrypointLoaded: runApp,
+        });
+      } else {
+        console.error('Flutter loader is missing both load and loadEntrypoint APIs.');
+      }
+    });
+  </script>
+</body>
+</html>
