@@ -84,11 +84,12 @@ class TtsService {
   }
 
   Future<void> _unlockAudioIfNeeded() async {
-    if (_isUnlocked || kIsWeb) {
-      _isUnlocked = true;
+    if (_isUnlocked) {
       return;
     }
 
+    // Spela en tyst ljudfil för att "låsa upp" audio context
+    // Detta krävs för iOS Safari och vissa andra mobila webbläsare
     const silentDataUri =
         'data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBIAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=';
 
@@ -100,6 +101,7 @@ class TtsService {
       await _audioPlayer.play();
       await _audioPlayer.stop();
     } catch (_) {
+      // Om unlock failar fortsätt ändå, ljudet kanske fungerar ändå
       await _audioPlayer.stop();
     } finally {
       await _audioPlayer.setVolume(1.0);
