@@ -1,8 +1,16 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/((?!assets|favicon\\.ico|manifest\\.json|icons|flutter).*)",
-      "destination": "/index.html"
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/(.*\\.(ico|png|jpg|jpeg|svg|webp|gif|json|js|css|woff|woff2|ttf|eot|mp3))",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ],
   "headers": [
