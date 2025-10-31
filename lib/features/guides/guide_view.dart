@@ -70,6 +70,20 @@ class GuideView extends ConsumerWidget {
           const SizedBox(height: 24),
           _buildTroubleshooting(context, guide.troubleshoot, ref),
           const SizedBox(height: 32),
+          Center(
+            child: OutlinedButton.icon(
+              onPressed: () => Navigator.of(context).pop(),
+              icon: const Icon(Icons.arrow_back),
+              label: const Text('Tillbaka till alla guider'),
+              style: OutlinedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 24,
+                  vertical: 12,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 32),
         ],
       ),
     );
