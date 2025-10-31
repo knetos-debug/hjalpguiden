@@ -38,8 +38,10 @@ class TtsService {
       await _audioPlayer.setVolume(1.0);
 
       if (kIsWeb) {
-        // För web/PWA: använd URL-baserad laddning
-        await _audioPlayer.setUrl(assetSourcePath);
+        // För web/PWA: använd URI-baserad laddning
+        await _audioPlayer.setAudioSource(
+          AudioSource.uri(Uri.parse(assetSourcePath)),
+        );
       } else {
         // För mobil: använd asset-baserad laddning
         await _audioPlayer.setAudioSource(AudioSource.asset(assetSourcePath));
