@@ -86,7 +86,6 @@ class TtsButton extends ConsumerWidget {
                   guideId: guideId,
                   stepNumber: stepNumber,
                   langCode: langCode,
-                  text: playbackText,
                 )
                 .whenComplete(() {
                   if (ref.read(ttsPlayingProvider) == stepKey) {

@@ -68,13 +68,6 @@ class TtsService {
       await session.configure(const AudioSessionConfiguration.music());
 
       if (defaultTargetPlatform == TargetPlatform.iOS) {
-        await session.setCategory(
-          AVAudioSessionCategory.playback,
-          options: {
-            AVAudioSessionOptions.defaultToSpeaker,
-            AVAudioSessionOptions.mixWithOthers,
-          },
-        );
         await session.setActive(true);
       }
     } catch (_) {}
@@ -91,7 +84,9 @@ class TtsService {
 
     try {
       await _audioPlayer.setVolume(0.0);
-      await _audioPlayer.setAudioSource(AudioSource.uri(Uri.parse(silentDataUri)));
+      await _audioPlayer.setAudioSource(
+        AudioSource.uri(Uri.parse(silentDataUri)),
+      );
       await _audioPlayer.play();
       await _audioPlayer.stop();
     } catch (_) {
