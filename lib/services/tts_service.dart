@@ -24,7 +24,7 @@ class TtsService {
     required int stepNumber,
     required String langCode,
   }) async {
-    final assetSourcePath = 'audio/$langCode/$guideId-step-$stepNumber.mp3';
+    final assetSourcePath = 'assets/audio/$langCode/$guideId-step-$stepNumber.mp3';
 
     if (_isPlaying) {
       await stop();
@@ -36,7 +36,15 @@ class TtsService {
 
     try {
       await _audioPlayer.setVolume(1.0);
-      await _audioPlayer.setAudioSource(AudioSource.asset(assetSourcePath));
+
+      if (kIsWeb) {
+        // För web/PWA: använd URL-baserad laddning
+        await _audioPlayer.setUrl(assetSourcePath);
+      } else {
+        // För mobil: använd asset-baserad laddning
+        await _audioPlayer.setAudioSource(AudioSource.asset(assetSourcePath));
+      }
+
       await _audioPlayer.play();
     } on PlayerException {
       _isPlaying = false;
