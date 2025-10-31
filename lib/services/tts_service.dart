@@ -24,8 +24,6 @@ class TtsService {
     required int stepNumber,
     required String langCode,
   }) async {
-    final assetSourcePath = 'assets/audio/$langCode/$guideId-step-$stepNumber.mp3';
-
     if (_isPlaying) {
       await stop();
     }
@@ -38,12 +36,15 @@ class TtsService {
       await _audioPlayer.setVolume(1.0);
 
       if (kIsWeb) {
-        // För web/PWA: resolva fullständig URL från base URI
-        final uri = Uri.base.resolve(assetSourcePath);
+        // För web/PWA: Vercel serverar från /assets/assets/audio/ (dubbla assets)
+        // Detta är pga hur Flutter kopierar assets till build/web/
+        final webPath = 'assets/assets/audio/$langCode/$guideId-step-$stepNumber.mp3';
+        final uri = Uri.base.resolve(webPath);
         await _audioPlayer.setAudioSource(AudioSource.uri(uri));
       } else {
-        // För mobil: använd asset-baserad laddning
-        await _audioPlayer.setAudioSource(AudioSource.asset(assetSourcePath));
+        // För mobil: använd asset-baserad laddning med assets/ prefix
+        final assetPath = 'assets/audio/$langCode/$guideId-step-$stepNumber.mp3';
+        await _audioPlayer.setAudioSource(AudioSource.asset(assetPath));
       }
 
       await _audioPlayer.play();
