@@ -14,13 +14,13 @@ Map<String, dynamic> _$LangLineToJson(LangLine instance) => <String, dynamic>{
   'hs': instance.hs,
 };
 
-GuideStep _$GuideStepFromJson(Map<String, dynamic> json) => GuideStep(
+Step _$StepFromJson(Map<String, dynamic> json) => Step(
   svEnkel: json['sv_enkel'] as String,
   hs: json['hs'] as String,
   icon: json['icon'] as String?,
 );
 
-Map<String, dynamic> _$GuideStepToJson(GuideStep instance) => <String, dynamic>{
+Map<String, dynamic> _$StepToJson(Step instance) => <String, dynamic>{
   'sv_enkel': instance.svEnkel,
   'hs': instance.hs,
   'icon': instance.icon,
@@ -50,7 +50,7 @@ Guide _$GuideFromJson(Map<String, dynamic> json) => Guide(
       .map((e) => LangLine.fromJson(e as Map<String, dynamic>))
       .toList(),
   steps: (json['steps'] as List<dynamic>)
-      .map((e) => GuideStep.fromJson(e as Map<String, dynamic>))
+      .map((e) => Step.fromJson(e as Map<String, dynamic>))
       .toList(),
   troubleshoot: (json['troubleshoot'] as List<dynamic>)
       .map((e) => Trouble.fromJson(e as Map<String, dynamic>))

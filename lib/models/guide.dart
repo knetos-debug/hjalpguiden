@@ -13,53 +13,43 @@ enum Module {
   Mobil,
   AI,
   Kommun,
-  Trygghet
+  Trygghet,
 }
 
 @JsonSerializable()
 class LangLine {
   @JsonKey(name: 'sv_enkel')
   final String svEnkel;
-  
+
   @JsonKey(name: 'hs')
   final String hs;
 
-  const LangLine({
-    required this.svEnkel,
-    required this.hs,
-  });
+  const LangLine({required this.svEnkel, required this.hs});
 
   factory LangLine.fromJson(Map<String, dynamic> json) =>
       _$LangLineFromJson(json);
-  
+
   Map<String, dynamic> toJson() => _$LangLineToJson(this);
-  
+
   LangLine copyWith({String? svEnkel, String? hs}) {
-    return LangLine(
-      svEnkel: svEnkel ?? this.svEnkel,
-      hs: hs ?? this.hs,
-    );
+    return LangLine(svEnkel: svEnkel ?? this.svEnkel, hs: hs ?? this.hs);
   }
 }
 
 @JsonSerializable()
-class GuideStep extends LangLine {
+class Step extends LangLine {
   final String? icon;
 
-  const GuideStep({
-    required super.svEnkel,
-    required super.hs,
-    this.icon,
-  });
+  const Step({required super.svEnkel, required super.hs, this.icon});
 
-  factory GuideStep.fromJson(Map<String, dynamic> json) => _$GuideStepFromJson(json);
-  
+  factory Step.fromJson(Map<String, dynamic> json) => _$StepFromJson(json);
+
   @override
-  Map<String, dynamic> toJson() => _$GuideStepToJson(this);
-  
+  Map<String, dynamic> toJson() => _$StepToJson(this);
+
   @override
-  GuideStep copyWith({String? svEnkel, String? hs, String? icon}) {
-    return GuideStep(
+  Step copyWith({String? svEnkel, String? hs, String? icon}) {
+    return Step(
       svEnkel: svEnkel ?? this.svEnkel,
       hs: hs ?? this.hs,
       icon: icon ?? this.icon,
@@ -71,18 +61,14 @@ class GuideStep extends LangLine {
 class Trouble extends LangLine {
   final int? stepIndex;
 
-  const Trouble({
-    required super.svEnkel,
-    required super.hs,
-    this.stepIndex,
-  });
+  const Trouble({required super.svEnkel, required super.hs, this.stepIndex});
 
   factory Trouble.fromJson(Map<String, dynamic> json) =>
       _$TroubleFromJson(json);
-  
+
   @override
   Map<String, dynamic> toJson() => _$TroubleToJson(this);
-  
+
   @override
   Trouble copyWith({String? svEnkel, String? hs, int? stepIndex}) {
     return Trouble(
@@ -96,13 +82,13 @@ class Trouble extends LangLine {
 @JsonSerializable()
 class Guide {
   final String id;
-
+  
   @JsonKey(unknownEnumValue: Module.m1177)
   final Module module;
-
+  
   final LangLine title;
   final List<LangLine> prereq;
-  final List<GuideStep> steps;
+  final List<Step> steps;
   final List<Trouble> troubleshoot;
   final List<Map<String, String>> sources;
   final String? lastVerified;
@@ -131,6 +117,6 @@ class ContentBundle {
 
   factory ContentBundle.fromJson(Map<String, dynamic> json) =>
       _$ContentBundleFromJson(json);
-  
+
   Map<String, dynamic> toJson() => _$ContentBundleToJson(this);
 }

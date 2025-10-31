@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
-import '../../models/guide.dart';
-import '../../providers/providers.dart';
-import '../../widgets/step_card.dart';
+import 'package:hjalpguiden/models/guide.dart' as models;
+import 'package:hjalpguiden/providers/providers.dart';
+import 'package:hjalpguiden/widgets/step_card.dart';
 
 class GuideView extends ConsumerWidget {
   final String guideId;
@@ -13,6 +12,7 @@ class GuideView extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final guide = ref.watch(guideProvider(guideId));
+    final selectedLang = ref.watch(selectedLanguageProvider);
 
     if (guide == null) {
       return Scaffold(
@@ -21,37 +21,35 @@ class GuideView extends ConsumerWidget {
       );
     }
 
+    final isSwedish = selectedLang == null || selectedLang == 'sv';
+    final hasTranslation = !isSwedish && guide.title.hs.isNotEmpty;
+    final primaryTitle = hasTranslation ? guide.title.hs : guide.title.svEnkel;
+    final secondaryTitle = hasTranslation ? guide.title.svEnkel : null;
+
     return Scaffold(
       appBar: AppBar(
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              guide.title.svEnkel,
-              style: const TextStyle(fontSize: 14),
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
+              primaryTitle,
+              style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                color: Theme.of(context).colorScheme.onSurface,
+              ),
             ),
-            if (guide.title.hs.isNotEmpty)
+            if (secondaryTitle != null)
               Text(
-                guide.title.hs,
-                style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
+                secondaryTitle,
+                style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                  color: Theme.of(
+                    context,
+                  ).colorScheme.onSurface.withOpacity(0.7),
+                ),
               ),
           ],
         ),
         actions: [
-          Semantics(
-            button: true,
-            label: 'Tillbaka till startsidan',
-            child: IconButton(
-              icon: const Icon(Icons.home),
-              onPressed: () => context.go('/home'),
-              tooltip: 'Hem',
-            ),
-          ),
           Semantics(
             button: true,
             label: 'Visa information',
@@ -68,7 +66,7 @@ class GuideView extends ConsumerWidget {
         children: [
           _buildPrerequisites(context, guide.prereq),
           const SizedBox(height: 24),
-          _buildSteps(context, guide.steps, ref),
+          _buildSteps(context, guide.steps, guide.id, ref),
           const SizedBox(height: 24),
           _buildTroubleshooting(context, guide.troubleshoot, ref),
           const SizedBox(height: 32),
@@ -77,7 +75,10 @@ class GuideView extends ConsumerWidget {
     );
   }
 
-  Widget _buildPrerequisites(BuildContext context, List<LangLine> prereq) {
+  Widget _buildPrerequisites(
+    BuildContext context,
+    List<models.LangLine> prereq,
+  ) {
     if (prereq.isEmpty) return const SizedBox.shrink();
 
     return Card(
@@ -102,50 +103,57 @@ class GuideView extends ConsumerWidget {
               ],
             ),
             const SizedBox(height: 12),
-            ...prereq.map((item) => Padding(
-                  padding: const EdgeInsets.only(bottom: 8),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text('• ', style: TextStyle(fontSize: 18)),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+            ...prereq.map(
+              (item) => Padding(
+                padding: const EdgeInsets.only(bottom: 8),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text('• ', style: TextStyle(fontSize: 18)),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            item.svEnkel,
+                            style: const TextStyle(fontSize: 16),
+                          ),
+                          if (item.hs.isNotEmpty)
                             Text(
-                              item.svEnkel,
-                              style: const TextStyle(fontSize: 16),
-                            ),
-                            if (item.hs.isNotEmpty)
-                              Text(
-                                item.hs,
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  color: Colors.grey.shade700,
-                                  fontStyle: FontStyle.italic,
-                                ),
+                              item.hs,
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.grey.shade700,
+                                fontStyle: FontStyle.italic,
                               ),
-                          ],
-                        ),
+                            ),
+                        ],
                       ),
-                    ],
-                  ),
-                )),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 
-  Widget _buildSteps(BuildContext context, List<GuideStep> steps, WidgetRef ref) {
+  Widget _buildSteps(
+    BuildContext context,
+    List<models.Step> steps,
+    String guideId,
+    WidgetRef ref,
+  ) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           'Steg för steg',
-          style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+          style: Theme.of(
+            context,
+          ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 16),
         ...steps.asMap().entries.map((entry) {
@@ -165,7 +173,10 @@ class GuideView extends ConsumerWidget {
   }
 
   Widget _buildTroubleshooting(
-      BuildContext context, List<Trouble> troubleshoot, WidgetRef ref) {
+    BuildContext context,
+    List<models.Trouble> troubleshoot,
+    WidgetRef ref,
+  ) {
     if (troubleshoot.isEmpty) return const SizedBox.shrink();
 
     return Card(
@@ -190,44 +201,43 @@ class GuideView extends ConsumerWidget {
               ],
             ),
             const SizedBox(height: 12),
-            ...troubleshoot.map((trouble) => Padding(
-                  padding: const EdgeInsets.only(bottom: 12),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      if (trouble.stepIndex != null)
-                        Text(
-                          'Vid steg ${trouble.stepIndex}:',
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.orange.shade800,
-                          ),
-                        ),
-                      const SizedBox(height: 4),
+            ...troubleshoot.map(
+              (trouble) => Padding(
+                padding: const EdgeInsets.only(bottom: 12),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    if (trouble.stepIndex != null)
                       Text(
-                        trouble.svEnkel,
-                        style: const TextStyle(fontSize: 16),
-                      ),
-                      if (trouble.hs.isNotEmpty)
-                        Text(
-                          trouble.hs,
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: Colors.grey.shade700,
-                            fontStyle: FontStyle.italic,
-                          ),
+                        'Vid steg ${trouble.stepIndex}:',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.orange.shade800,
                         ),
-                    ],
-                  ),
-                )),
+                      ),
+                    const SizedBox(height: 4),
+                    Text(trouble.svEnkel, style: const TextStyle(fontSize: 16)),
+                    if (trouble.hs.isNotEmpty)
+                      Text(
+                        trouble.hs,
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.grey.shade700,
+                          fontStyle: FontStyle.italic,
+                        ),
+                      ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 
-  void _showInfoDialog(BuildContext context, Guide guide) {
+  void _showInfoDialog(BuildContext context, models.Guide guide) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -251,23 +261,25 @@ class GuideView extends ConsumerWidget {
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 8),
-                ...guide.sources.map((source) => Padding(
-                      padding: const EdgeInsets.only(bottom: 8),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(source['label'] ?? ''),
-                          if (source['url'] != null)
-                            Text(
-                              source['url']!,
-                              style: const TextStyle(
-                                fontSize: 12,
-                                color: Colors.blue,
-                              ),
+                ...guide.sources.map(
+                  (source) => Padding(
+                    padding: const EdgeInsets.only(bottom: 8),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(source['label'] ?? ''),
+                        if (source['url'] != null)
+                          Text(
+                            source['url']!,
+                            style: const TextStyle(
+                              fontSize: 12,
+                              color: Colors.blue,
                             ),
-                        ],
-                      ),
-                    )),
+                          ),
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ],
           ),

@@ -1,108 +1,98 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../providers/providers.dart';
+import 'package:hjalpguiden/providers/providers.dart';
 
 class TtsButton extends ConsumerWidget {
   final String guideId;
-  final String text;
+  final String translationText;
+  final String swedishText;
   final int stepNumber;
 
   const TtsButton({
     super.key,
     required this.guideId,
-    required this.text,
+    required this.translationText,
+    required this.swedishText,
     required this.stepNumber,
   });
+
+  String _normalize(String value) {
+    final trimmed = value.trim();
+    if (trimmed.isEmpty || trimmed == '[HS]') {
+      return '';
+    }
+    return trimmed;
+  }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final ttsService = ref.watch(ttsServiceProvider);
     final currentPlaying = ref.watch(ttsPlayingProvider);
     final selectedLang = ref.watch(selectedLanguageProvider);
-    final isPlaying = currentPlaying == 'step_$stepNumber';
+    final langCode = (selectedLang ?? 'sv').toLowerCase();
+    final normalizedTranslation = _normalize(translationText);
+    final normalizedSwedish = _normalize(swedishText);
+    final playbackText = langCode != 'sv' && normalizedTranslation.isNotEmpty
+        ? normalizedTranslation
+        : normalizedSwedish.isNotEmpty
+        ? normalizedSwedish
+        : normalizedTranslation;
 
-    if (text.isEmpty || selectedLang == null) {
+    if (playbackText.isEmpty) {
       return const SizedBox.shrink();
     }
 
-    // Check if TTS is available (no longer async!)
-    final hasVoice = ttsService.hasLocalVoice(selectedLang);
-    final isDisabled = !hasVoice;
+    final stepKey = '$guideId-step-$stepNumber';
+    final isPlaying = currentPlaying == stepKey;
 
     return Semantics(
       button: true,
-      label: isDisabled
-          ? 'Uppläsning inte tillgänglig för detta språk'
-          : (isPlaying ? 'Sluta lyssna på steg $stepNumber' : 'Lyssna på steg $stepNumber'),
-      child: Opacity(
-        opacity: isDisabled ? 0.5 : 1.0,
-        child: Container(
-          width: 48,
-          height: 48,
-          decoration: BoxDecoration(
+      label: isPlaying
+          ? 'Sluta lyssna på steg $stepNumber'
+          : 'Lyssna på steg $stepNumber',
+      child: Container(
+        width: 48,
+        height: 48,
+        decoration: BoxDecoration(
+          color: isPlaying
+              ? Theme.of(context).colorScheme.secondary
+              : Theme.of(context).colorScheme.primary.withOpacity(0.1),
+          shape: BoxShape.circle,
+        ),
+        child: IconButton(
+          icon: Icon(
+            isPlaying ? Icons.stop : Icons.volume_up,
             color: isPlaying
-                ? Theme.of(context).colorScheme.secondary
-                : Theme.of(context).colorScheme.primary.withOpacity(0.1),
-            shape: BoxShape.circle,
+                ? Colors.white
+                : Theme.of(context).colorScheme.primary,
           ),
-          child: Stack(
-            alignment: Alignment.center,
-            children: [
-              IconButton(
-                icon: Icon(
-                  isPlaying ? Icons.stop : Icons.volume_up,
-                  color: isPlaying
-                      ? Colors.white
-                      : Theme.of(context).colorScheme.primary,
-                ),
-                onPressed: isDisabled ? null : () async {
-                  if (isPlaying) {
-                    await ttsService.stop();
-                    ref.read(ttsPlayingProvider.notifier).state = null;
-                  } else {
-                    // Stop any currently playing
-                    if (currentPlaying != null) {
-                      await ttsService.stop();
-                    }
+          onPressed: () async {
+            if (isPlaying) {
+              await ttsService.stop();
+              ref.read(ttsPlayingProvider.notifier).state = null;
+            } else {
+              // Stop any currently playing
+              if (currentPlaying != null) {
+                await ttsService.stop();
+              }
 
-                    ref.read(ttsPlayingProvider.notifier).state = 'step_$stepNumber';
+              ref.read(ttsPlayingProvider.notifier).state = stepKey;
 
-                    try {
-                      await ttsService.speak(text, selectedLang, guideId, stepNumber);
-                      // Add pause after speaking
-                      await Future.delayed(const Duration(milliseconds: 600));
-                    } finally {
-                      if (ref.read(ttsPlayingProvider) == 'step_$stepNumber') {
-                        ref.read(ttsPlayingProvider.notifier).state = null;
-                      }
-                    }
-                  }
-                },
-                tooltip: isDisabled
-                    ? 'Uppläsning inte tillgänglig'
-                    : (isPlaying ? 'Stoppa' : 'Lyssna'),
-              ),
-              if (isDisabled)
-                Positioned(
-                  top: 8,
-                  right: 8,
-                  child: Container(
-                    width: 20,
-                    height: 20,
-                    decoration: BoxDecoration(
-                      color: Colors.red,
-                      shape: BoxShape.circle,
-                      border: Border.all(color: Colors.white, width: 1.5),
-                    ),
-                    child: const Icon(
-                      Icons.close,
-                      color: Colors.white,
-                      size: 14,
-                    ),
-                  ),
-                ),
-            ],
-          ),
+              try {
+                await ttsService.playStep(
+                  guideId: guideId,
+                  stepNumber: stepNumber,
+                  langCode: langCode,
+                  text: playbackText,
+                );
+              } finally {
+                if (ref.read(ttsPlayingProvider) == stepKey) {
+                  ref.read(ttsPlayingProvider.notifier).state = null;
+                }
+              }
+            }
+          },
+          tooltip: isPlaying ? 'Stoppa' : 'Lyssna',
         ),
       ),
     );

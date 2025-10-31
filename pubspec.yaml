@@ -29,11 +29,8 @@ dependencies:
   http: ^1.1.0
   
   # JSON
-  json_annotation: ^4.8.1
-
-  # File paths
-  path_provider: ^2.1.1
-
+  json_annotation: ^4.9.0
+  
   # UI
   cupertino_icons: ^1.0.6
 
@@ -48,14 +45,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
+  
   assets:
     - assets/content/
-    - assets/audio/ar/
-    - assets/audio/so/
-    - assets/audio/ru/
-    - assets/audio/uk/
-    - assets/audio/en/
-    - assets/audio/tr/
-    - assets/audio/fa/
-    - assets/audio/prs/
+    - assets/audio/

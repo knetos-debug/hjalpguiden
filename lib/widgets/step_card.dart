@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../models/guide.dart';
-import 'tts_button.dart';
+import 'package:hjalpguiden/models/guide.dart' as models;
+import 'package:hjalpguiden/widgets/tts_button.dart';
 
 class StepCard extends ConsumerWidget {
   final String guideId;
   final int stepNumber;
-  final GuideStep step;
+  final models.Step step;
 
   const StepCard({
     super.key,
@@ -76,7 +76,8 @@ class StepCard extends ConsumerWidget {
               const SizedBox(width: 8),
               TtsButton(
                 guideId: guideId,
-                text: step.hs,
+                translationText: step.hs,
+                swedishText: step.svEnkel,
                 stepNumber: stepNumber,
               ),
             ],

@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../models/guide.dart';
-import '../services/content_loader.dart';
-import '../services/tts_service.dart';
+import 'package:hjalpguiden/models/guide.dart';
+import 'package:hjalpguiden/services/content_loader.dart';
+import 'package:hjalpguiden/services/tts_service.dart';
 
 // Language provider
 final selectedLanguageProvider = StateProvider<String?>((ref) => null);
@@ -10,7 +10,11 @@ final selectedLanguageProvider = StateProvider<String?>((ref) => null);
 final contentLoaderProvider = Provider((ref) => ContentLoader());
 
 // TTS service instance
-final ttsServiceProvider = Provider((ref) => TtsService());
+final ttsServiceProvider = Provider<TtsService>((ref) {
+  final service = TtsService();
+  ref.onDispose(service.dispose);
+  return service;
+});
 
 // Content bundle for selected language
 final contentBundleProvider = FutureProvider<ContentBundle>((ref) async {
@@ -18,7 +22,6 @@ final contentBundleProvider = FutureProvider<ContentBundle>((ref) async {
   if (lang == null) {
     throw Exception('No language selected');
   }
-  
   final loader = ref.watch(contentLoaderProvider);
   return await loader.loadForLanguage(lang);
 });
@@ -26,7 +29,6 @@ final contentBundleProvider = FutureProvider<ContentBundle>((ref) async {
 // Individual guide provider
 final guideProvider = Provider.family<Guide?, String>((ref, guideId) {
   final contentAsync = ref.watch(contentBundleProvider);
-  
   return contentAsync.when(
     data: (bundle) => bundle.guides.firstWhere(
       (g) => g.id == guideId,
