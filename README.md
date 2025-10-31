@@ -1,203 +1,320 @@
-ROLL & UPPDRAG
+# 🇸🇪 Hjälpguiden
 
-Du är lead Flutter-utvecklare + tech writer. Bygg och leverera en mobil-först Flutter-app (Android, iOS, Flutter Web PWA) som visar hjälpguider om svenska myndighetstjänster på enkel svenska + hemspråket med uppläsning (TTS) av hemspråksraden.
-Målgrupp: vuxna med låg digital vana och svenska på A1–A2.
-Krav på språk i UI: varje steg visas i två rader: Rad A = enkel svenska, Rad B = hemspråket (TTS läser Rad B).
+> **Steg-för-steg-guider för svenska myndighetstjänster – på ditt språk**
 
-PRODUKTENS SYFTE
+En mobil-först Progressive Web App (PWA) byggd med Flutter som hjälper personer med låg digital vana att navigera svenska e-tjänster. Varje guide presenteras på enkel svenska tillsammans med användarens hemspråk, med uppläsning via förinspelade MP3-filer.
 
-Hjälpa användaren att fullfölja vanliga e-tjänst-uppgifter (1177, Kivra, AF m.fl.) utan handledare.
+[![Deploy Status](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](https://vercel.com)
+[![Flutter](https://img.shields.io/badge/Flutter-3.8+-02569B?logo=flutter)](https://flutter.dev)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](#)
 
-Minimera stress: korta, tydliga steg; konsekvent språk; uppläsning.
+---
 
-Fungerar offline efter första visning av en guide.
+## ✨ Features
 
-ICKE-MÅL (MVP)
+- 🌍 **Flerspråksstöd** – Arabiska, Somaliska, Ryska, Ukrainska, Engelska, Farsi, Dari, Turkiska + Svenska
+- 🔊 **Ljuduppläsning** – Förinspelade MP3-filer för varje steg på användarens hemspråk
+- 📱 **Mobil-först design** – Optimerad för smartphones och surfplattor
+- 🌐 **Fungerar offline** – Guider och ljudfiler cachas för användning utan internet
+- ♿ **Tillgänglig** – Stora tryckytor, hög kontrast, skärmläsarstöd
+- 🔒 **Integritetsfokuserad** – Ingen inloggning, inga personuppgifter, ingen spårning
+- ⚡ **Progressive Web App** – Installeras direkt från webbläsaren, ingen app store behövs
 
-Ingen inloggning, inga konton, ingen spårning.
+---
 
-Inget autofyll i myndighetsformulär.
+## 📚 Tillgängliga guider
 
-Inga skärmbilder i MVP (text först).
+### 🏥 1177 Vårdguiden
+- Logga in (samma enhet)
+- Logga in (annan enhet)
+- Läsa meddelande
+- Boka tid
 
-Inget GPT-chatläge i appen (detta är en instruktionsbok).
+### 📨 Kivra
+- Aktivera & logga in
+- Läsa nytt brev
 
-PERSONOR (för designbeslut)
+### 💼 Arbetsförmedlingen
+- Logga in
+- Ladda upp dokument/foto
 
-A: Ny i Sverige, låg digital vana, saknar ibland BankID.
+### 🏛️ Skatteverket
+- Logga in
+- Hämta personbevis
 
-B: Har BankID, låg svenska, rädd att göra fel.
+### 🆔 BankID
+- Logga in (samma enhet)
+- Logga in (annan enhet)
+- Byta säkerhetskod
 
-C: Klarar grunderna men fastnar på “ladda upp/foto/PDF”.
+### 📱 Mobilens grunder
+- Ansluta till Wi-Fi
+- Öppna länkar och QR-koder
+- Ta skärmdumpar
 
-GLOBALA ACCEPTANSKRITERIER
+### 🌐 Översättning & AI
+- Google Översätt med kamera
+- Google Översätt röst↔text
 
-Vid start måste appen fråga: “Vilket språk vill du använda?” (varje appstart).
+---
 
-Varje guide har Förberedelser, Steg 1–6 (två rader/ steg), Om det strular.
+## 🛠️ Tech Stack
 
-TTS spelar upp endast hemspråksraden; paus (~600 ms) mellan steg.
+- **Frontend:** Flutter (Dart)
+- **State Management:** Riverpod
+- **Routing:** go_router
+- **Audio Playback:** just_audio + förinspelade MP3-filer
+- **Deployment:** Vercel
+- **Build Tool:** Flutter Web (PWA)
+- **Offline Support:** Service Workers + Cache API
 
-Offline: En guide som visats online ska gå att läsa offline.
+---
 
-Tillgänglighet: stora tryckytor (min 48×48 dp), hög kontrast, skärmläsarstöd (Semantics).
+## 🚀 Kom igång
+
+### Förutsättningar
+
+- Flutter SDK `>=3.8.0`
+- Dart SDK
+- Git
+
+### Installation
+
+```bash
+# Klona repot
+git clone https://github.com/knetos-debug/hjalpguiden.git
+cd hjalpguiden
+
+# Installera dependencies
+flutter pub get
+
+# Kör appen i utvecklingsläge
+flutter run -d chrome
+```
+
+### Bygg för produktion
+
+```bash
+# Bygg Flutter Web PWA
+flutter build web --release --pwa-strategy=offline-first
+
+# Output hamnar i build/web/
+```
+
+---
+
+## 📦 Deployment (Vercel)
+
+Projektet är konfigurerat för automatisk deployment på Vercel via Git.
+
+### Vercel Build Script
+
+Se `vercel-build.sh` för build-konfiguration:
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+# 1) Hämta Flutter (stable)
+git clone https://github.com/flutter/flutter.git -b stable --depth 1
+export PATH="$PWD/flutter/bin:$PATH"
+
+# 2) Bygg Flutter Web
+flutter --version
+flutter pub get
+flutter build web --release --pwa-strategy=offline-first
+```
+
+### Vercel Configuration
+
+Se `vercel.json` för routing och headers:
+
+```json
+{
+  "headers": [
+    {
+      "source": "/assets/audio/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "audio/mpeg"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
+```
+
+---
+
+## 🎨 Projektstruktur
+
+```
+hjalpguiden/
+├── assets/
+│   ├── audio/           # Förinspelade MP3-filer (~900+ filer)
+│   │   ├── ar/         # Arabiska
+│   │   ├── en/         # Engelska
+│   │   ├── fa/         # Farsi
+│   │   ├── ru/         # Ryska
+│   │   ├── so/         # Somaliska
+│   │   ├── tr/         # Turkiska
+│   │   └── uk/         # Ukrainska
+│   └── content/        # Guide-innehåll (JSON)
+├── lib/
+│   ├── features/
+│   │   ├── guides/     # Guide-vyer
+│   │   ├── home/       # Hemskärm
+│   │   └── language/   # Språkväljare
+│   ├── models/         # Data models (Guide, Step, etc.)
+│   ├── providers/      # Riverpod providers
+│   ├── services/       # TTS service, content loader
+│   └── widgets/        # Återanvändbara widgets
+├── web/
+│   ├── index.html
+│   ├── manifest.json   # PWA manifest
+│   └── icons/          # PWA ikoner
+├── pubspec.yaml
+├── vercel-build.sh     # Vercel build script
+└── vercel.json         # Vercel konfiguration
+```
+
+---
+
+## 🎯 Målgrupp & Design
+
+### Personas
+
+**Persona A:** Ny i Sverige, låg digital vana, saknar ibland BankID
+**Persona B:** Har BankID, låg svenska, rädd att göra fel
+**Persona C:** Klarar grunderna men fastnar på "ladda upp/foto/PDF"
+
+### Designprinciper
+
+- ✅ **Enkel svenska** (A1–A2 nivå)
+- ✅ **Tvåradigt format** – Rad 1: Enkel svenska, Rad 2: Hemspråk
+- ✅ **Verb först** – Maximalt 9–12 ord per instruktion
+- ✅ **Stora tryckytor** – Minst 48×48 dp enligt WCAG
+- ✅ **Hög kontrast** – För lättläst text
+- ✅ **Konsekvent språk** – Samma termer genom hela appen
 
-Integritet: inga personuppgifter lagras; inga tredjeparts-trackers.
+---
 
-FUNKTIONALITET (MVP)
-1) Språkflöde
+## 🔊 Audio System
 
-Startskärm varje appstart: 8–12 språkknappar med endonym (t.ex. العربية) + svensk benämning + flagg-ikon (hjälpmedel).
+### Hur det fungerar
 
-Glob-ikon i app-baren för språkbyte när som helst (gäller tills appen stängs).
+1. **Förinspelade MP3-filer** – ~900+ ljudfiler genererade med TTS
+2. **Språkspecifika mappar** – En fil per steg, per språk
+3. **just_audio package** – Cross-platform audio playback
+4. **iOS Safari unlock** – "Silent audio trick" för att kringgå autoplay-restriktioner
+5. **Offline caching** – Alla ljudfiler cachas efter första laddningen
 
-Språklista v1: ar (arabiska), so (somaliska), ti (tigrinska), fa (persiska/farsi), prs (dari), uk, ru, tr, en, sv.
+### Filnamnskonvention
 
-2) Hemskärm (kakel / GridView)
+```
+assets/audio/{langCode}/{guideId}-step-{stepNumber}.mp3
 
-Ordning efter frekvens × smärta:
+Exempel:
+assets/audio/ar/1177-login-other-step-1.mp3
+assets/audio/ru/kivra-activate-step-3.mp3
+```
 
-BankID – Logga in (samma/annan enhet), Byta kod, Låst (översikt)
+### Web/PWA Audio Path Fix
 
-1177 – Logga in (samma/annan), Läsa meddelande, Boka tid (light)
+På grund av hur Flutter kopierar assets till `build/web/`, serveras filerna från `/assets/assets/audio/` (dubbla "assets" prefix) i produktionsmiljön.
 
-Kivra – Aktivera & logga in, Läsa nytt brev / Öppna PDF
+---
 
-Arbetsförmedlingen – Logga in, Ladda upp dokument/foto
+## 🌍 Språkstöd
 
-Skatteverket – Logga in, Hämta personbevis (PDF)
+| Språk | Kod | Status | Audio |
+|-------|-----|--------|-------|
+| Svenska | sv | ✅ Komplett | - |
+| Arabiska | ar | ✅ Komplett | ✅ MP3 |
+| Somaliska | so | ✅ Komplett | ✅ MP3 |
+| Ryska | ru | ✅ Komplett | ✅ MP3 |
+| Ukrainska | uk | ✅ Komplett | ✅ MP3 |
+| Engelska | en | ✅ Komplett | ✅ MP3 |
+| Farsi | fa | ⚠️ Delvis | ✅ MP3 |
+| Dari | prs | ⚠️ Delvis | ✅ MP3 |
+| Turkiska | tr | ⚠️ Delvis | ✅ MP3 |
 
-Försäkringskassan – Logga in, Ladda upp intyg (orientering)
+---
 
-E-post & meddelanden – Logga in, Öppna bilaga, Skicka bild/fil
+## 🐛 Kända problem & lösningar
 
-Mobilens grunder – Wi-Fi, Öppna länk/QR, Skärmdump
+### Audio fungerar inte på iPhone/iOS Safari
 
-Översättning & AI – Google Översätt (kamera/röst), enkel fråga-guide
+**Problem:** iOS Safari blockerar audio utan user interaction.
 
-Kommun & skola – Hitta e-tjänst, Logga in (generiskt)
+**Lösning:** Implementerad "silent audio unlock" i `tts_service.dart`:
+- Första klicket spelar en tyst ljudfil för att låsa upp audio context
+- Efterföljande klick fungerar normalt
 
-Trygghet & “visa-upp” – korta fraser (kommunikationstöd)
+### Vercel serverar MP3 med fel Content-Type
 
-3) Guidevy
+**Problem:** MP3-filer serverades som `text/html`.
 
-Titel + Förberedelser (2–4 punkter).
+**Lösning:** Explicit Content-Type i `vercel.json`:
+```json
+{
+  "source": "/assets/audio/(.*)",
+  "headers": [
+    { "key": "Content-Type", "value": "audio/mpeg" }
+  ]
+}
+```
 
-Stegkort 1–6: två rader text per steg:
+---
 
-sv_enkel (max 9–12 ord, verb först)
+## 🤝 Bidra
 
-hs (hemspråk – TTS läser denna rad)
+Vi välkomnar bidrag! Här är några sätt du kan hjälpa till:
 
-Lyssna-knapp per steg: TTS av hs.
+### Rapportera buggar
+Öppna ett issue med:
+- Beskrivning av problemet
+- Steg för att återskapa
+- Förväntad vs faktisk beteende
+- Screenshots om möjligt
 
-Om det strular: 2–4 fel→åtgärd, gärna med stepIndex.
+### Föreslå nya guider
+Vi letar efter:
+- Vanliga e-tjänster som saknas
+- Myndighetsprocedurer som är svåra att förstå
+- Feedback från målgruppen
 
-Info-ikon (“i”): Källor (etikett + URL) och Senast verifierad: YYYY-MM-DD.
+### Förbättra översättningar
+Om du är modersmålstalare för något av våra språk, hjälp oss granska och förbättra översättningar!
 
-INNEHÅLL (MVP-GUIDER) Uppdatering finns längre ner!!!!
+---
 
-Följande fem ska finnas färdiga:
+## 📄 Licens
 
-1177 – Logga in (samma enhet)
+Detta projekt är licensierat under MIT License.
 
-1177 – Logga in (annan enhet)
+---
 
-Kivra – Aktivera & logga in
+## 🙏 Tack till
 
-Kivra – Läsa nytt brev
+- **Flutter Team** – För ett fantastiskt framework
+- **Vercel** – För enkel och snabb hosting
+- **just_audio package** – För pålitlig cross-platform audio
+- **Alla översättare och testare** som hjälper till att göra appen tillgänglig för fler
 
-Arbetsförmedlingen – Ladda upp dokument/foto
+---
 
-Varje guide är skriven i A1-svenska, två rader/ steg, och har “Om det strular”. Texterna bygger på officiella, publika källor, omformulerade till enkel svenska och försedda med källa + datum.
+## 📞 Kontakt
 
+För frågor eller feedback, öppna ett issue på GitHub.
 
-fortsättning ökad kravställning samt plan
+---
 
-
-📋 Del 1: Inventering av vad som finns vs. vad som ska finnas
-Nuvarande status (5 guider finns):
-✅ 1177 - Logga in (samma enhet)
-✅ 1177 - Logga in (annan enhet)
-✅ Kivra - Aktivera & logga in
-✅ Kivra - Läsa nytt brev
-✅ AF - Ladda upp dokument/foto
-Saknas (11 nya guider):
-❌ Mobilens grunder - Wi-Fi anslut
-❌ Mobilens grunder - Öppna länk/QR
-❌ Mobilens grunder - Skärmdump
-❌ Översättning & AI - Google Översätt kamera
-❌ Översättning & AI - Google Översätt röst↔text
-❌ BankID - Logga in (samma enhet)
-❌ BankID - Logga in (annan enhet)
-❌ 1177 - Läsa meddelande (saknas, vi har bara "logga in")
-❌ Skatteverket - Hämta personbevis
-❌ FK - Logga in (orientering)
-❌ E-post - Logga in
-❌ E-post - Skicka bild/fil
-❌ Trygghet - "Visa-upp-kort" (2 st)
-
-🗣️ Del 2: Språk & TTS-problem
-Nuvarande språkstöd:
-
-Svenska (sv) ✅
-Arabiska (ar) ✅ (översättning finns)
-Somaliska (so) ✅ (översättning finns, MEN fel TTS)
-Tigrinska (ti) ⚠️ (ingen översättning, ingen TTS)
-Persiska/Farsi (fa) ⚠️ (ingen översättning, TTS?)
-Dari (prs) ⚠️ (ingen översättning, TTS?)
-Ukrainska (uk) ⚠️ (ingen översättning, TTS?)
-Ryska (ru) ⚠️ (ingen översättning, TTS?)
-Turkiska (tr) ⚠️ (ingen översättning, TTS?)
-Engelska (en) ⚠️ (ingen översättning)
-
-TTS-problem att lösa:
-Problem 1: Somaliska läses med svensk röst
-
-Flutter's flutter_tts hittar ingen somalisk röst
-Läser somalisk text med svensk uttal = oförståeligt
-
-Lösningar:
-
-Moln-TTS (Azure/Google Cloud) - har somaliska röster
-Förinspelade MP3 - spela in varje steg
-Extern TTS-app - länka till Google Översätt-app
-
-Problem 2: Tigrinska saknar TTS helt
-
-Nästan ingen TTS-tjänst har tigrinska
-Lösning: Endast förinspelade MP3-filer
-
- arbetsgång:
-Fas 1: Fixa befintliga 5 guider (snabbast) *klart*
-
-Lägg till översättningar för alla 8 saknade språk 
-
-Fixa somalisk TTS (välj lösning)
-Testa att allt fungerar
-
-Fas 2: Lägg till de 11 nya guiderna 
-
-Skapa innehåll på svenska först
-Översätt till alla 10 språk
-Generera/spela in TTS för problematiska språk
-
-Fas 3: TTS-integration (tekniskt)
-
-Implementera moln-TTS-fallback
-Lägg till förinspelade ljud
-Cacha allt för offline
-
-
-Plan framåt:
-
-TTS: Moln-TTS (Azure/Google) - Implementeras senare när guiderna finns
-Prioritering: Lägga till nya guider på svenska först
-Översättningar: Maskinöversättning + kvalitetskontroll
-
-
-
-uppdatering: alla guider skrivan på svenska
-
-översättningar gjorda för arabiska, somaliska, ryska, ukrinska
-Arabiska dock trasig
+<p align="center">
+  Gjord med ❤️ för alla som behöver hjälp att navigera svenska myndighetstjänster
+</p>
