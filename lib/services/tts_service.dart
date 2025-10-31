@@ -54,35 +54,12 @@ class TtsService {
 
     final audioAsset = 'assets/audio/$langCode/$guideId-step-$stepNumber.mp3';
 
-    if (await _tryPlayAsset(audioAsset)) {
+    if (await _prepareAsset(audioAsset)) {
+      _playPreparedSource();
       return;
     }
 
-    await speak(text, langCode);
-  }
-
-  Future<void> speak(String text, String langCode) async {
-    if (_isPlaying) {
-      await stop();
-    }
-
-    _isPlaying = true;
-
-    if (_isTestEnvironment) {
-      await Future.delayed(const Duration(milliseconds: 50));
-      _isPlaying = false;
-      return;
-    }
-
-    await setLanguage(langCode);
-
-    final hasVoice = await _hasLocalVoice(langCode);
-
-    if (hasVoice) {
-      await _flutterTts.speak(text);
-    } else {
-      await _speakWithCloud(text, langCode);
-    }
+    _playFallbackTts(text, langCode);
   }
 
   Future<void> setLanguage(String langCode) async {
@@ -107,50 +84,7 @@ class TtsService {
     return map[code] ?? 'sv-SE';
   }
 
-  Future<bool> _hasLocalVoice(String langCode) async {
-    if (_isTestEnvironment) {
-      return false;
-    }
-
-    try {
-      final voices = await _flutterTts.getVoices;
-      if (voices == null) return false;
-
-      final mappedCode = _mapLangCode(langCode);
-      return voices.any(
-        (v) =>
-            v['locale']?.toString().startsWith(mappedCode.split('-')[0]) ??
-            false,
-      );
-    } catch (_) {
-      return false;
-    }
-  }
-
-  Future<void> _speakWithCloud(String text, String langCode) async {
-    if (_isTestEnvironment) {
-      return;
-    }
-
-    try {
-      final cacheKey = '${langCode}_${text.hashCode}';
-      final cached = await _cacheManager.getFileFromCache(cacheKey);
-
-      if (cached != null) {
-        await _audioPlayer.setFilePath(cached.file.path);
-        _attachPlayerListener();
-        _isPlaying = true;
-        await _audioPlayer.play();
-        _isPlaying = false;
-      } else {
-        await _flutterTts.speak(text);
-      }
-    } catch (_) {
-      await _flutterTts.speak(text);
-    }
-  }
-
-  Future<bool> _tryPlayAsset(String assetPath) async {
+  Future<bool> _prepareAsset(String assetPath) async {
     try {
       if (kIsWeb) {
         final url = Uri.base.resolve(assetPath).toString();
@@ -159,15 +93,33 @@ class TtsService {
         await _audioPlayer.setAsset(assetPath);
       }
       _attachPlayerListener();
-      _isPlaying = true;
-      await _audioPlayer.play();
-      _isPlaying = false;
       return true;
     } on PlayerException {
       return false;
     } catch (_) {
       return false;
     }
+  }
+
+  void _playPreparedSource() {
+    _isPlaying = true;
+    _audioPlayer.play();
+  }
+
+  void _playFallbackTts(String text, String langCode) {
+    _isPlaying = true;
+    if (_isTestEnvironment) {
+      Future.delayed(const Duration(milliseconds: 50)).then((_) {
+        _isPlaying = false;
+      });
+      return;
+    }
+
+    setLanguage(langCode).then((_) {
+      _flutterTts.speak(text).whenComplete(() {
+        _isPlaying = false;
+      });
+    });
   }
 
   void _attachPlayerListener() {

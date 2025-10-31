@@ -66,31 +66,33 @@ class TtsButton extends ConsumerWidget {
                 ? Colors.white
                 : Theme.of(context).colorScheme.primary,
           ),
-          onPressed: () async {
+          onPressed: () {
+            final notifier = ref.read(ttsPlayingProvider.notifier);
+
             if (isPlaying) {
-              await ttsService.stop();
-              ref.read(ttsPlayingProvider.notifier).state = null;
-            } else {
-              // Stop any currently playing
-              if (currentPlaying != null) {
-                await ttsService.stop();
-              }
+              ttsService.stop();
+              notifier.state = null;
+              return;
+            }
 
-              ref.read(ttsPlayingProvider.notifier).state = stepKey;
+            if (currentPlaying != null) {
+              ttsService.stop();
+            }
 
-              try {
-                await ttsService.playStep(
+            notifier.state = stepKey;
+
+            ttsService
+                .playStep(
                   guideId: guideId,
                   stepNumber: stepNumber,
                   langCode: langCode,
                   text: playbackText,
-                );
-              } finally {
-                if (ref.read(ttsPlayingProvider) == stepKey) {
-                  ref.read(ttsPlayingProvider.notifier).state = null;
-                }
-              }
-            }
+                )
+                .whenComplete(() {
+                  if (ref.read(ttsPlayingProvider) == stepKey) {
+                    notifier.state = null;
+                  }
+                });
           },
           tooltip: isPlaying ? 'Stoppa' : 'Lyssna',
         ),
