@@ -49,3 +49,11 @@ flutter:
   assets:
     - assets/content/
     - assets/audio/
+    - assets/audio/ar/
+    - assets/audio/en/
+    - assets/audio/fa/
+    - assets/audio/prs/
+    - assets/audio/ru/
+    - assets/audio/so/
+    - assets/audio/tr/
+    - assets/audio/uk/
