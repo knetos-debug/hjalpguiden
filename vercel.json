@@ -1,13 +1,13 @@
 {
   "rewrites": [
     {
-      "source": "/((?!assets/).*)",
+      "source": "/((?!assets|favicon\\.ico|manifest\\.json|icons|flutter).*)",
       "destination": "/index.html"
     }
   ],
   "headers": [
     {
-      "source": "/assets/audio/(.*).mp3",
+      "source": "/assets/audio/(.*)",
       "headers": [
         {
           "key": "Content-Type",
