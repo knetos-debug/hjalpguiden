@@ -86,18 +86,11 @@ class HomeScreen extends ConsumerWidget {
   }
 }
 
-class _GuideCard extends StatefulWidget {
+class _GuideCard extends StatelessWidget {
   const _GuideCard({required this.guide, required this.selectedLang});
 
   final models.Guide guide;
   final String? selectedLang;
-
-  @override
-  State<_GuideCard> createState() => _GuideCardState();
-}
-
-class _GuideCardState extends State<_GuideCard> {
-  bool _isHovered = false;
 
   IconData _getCategoryIcon(String guideId) {
     if (guideId.contains('1177')) return Icons.local_hospital_rounded;
@@ -142,141 +135,125 @@ class _GuideCardState extends State<_GuideCard> {
 
   @override
   Widget build(BuildContext context) {
-    final isSwedish = widget.selectedLang == null || widget.selectedLang == 'sv';
-    final hasTranslation = !isSwedish && widget.guide.title.hs.isNotEmpty;
+    final isSwedish = selectedLang == null || selectedLang == 'sv';
+    final hasTranslation = !isSwedish && guide.title.hs.isNotEmpty;
     final primaryTitle =
-        hasTranslation ? widget.guide.title.hs : widget.guide.title.svEnkel;
-    final secondaryTitle = hasTranslation ? widget.guide.title.svEnkel : null;
-    final categoryIcon = _getCategoryIcon(widget.guide.id);
-    final categoryColor = _getCategoryColor(widget.guide.id);
+        hasTranslation ? guide.title.hs : guide.title.svEnkel;
+    final secondaryTitle = hasTranslation ? guide.title.svEnkel : null;
+    final categoryIcon = _getCategoryIcon(guide.id);
+    final categoryColor = _getCategoryColor(guide.id);
 
-    return MouseRegion(
-      onEnter: (_) => setState(() => _isHovered = true),
-      onExit: (_) => setState(() => _isHovered = false),
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
-        transform: Matrix4.identity()
-          ..scale(_isHovered ? 1.02 : 1.0)
-          ..translate(0.0, _isHovered ? -4.0 : 0.0),
-        child: Card(
-          elevation: _isHovered ? 8 : 2,
-          shadowColor: categoryColor.withOpacity(0.3),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(16),
-            side: BorderSide(
-              color: _isHovered
-                  ? categoryColor.withOpacity(0.3)
-                  : Colors.transparent,
-              width: 2,
-            ),
-          ),
-          child: InkWell(
-            onTap: () => context.go('/guide/${widget.guide.id}'),
-            borderRadius: BorderRadius.circular(16),
-            child: Padding(
-              padding: const EdgeInsets.all(20),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+    return Card(
+      elevation: 2,
+      shadowColor: categoryColor.withOpacity(0.3),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: InkWell(
+        onTap: () => context.go('/guide/${guide.id}'),
+        borderRadius: BorderRadius.circular(16),
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
                 children: [
-                  Row(
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.all(12),
-                        decoration: BoxDecoration(
-                          color: categoryColor.withOpacity(0.1),
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Icon(
-                          categoryIcon,
-                          color: categoryColor.shade700,
-                          size: 28,
-                        ),
-                      ),
-                      const SizedBox(width: 16),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              primaryTitle,
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .titleLarge
-                                  ?.copyWith(
-                                    fontWeight: FontWeight.bold,
-                                    letterSpacing: 0.5,
-                                  ),
-                            ),
-                            if (secondaryTitle != null) ...[
-                              const SizedBox(height: 4),
-                              Text(
-                                secondaryTitle,
-                                style: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium
-                                    ?.copyWith(
-                                      color: Colors.grey[600],
-                                      height: 1.4,
-                                    ),
+                  Container(
+                    padding: const EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: categoryColor.withOpacity(0.1),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Icon(
+                      categoryIcon,
+                      color: categoryColor.shade700,
+                      size: 28,
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          primaryTitle,
+                          style: Theme.of(context)
+                              .textTheme
+                              .titleLarge
+                              ?.copyWith(
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 0.5,
                               ),
-                            ],
-                          ],
                         ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 16),
-                  Wrap(
-                    spacing: 12,
-                    runSpacing: 8,
-                    children: [
-                      _InfoChip(
-                        icon: Icons.list_rounded,
-                        label: '${widget.guide.steps.length} steg',
-                        color: Colors.blue,
-                      ),
-                      _InfoChip(
-                        icon: Icons.schedule_rounded,
-                        label: _getEstimatedTime(widget.guide.steps.length),
-                        color: Colors.green,
-                      ),
-                      _InfoChip(
-                        icon: Icons.signal_cellular_alt_rounded,
-                        label: _getDifficulty(widget.guide.steps.length),
-                        color: Colors.orange,
-                      ),
-                      if (widget.guide.prereq.isNotEmpty)
-                        _InfoChip(
-                          icon: Icons.checklist_rounded,
-                          label: '${widget.guide.prereq.length} förberedelser',
-                          color: Colors.purple,
-                        ),
-                    ],
-                  ),
-                  const SizedBox(height: 16),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      TextButton.icon(
-                        onPressed: () => context.go('/guide/${widget.guide.id}'),
-                        icon: const Icon(Icons.arrow_forward_rounded),
-                        label: const Text(
-                          'Öppna guide',
-                          style: TextStyle(fontWeight: FontWeight.w600),
-                        ),
-                        style: TextButton.styleFrom(
-                          foregroundColor: categoryColor.shade700,
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 16,
-                            vertical: 12,
+                        if (secondaryTitle != null) ...[
+                          const SizedBox(height: 4),
+                          Text(
+                            secondaryTitle,
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium
+                                ?.copyWith(
+                                  color: Colors.grey[600],
+                                  height: 1.4,
+                                ),
                           ),
-                        ),
-                      ),
-                    ],
+                        ],
+                      ],
+                    ),
                   ),
                 ],
               ),
-            ),
+              const SizedBox(height: 16),
+              Wrap(
+                spacing: 12,
+                runSpacing: 8,
+                children: [
+                  _InfoChip(
+                    icon: Icons.list_rounded,
+                    label: '${guide.steps.length} steg',
+                    color: Colors.blue,
+                  ),
+                  _InfoChip(
+                    icon: Icons.schedule_rounded,
+                    label: _getEstimatedTime(guide.steps.length),
+                    color: Colors.green,
+                  ),
+                  _InfoChip(
+                    icon: Icons.signal_cellular_alt_rounded,
+                    label: _getDifficulty(guide.steps.length),
+                    color: Colors.orange,
+                  ),
+                  if (guide.prereq.isNotEmpty)
+                    _InfoChip(
+                      icon: Icons.checklist_rounded,
+                      label: '${guide.prereq.length} förberedelser',
+                      color: Colors.purple,
+                    ),
+                ],
+              ),
+              const SizedBox(height: 16),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  TextButton.icon(
+                    onPressed: () => context.go('/guide/${guide.id}'),
+                    icon: const Icon(Icons.arrow_forward_rounded),
+                    label: const Text(
+                      'Öppna guide',
+                      style: TextStyle(fontWeight: FontWeight.w600),
+                    ),
+                    style: TextButton.styleFrom(
+                      foregroundColor: categoryColor.shade700,
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                        vertical: 12,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
       ),
