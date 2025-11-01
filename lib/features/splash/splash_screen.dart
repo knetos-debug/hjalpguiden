@@ -75,9 +75,9 @@ class _SplashScreenState extends State<SplashScreen>
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              Colors.blue.shade50,
-              Colors.blue.shade100,
-              Colors.purple.shade50,
+              Colors.blue[50]!,
+              Colors.blue[100]!,
+              Colors.purple[50]!,
             ],
           ),
         ),
@@ -95,7 +95,7 @@ class _SplashScreenState extends State<SplashScreen>
                     style: TextStyle(
                       fontSize: item.size,
                       fontWeight: FontWeight.w600,
-                      color: Colors.blue.shade900.withOpacity(item.opacity),
+                      color: Colors.blue[900]!.withOpacity(item.opacity),
                       letterSpacing: 1.2,
                     ),
                   ),
@@ -123,7 +123,7 @@ class _SplashScreenState extends State<SplashScreen>
                             shape: BoxShape.circle,
                             boxShadow: [
                               BoxShadow(
-                                color: Colors.blue.shade200.withOpacity(0.5),
+                                color: Colors.blue[200]!.withOpacity(0.5),
                                 blurRadius: 30,
                                 spreadRadius: 10,
                               ),
@@ -133,7 +133,7 @@ class _SplashScreenState extends State<SplashScreen>
                             child: Icon(
                               Icons.arrow_forward_rounded,
                               size: 60,
-                              color: Colors.blue.shade700,
+                              color: Colors.blue[700],
                             ),
                           ),
                         ),
@@ -144,7 +144,7 @@ class _SplashScreenState extends State<SplashScreen>
                         'Tryck för att börja',
                         style: TextStyle(
                           fontSize: 16,
-                          color: Colors.blue.shade800,
+                          color: Colors.blue[800],
                           fontWeight: FontWeight.w500,
                           letterSpacing: 0.5,
                         ),
@@ -168,7 +168,7 @@ class _SplashScreenState extends State<SplashScreen>
                     style: TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
-                      color: Colors.blue.shade900,
+                      color: Colors.blue[900],
                       letterSpacing: 1.0,
                     ),
                   ),
@@ -188,7 +188,7 @@ class _SplashScreenState extends State<SplashScreen>
                     'Hjälpguiden',
                     style: TextStyle(
                       fontSize: 14,
-                      color: Colors.blue.shade700.withOpacity(0.6),
+                      color: Colors.blue[700]!.withOpacity(0.6),
                       letterSpacing: 2.0,
                       fontWeight: FontWeight.w300,
                     ),

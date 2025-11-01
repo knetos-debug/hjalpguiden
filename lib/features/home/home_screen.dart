@@ -167,7 +167,7 @@ class _GuideCard extends StatelessWidget {
                     ),
                     child: Icon(
                       categoryIcon,
-                      color: categoryColor.shade700,
+                      color: categoryColor[700],
                       size: 28,
                     ),
                   ),
@@ -244,7 +244,7 @@ class _GuideCard extends StatelessWidget {
                       style: TextStyle(fontWeight: FontWeight.w600),
                     ),
                     style: TextButton.styleFrom(
-                      foregroundColor: categoryColor.shade700,
+                      foregroundColor: categoryColor[700],
                       padding: const EdgeInsets.symmetric(
                         horizontal: 16,
                         vertical: 12,
@@ -287,14 +287,14 @@ class _InfoChip extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(icon, size: 16, color: color.shade700),
+          Icon(icon, size: 16, color: color[700]),
           const SizedBox(width: 6),
           Text(
             label,
             style: TextStyle(
               fontSize: 13,
               fontWeight: FontWeight.w600,
-              color: color.shade700,
+              color: color[700],
             ),
           ),
         ],
