@@ -107,7 +107,7 @@ class _GuideCard extends StatelessWidget {
     return Icons.help_outline_rounded;
   }
 
-  Color _getCategoryColor(String guideId) {
+  MaterialColor _getCategoryColor(String guideId) {
     if (guideId.contains('1177')) return Colors.blue;
     if (guideId.contains('kivra')) return Colors.green;
     if (guideId.contains('arbetsformedlingen') || guideId.contains('af-')) {
@@ -262,7 +262,7 @@ class _GuideCard extends StatelessWidget {
 class _InfoChip extends StatelessWidget {
   final IconData icon;
   final String label;
-  final Color color;
+  final MaterialColor color;
 
   const _InfoChip({
     required this.icon,
