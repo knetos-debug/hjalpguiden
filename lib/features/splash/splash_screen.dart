@@ -16,38 +16,9 @@ class _SplashScreenState extends State<SplashScreen>
   late Animation<double> _fadeAnimation;
   late Animation<double> _scaleAnimation;
 
-  static const List<WelcomeText> _welcomeTexts = [
-    WelcomeText('Välkommen!', 'sv'),
-    WelcomeText('Welcome!', 'en'),
-    WelcomeText('مرحبا!', 'ar'),
-    WelcomeText('Soo dhawoow!', 'so'),
-    WelcomeText('እንቋዕ ብደሓን መፃእኩም!', 'ti'),
-    WelcomeText('خوش آمدید!', 'fa'),
-    WelcomeText('خوش آمدید!', 'prs'),
-    WelcomeText('Ласкаво просимо!', 'uk'),
-    WelcomeText('Добро пожаловать!', 'ru'),
-    WelcomeText('Hoş geldiniz!', 'tr'),
-  ];
-
-  // Pre-generated random positions for consistent layout
-  late final List<WelcomePosition> _positions;
-
   @override
   void initState() {
     super.initState();
-
-    // Generate random positions
-    final random = math.Random(42); // Fixed seed for consistency
-    _positions = _welcomeTexts.map((text) {
-      return WelcomePosition(
-        text: text,
-        left: random.nextDouble(),
-        top: random.nextDouble(),
-        fontSize: 12 + random.nextDouble() * 36, // 12-48px
-        opacity: 0.2 + random.nextDouble() * 0.5, // 0.2-0.7
-        rotation: (random.nextDouble() - 0.5) * 0.3, // -0.15 to 0.15 radians
-      );
-    }).toList();
 
     _controller = AnimationController(
       duration: const Duration(milliseconds: 1500),
@@ -85,6 +56,18 @@ class _SplashScreenState extends State<SplashScreen>
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
+    // Pre-defined positions for welcome texts
+    final welcomeTexts = [
+      _WelcomeItem('Välkommen!', 0.1, 0.15, 32.0, 0.5),
+      _WelcomeItem('Welcome!', 0.7, 0.1, 24.0, 0.4),
+      _WelcomeItem('مرحبا!', 0.15, 0.7, 28.0, 0.45),
+      _WelcomeItem('Soo dhawoow!', 0.75, 0.65, 20.0, 0.35),
+      _WelcomeItem('خوش آمدید!', 0.8, 0.35, 26.0, 0.4),
+      _WelcomeItem('Ласкаво просимо!', 0.1, 0.4, 22.0, 0.38),
+      _WelcomeItem('Добро пожаловать!', 0.65, 0.8, 18.0, 0.35),
+      _WelcomeItem('Hoş geldiniz!', 0.25, 0.85, 24.0, 0.42),
+    ];
+
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
@@ -101,42 +84,24 @@ class _SplashScreenState extends State<SplashScreen>
         child: Stack(
           children: [
             // Random welcome texts in background
-            ...(_positions.map((pos) {
-              final left = pos.left * size.width * 0.9;
-              final top = pos.top * size.height * 0.9;
-
-              // Avoid center area (for the icon)
-              final centerX = size.width / 2;
-              final centerY = size.height / 2;
-              final distanceFromCenter = math.sqrt(
-                math.pow(left - centerX, 2) + math.pow(top - centerY, 2),
-              );
-
-              // Skip if too close to center
-              if (distanceFromCenter < 150) {
-                return const SizedBox.shrink();
-              }
-
+            ...welcomeTexts.map((item) {
               return Positioned(
-                left: left,
-                top: top,
+                left: item.x * size.width,
+                top: item.y * size.height,
                 child: FadeTransition(
                   opacity: _fadeAnimation,
-                  child: Transform.rotate(
-                    angle: pos.rotation,
-                    child: Text(
-                      pos.text.text,
-                      style: TextStyle(
-                        fontSize: pos.fontSize,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.blue.shade900.withOpacity(pos.opacity),
-                        letterSpacing: 1.2,
-                      ),
+                  child: Text(
+                    item.text,
+                    style: TextStyle(
+                      fontSize: item.size,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.blue.shade900.withOpacity(item.opacity),
+                      letterSpacing: 1.2,
                     ),
                   ),
                 ),
               );
-            })),
+            }),
 
             // Center content
             Center(
@@ -238,27 +203,12 @@ class _SplashScreenState extends State<SplashScreen>
   }
 }
 
-class WelcomeText {
+class _WelcomeItem {
   final String text;
-  final String langCode;
-
-  const WelcomeText(this.text, this.langCode);
-}
-
-class WelcomePosition {
-  final WelcomeText text;
-  final double left;
-  final double top;
-  final double fontSize;
+  final double x;
+  final double y;
+  final double size;
   final double opacity;
-  final double rotation;
 
-  WelcomePosition({
-    required this.text,
-    required this.left,
-    required this.top,
-    required this.fontSize,
-    required this.opacity,
-    required this.rotation,
-  });
+  _WelcomeItem(this.text, this.x, this.y, this.size, this.opacity);
 }
