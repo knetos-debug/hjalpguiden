@@ -1,4 +1,4 @@
-import 'dart:math';
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -37,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen>
     super.initState();
 
     // Generate random positions
-    final random = Random(42); // Fixed seed for consistency
+    final random = math.Random(42); // Fixed seed for consistency
     _positions = _welcomeTexts.map((text) {
       return WelcomePosition(
         text: text,
@@ -108,8 +108,8 @@ class _SplashScreenState extends State<SplashScreen>
               // Avoid center area (for the icon)
               final centerX = size.width / 2;
               final centerY = size.height / 2;
-              final distanceFromCenter = sqrt(
-                pow(left - centerX, 2) + pow(top - centerY, 2),
+              final distanceFromCenter = math.sqrt(
+                math.pow(left - centerX, 2) + math.pow(top - centerY, 2),
               );
 
               // Skip if too close to center
