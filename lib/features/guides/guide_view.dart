@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hjalpguiden/models/guide.dart' as models;
 import 'package:hjalpguiden/providers/providers.dart';
 import 'package:hjalpguiden/widgets/step_card.dart';
@@ -72,7 +73,7 @@ class GuideView extends ConsumerWidget {
           const SizedBox(height: 32),
           Center(
             child: OutlinedButton.icon(
-              onPressed: () => Navigator.of(context).pop(),
+              onPressed: () => context.go('/home'),
               icon: const Icon(Icons.arrow_back),
               label: const Text('Tillbaka till alla guider'),
               style: OutlinedButton.styleFrom(
