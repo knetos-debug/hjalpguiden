@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:hjalpguiden/features/guides/guide_view.dart';
 import 'package:hjalpguiden/features/home/home_screen.dart';
 import 'package:hjalpguiden/features/language/select_language_screen.dart';
+import 'package:hjalpguiden/features/splash/splash_screen.dart';
 
 class HjalpguidenApp extends StatefulWidget {
   const HjalpguidenApp({super.key});
@@ -13,8 +14,12 @@ class HjalpguidenApp extends StatefulWidget {
 
 class _HjalpguidenAppState extends State<HjalpguidenApp> {
   late final GoRouter _router = GoRouter(
-    initialLocation: '/',
+    initialLocation: '/splash',
     routes: [
+      GoRoute(
+        path: '/splash',
+        builder: (context, state) => const SplashScreen(),
+      ),
       GoRoute(
         path: '/',
         builder: (context, state) => const SelectLanguageScreen(),

@@ -86,70 +86,241 @@ class HomeScreen extends ConsumerWidget {
   }
 }
 
-class _GuideCard extends StatelessWidget {
+class _GuideCard extends StatefulWidget {
   const _GuideCard({required this.guide, required this.selectedLang});
 
   final models.Guide guide;
   final String? selectedLang;
 
   @override
-  Widget build(BuildContext context) {
-    final isSwedish = selectedLang == null || selectedLang == 'sv';
-    final hasTranslation = !isSwedish && guide.title.hs.isNotEmpty;
-    final primaryTitle = hasTranslation ? guide.title.hs : guide.title.svEnkel;
-    final secondaryTitle = hasTranslation ? guide.title.svEnkel : null;
+  State<_GuideCard> createState() => _GuideCardState();
+}
 
-    return Card(
-      elevation: 2,
-      child: InkWell(
-        onTap: () => context.go('/guide/${guide.id}'),
-        borderRadius: BorderRadius.circular(12),
-        child: Padding(
-          padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                primaryTitle,
-                style: Theme.of(
-                  context,
-                ).textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold),
+class _GuideCardState extends State<_GuideCard> {
+  bool _isHovered = false;
+
+  IconData _getCategoryIcon(String guideId) {
+    if (guideId.contains('1177')) return Icons.local_hospital_rounded;
+    if (guideId.contains('kivra')) return Icons.mail_rounded;
+    if (guideId.contains('arbetsformedlingen') || guideId.contains('af-')) {
+      return Icons.work_rounded;
+    }
+    if (guideId.contains('skatteverket')) return Icons.account_balance_rounded;
+    if (guideId.contains('bankid')) return Icons.fingerprint_rounded;
+    if (guideId.contains('mobil')) return Icons.smartphone_rounded;
+    if (guideId.contains('oversatt') || guideId.contains('translate')) {
+      return Icons.translate_rounded;
+    }
+    return Icons.help_outline_rounded;
+  }
+
+  Color _getCategoryColor(String guideId) {
+    if (guideId.contains('1177')) return Colors.blue;
+    if (guideId.contains('kivra')) return Colors.green;
+    if (guideId.contains('arbetsformedlingen') || guideId.contains('af-')) {
+      return Colors.orange;
+    }
+    if (guideId.contains('skatteverket')) return Colors.purple;
+    if (guideId.contains('bankid')) return Colors.teal;
+    if (guideId.contains('mobil')) return Colors.indigo;
+    if (guideId.contains('oversatt') || guideId.contains('translate')) {
+      return Colors.pink;
+    }
+    return Colors.grey;
+  }
+
+  String _getEstimatedTime(int steps) {
+    final minutes = (steps * 1.5).ceil();
+    return '~$minutes min';
+  }
+
+  String _getDifficulty(int steps) {
+    if (steps <= 3) return 'Enkelt';
+    if (steps <= 5) return 'Medel';
+    return 'Avancerat';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final isSwedish = widget.selectedLang == null || widget.selectedLang == 'sv';
+    final hasTranslation = !isSwedish && widget.guide.title.hs.isNotEmpty;
+    final primaryTitle =
+        hasTranslation ? widget.guide.title.hs : widget.guide.title.svEnkel;
+    final secondaryTitle = hasTranslation ? widget.guide.title.svEnkel : null;
+    final categoryIcon = _getCategoryIcon(widget.guide.id);
+    final categoryColor = _getCategoryColor(widget.guide.id);
+
+    return MouseRegion(
+      onEnter: (_) => setState(() => _isHovered = true),
+      onExit: (_) => setState(() => _isHovered = false),
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        transform: Matrix4.identity()
+          ..scale(_isHovered ? 1.02 : 1.0)
+          ..translate(0.0, _isHovered ? -4.0 : 0.0),
+        child: Card(
+          elevation: _isHovered ? 8 : 2,
+          shadowColor: categoryColor.withOpacity(0.3),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+            side: BorderSide(
+              color: _isHovered
+                  ? categoryColor.withOpacity(0.3)
+                  : Colors.transparent,
+              width: 2,
+            ),
+          ),
+          child: InkWell(
+            onTap: () => context.go('/guide/${widget.guide.id}'),
+            borderRadius: BorderRadius.circular(16),
+            child: Padding(
+              padding: const EdgeInsets.all(20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: categoryColor.withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Icon(
+                          categoryIcon,
+                          color: categoryColor.shade700,
+                          size: 28,
+                        ),
+                      ),
+                      const SizedBox(width: 16),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              primaryTitle,
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .titleLarge
+                                  ?.copyWith(
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: 0.5,
+                                  ),
+                            ),
+                            if (secondaryTitle != null) ...[
+                              const SizedBox(height: 4),
+                              Text(
+                                secondaryTitle,
+                                style: Theme.of(context)
+                                    .textTheme
+                                    .bodyMedium
+                                    ?.copyWith(
+                                      color: Colors.grey[600],
+                                      height: 1.4,
+                                    ),
+                              ),
+                            ],
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 16),
+                  Wrap(
+                    spacing: 12,
+                    runSpacing: 8,
+                    children: [
+                      _InfoChip(
+                        icon: Icons.list_rounded,
+                        label: '${widget.guide.steps.length} steg',
+                        color: Colors.blue,
+                      ),
+                      _InfoChip(
+                        icon: Icons.schedule_rounded,
+                        label: _getEstimatedTime(widget.guide.steps.length),
+                        color: Colors.green,
+                      ),
+                      _InfoChip(
+                        icon: Icons.signal_cellular_alt_rounded,
+                        label: _getDifficulty(widget.guide.steps.length),
+                        color: Colors.orange,
+                      ),
+                      if (widget.guide.prereq.isNotEmpty)
+                        _InfoChip(
+                          icon: Icons.checklist_rounded,
+                          label: '${widget.guide.prereq.length} förberedelser',
+                          color: Colors.purple,
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: 16),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      TextButton.icon(
+                        onPressed: () => context.go('/guide/${widget.guide.id}'),
+                        icon: const Icon(Icons.arrow_forward_rounded),
+                        label: const Text(
+                          'Öppna guide',
+                          style: TextStyle(fontWeight: FontWeight.w600),
+                        ),
+                        style: TextButton.styleFrom(
+                          foregroundColor: categoryColor.shade700,
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 16,
+                            vertical: 12,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
-              if (secondaryTitle != null) ...[
-                const SizedBox(height: 4),
-                Text(
-                  secondaryTitle,
-                  style: Theme.of(
-                    context,
-                  ).textTheme.bodySmall?.copyWith(color: Colors.grey[700]),
-                ),
-              ],
-              const SizedBox(height: 8),
-              Text(
-                'Steg: ${guide.steps.length}',
-                style: Theme.of(context).textTheme.bodyMedium,
-              ),
-              if (guide.prereq.isNotEmpty) ...[
-                const SizedBox(height: 8),
-                Text(
-                  'Förberedelser: ${guide.prereq.length}',
-                  style: Theme.of(
-                    context,
-                  ).textTheme.bodyMedium?.copyWith(color: Colors.grey[700]),
-                ),
-              ],
-              const SizedBox(height: 12),
-              Align(
-                alignment: Alignment.centerRight,
-                child: TextButton.icon(
-                  onPressed: () => context.go('/guide/${guide.id}'),
-                  icon: const Icon(Icons.arrow_forward),
-                  label: const Text('Öppna'),
-                ),
-              ),
-            ],
+            ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+class _InfoChip extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final Color color;
+
+  const _InfoChip({
+    required this.icon,
+    required this.label,
+    required this.color,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+      decoration: BoxDecoration(
+        color: color.withOpacity(0.1),
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(
+          color: color.withOpacity(0.2),
+          width: 1,
+        ),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(icon, size: 16, color: color.shade700),
+          const SizedBox(width: 6),
+          Text(
+            label,
+            style: TextStyle(
+              fontSize: 13,
+              fontWeight: FontWeight.w600,
+              color: color.shade700,
+            ),
+          ),
+        ],
       ),
     );
   }
