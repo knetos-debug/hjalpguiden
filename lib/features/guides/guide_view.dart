@@ -96,7 +96,7 @@ class GuideView extends ConsumerWidget {
     if (prereq.isEmpty) return const SizedBox.shrink();
 
     return Card(
-      color: Colors.blue.shade50,
+      color: Colors.blue[50],
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -104,14 +104,14 @@ class GuideView extends ConsumerWidget {
           children: [
             Row(
               children: [
-                Icon(Icons.checklist, color: Colors.blue.shade700),
+                Icon(Icons.checklist, color: Colors.blue[700]),
                 const SizedBox(width: 8),
                 Text(
                   'Förberedelser',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    color: Colors.blue.shade900,
+                    color: Colors.blue[900],
                   ),
                 ),
               ],
@@ -137,7 +137,7 @@ class GuideView extends ConsumerWidget {
                               item.hs,
                               style: TextStyle(
                                 fontSize: 16,
-                                color: Colors.grey.shade700,
+                                color: Colors.grey[700],
                                 fontStyle: FontStyle.italic,
                               ),
                             ),
@@ -194,7 +194,7 @@ class GuideView extends ConsumerWidget {
     if (troubleshoot.isEmpty) return const SizedBox.shrink();
 
     return Card(
-      color: Colors.orange.shade50,
+      color: Colors.orange[50],
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -202,14 +202,14 @@ class GuideView extends ConsumerWidget {
           children: [
             Row(
               children: [
-                Icon(Icons.help_outline, color: Colors.orange.shade700),
+                Icon(Icons.help_outline, color: Colors.orange[700]),
                 const SizedBox(width: 8),
                 Text(
                   'Om det strular',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
-                    color: Colors.orange.shade900,
+                    color: Colors.orange[900],
                   ),
                 ),
               ],
@@ -227,7 +227,7 @@ class GuideView extends ConsumerWidget {
                         style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w600,
-                          color: Colors.orange.shade800,
+                          color: Colors.orange[800],
                         ),
                       ),
                     const SizedBox(height: 4),
@@ -237,7 +237,7 @@ class GuideView extends ConsumerWidget {
                         trouble.hs,
                         style: TextStyle(
                           fontSize: 16,
-                          color: Colors.grey.shade700,
+                          color: Colors.grey[700],
                           fontStyle: FontStyle.italic,
                         ),
                       ),
